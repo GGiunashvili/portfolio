@@ -2,87 +2,14 @@ import React from "react";
 
 export default function Education() {
   return (
-    <div className="relative col-span-7 grid grid-cols-6 border border-[#FFD6D6] ">
-      {/* <p className="border-b border-[#FFD6D6]  p-[16px] font-bold text-md">
-        Education{" "}
-      </p> */}
-      <svg
-        fill="none"
-        height="0.9rem"
-        viewBox="0 0 9 9"
-        width="0.9rem"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{
-          position: "absolute",
-          top: "-0.1rem",
-          left: "-0.1rem",
-          stroke: "red",
-          zIndex: 3,
-          // backgroundColor: "red", // Uncomment if background color is needed
-        }}
+    <div className="relative col-span-8 grid grid-cols-6 border border-r-0 border-[#FFD6D6] overflow-hidden">
+      <div className="flex justify-center items-center col-span-6 border-b border-[#FFD6D6] py-[24px] bg-gradient-to-r from-black via-red to-black">
+        <p>CREATIONS</p>
+      </div>
+      <div
+        className="col-span-2  p-[16px] "
+        style={{ height: "-webkit-fill-available" }}
       >
-        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="1"></path>
-      </svg>
-      <svg
-        fill="none"
-        height="0.9rem"
-        viewBox="0 0 9 9"
-        width="0.9rem"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{
-          position: "absolute",
-          top: "-0.1rem",
-          right: "-0.1rem",
-          stroke: "red",
-          zIndex: 3,
-          // backgroundColor: "red", // Uncomment if background color is needed
-        }}
-      >
-        <path d="M0 1L8 1L8 9" stroke="current-color" strokeWidth="1"></path>
-      </svg>
-      <svg
-        fill="none"
-        height="0.9rem"
-        viewBox="0 0 9 9"
-        width="0.9rem"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{
-          position: "absolute",
-          bottom: "-0.1rem",
-          left: "-0.1rem",
-          stroke: "red",
-          zIndex: 3,
-          // backgroundColor: "red", // Uncomment if background color is needed
-        }}
-      >
-        <path
-          d="M9 8L1 8L0.999999 6.99382e-07"
-          stroke="current-color"
-          strokeWidth="1"
-        ></path>
-      </svg>
-      <svg
-        fill="none"
-        height="0.9rem"
-        viewBox="0 0 9 9"
-        width="0.9rem"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{
-          position: "absolute",
-          bottom: "-0.1rem",
-          right: "-0.1rem",
-          stroke: "red",
-          zIndex: 3,
-          // backgroundColor: "red", // Uncomment if background color is needed
-        }}
-      >
-        <path
-          d="M8 0L8 8L1.04907e-06 8"
-          stroke="current-color"
-          strokeWidth="1"
-        ></path>
-      </svg>
-      <div className="col-span-2  p-[16px]">
         <p className="border border-[#FFD6D6]  py-[8px] px-[16px] font-bold text-md">
           DETAILS
         </p>
@@ -90,7 +17,10 @@ export default function Education() {
           PROJECT
         </p>
       </div>
-      <div className="col-span-4 bg-yellow-100 p-[16px]">
+      <div
+        className="col-span-4 p-[16px]"
+        style={{ height: "-webkit-fill-available" }}
+      >
         {" "}
         <p className="border border-[#FFD6D6]  py-[8px] px-[16px] font-bold text-md">
           FILE XPLORER
@@ -143,6 +73,45 @@ export default function Education() {
           <p>Delivered custom UI designs for remote clients.</p>
         </div>
       </div>
+
+      <svg
+        fill="none"
+        height="0.9rem"
+        viewBox="0 0 9 9"
+        width="0.9rem"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{
+          position: "absolute",
+          top: "-0.1rem",
+          left: "-0.1rem",
+          stroke: "red",
+          zIndex: 3,
+          // backgroundColor: "red", // Uncomment if background color is needed
+        }}
+      >
+        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="1"></path>
+      </svg>
+      <svg
+        fill="none"
+        height="0.9rem"
+        viewBox="0 0 9 9"
+        width="0.9rem"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{
+          position: "absolute",
+          bottom: "-0.1rem",
+          left: "-0.1rem",
+          stroke: "red",
+          zIndex: 3,
+          // backgroundColor: "red", // Uncomment if background color is needed
+        }}
+      >
+        <path
+          d="M9 8L1 8L0.999999 6.99382e-07"
+          stroke="current-color"
+          strokeWidth="1"
+        ></path>
+      </svg>
     </div>
   );
 }

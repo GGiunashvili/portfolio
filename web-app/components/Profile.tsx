@@ -9,7 +9,7 @@ export default function Profile() {
   ];
 
   return (
-    <div className="col-span-2">
+    <div className="w-full mr-[24px]">
       <div className="relative p-2 bg-gradient-to-r from-black via-red to-black border border-[#FFD6D6]  mb-[20px] shadow-lg shadow-red-500">
         <Image
           className="m-auto"

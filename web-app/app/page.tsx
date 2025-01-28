@@ -4,10 +4,12 @@ import About from "../components/About";
 import Education from "../components/Education";
 export default function app() {
   return (
-    <div className="grid grid-cols-12 gap-[24px] p-[16px] h-screen">
+    <div className="flex p-[16px] h-screen">
       <Profile />
-      <Education />
-      <About />
+      <div className="grid grid-cols-12 ">
+        <Education />
+        <About />
+      </div>
     </div>
   );
 }

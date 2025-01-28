@@ -2,12 +2,12 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="overflow-hidden relative col-span-3 border border-[#FFD6D6]   ">
-      <p className="border-b border-[#FFD6D6]  p-[16px] font-bold text-md">
+    <div className="overflow-hidden relative col-span-4 border border-l-0 border-[#FFD6D6]   ">
+      <p className="border-l border-[#FFD6D6]  p-[16px] font-bold text-md">
         REACT DEVELOPER
       </p>
-      <div className="p-[24px] py-[24px] overflow-scroll h-[calc(100%-57px)]">
-        <div className="flex flex-col  border border-[#FFD6D6] ">
+      <div className="overflow-scroll h-[calc(100%-57px)]">
+        <div className="flex flex-col  border border-b-0 border-[#FFD6D6] ">
           <div>
             <p className="border-b border-[#FFD6D6]  py-[8px] px-[16px] font-bold text-md">
               ABOUT ME
@@ -291,27 +291,7 @@ export default function About() {
               </div>
             </div>
           </div>
-          <svg
-            fill="none"
-            height="0.9rem"
-            viewBox="0 0 9 9"
-            width="0.9rem"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{
-              position: "absolute",
-              top: "-0.1rem",
-              left: "-0.1rem",
-              stroke: "red",
-              zIndex: 3,
-              // backgroundColor: "red", // Uncomment if background color is needed
-            }}
-          >
-            <path
-              d="M1 9L1 1L9 1"
-              stroke="current-color"
-              strokeWidth="1"
-            ></path>
-          </svg>
+
           <svg
             fill="none"
             height="0.9rem"
@@ -333,27 +313,7 @@ export default function About() {
               strokeWidth="1"
             ></path>
           </svg>
-          <svg
-            fill="none"
-            height="0.9rem"
-            viewBox="0 0 9 9"
-            width="0.9rem"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{
-              position: "absolute",
-              bottom: "-0.1rem",
-              left: "-0.1rem",
-              stroke: "red",
-              zIndex: 3,
-              // backgroundColor: "red", // Uncomment if background color is needed
-            }}
-          >
-            <path
-              d="M9 8L1 8L0.999999 6.99382e-07"
-              stroke="current-color"
-              strokeWidth="1"
-            ></path>
-          </svg>
+
           <svg
             fill="none"
             height="0.9rem"
