@@ -10,7 +10,7 @@ export default function Profile() {
 
   return (
     <div className="col-span-3">
-      <div className="relative p-2 bg-blue-300 border border-black mb-[20px]">
+      <div className="relative p-2 bg-gradient-to-r from-black via-red to-black border border-black mb-[20px] shadow-lg shadow-red-500">
         <Image
           className="m-auto"
           src="/2807482.svg" // Replace with the direct image URL
@@ -33,7 +33,7 @@ export default function Profile() {
             // backgroundColor: "red", // Uncomment if background color is needed
           }}
         >
-          <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
+          <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="1"></path>
         </svg>
         <svg
           fill="none"
@@ -50,7 +50,7 @@ export default function Profile() {
             // backgroundColor: "red", // Uncomment if background color is needed
           }}
         >
-          <path d="M0 1L8 1L8 9" stroke="current-color" strokeWidth="2"></path>
+          <path d="M0 1L8 1L8 9" stroke="current-color" strokeWidth="1"></path>
         </svg>
         <svg
           fill="none"
@@ -70,7 +70,7 @@ export default function Profile() {
           <path
             d="M9 8L1 8L0.999999 6.99382e-07"
             stroke="current-color"
-            strokeWidth="2"
+            strokeWidth="1"
           ></path>
         </svg>
         <svg
@@ -91,7 +91,7 @@ export default function Profile() {
           <path
             d="M8 0L8 8L1.04907e-06 8"
             stroke="current-color"
-            strokeWidth="2"
+            strokeWidth="1"
           ></path>
         </svg>
       </div>
