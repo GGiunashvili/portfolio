@@ -2,8 +2,10 @@ import React from "react";
 
 export default function Education() {
   return (
-    <div className="relative col-span-5 border border-gray-600  bg-gradient-to-r from-black via-[#461212] to-black">
-      <p>Education</p>
+    <div className="relative col-span-5 border border-[#FFD6D6] ">
+      <p className="border-b border-[#FFD6D6]  p-[16px] font-bold text-md">
+        Education{" "}
+      </p>
       <svg
         fill="none"
         height="0.9rem"

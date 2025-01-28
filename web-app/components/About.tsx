@@ -2,426 +2,380 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="overflow-hidden relative col-span-4 border border-gray-600 text-white p-[16px]  bg-gradient-to-r from-black via-[#461212] to-black">
-      <div className="overflow-scroll flex flex-col h-full">
-        {" "}
-        <div className="mb-[24px]">
-          <p className="mb-[16px]">REACT DEVELOPER</p>
-          <p className="text-red">
-            I’m Giorgi, a Front-End Developer with 4 years of experience. I
-            specialize in React, Next.js, and TypeScript to create dynamic and
-            responsive web applications. Throughout my career, I have focused on
-            delivering high-quality solutions, always striving to combine
-            functionality with a seamless user experience. I’m Giorgi, a
-            Front-End Developer with 4 years of experience. I specialize in
-            React, Next.js, and TypeScript to create dynamic and responsive web
-            applications. Throughout my career, I have focused on delivering
-            high-quality solutions, always striving to combine functionality
-            with a seamless user experience.
-          </p>
-        </div>
-        <div className="border border-gray-600 p-[24px] mb-[24px]">
-          <p className="bg-red text-white text-lg font-bold border border-red p-[6px] mb-[20px]">
-            SKILLS
-          </p>
-          <div style={{ position: "relative", display: "inline-block" }}>
-            <svg
-              style={{
-                stroke: "red",
-                height: "40px",
-                width: "40px",
-              }}
-              fill="none"
-              height="20px"
-              viewBox="0 0 52 60"
-              width="20px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
-                stroke="red"
-                strokeWidth="1"
-              ></path>
-            </svg>
-            <svg
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                height: "20px",
-                width: "20px",
-                fill: "red", // Using the CSS variable for fill color
-              }}
-              height="2.5rem"
-              viewBox="0 0 50 50"
-              width="2.5rem"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M 5 4 A 1.0001 1.0001 0 0 0 4 5 L 4 45 A 1.0001 1.0001 0 0 0 5 46 L 45 46 A 1.0001 1.0001 0 0 0 46 45 L 46 5 A 1.0001 1.0001 0 0 0 45 4 L 5 4 z M 6 6 L 44 6 L 44 44 L 6 44 L 6 6 z M 15 23 L 15 26.445312 L 20 26.445312 L 20 42 L 24 42 L 24 26.445312 L 29 26.445312 L 29 23 L 15 23 z M 36.691406 23.009766 C 33.576782 22.997369 30.017578 23.941219 30.017578 28.324219 C 30.017578 34.054219 37.738281 34.055625 37.738281 36.640625 C 37.738281 36.885625 37.842187 38.666016 35.117188 38.666016 C 32.392187 38.666016 30.121094 36.953125 30.121094 36.953125 L 30.121094 41.111328 C 30.121094 41.111328 42.001953 44.954062 42.001953 36.289062 C 42.000953 30.664063 34.208984 30.945391 34.208984 28.150391 C 34.208984 27.067391 34.978375 26.054687 37.109375 26.054688 C 39.240375 26.054688 41.126953 27.3125 41.126953 27.3125 L 41.267578 23.607422 C 41.267578 23.607422 39.113892 23.019408 36.691406 23.009766 z"></path>
-            </svg>
-          </div>{" "}
-          <div style={{ position: "relative", display: "inline-block" }}>
-            <svg
-              style={{
-                stroke: "red",
-                height: "40px",
-                width: "40px",
-              }}
-              fill="none"
-              height="20px"
-              viewBox="0 0 52 60"
-              width="20px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
-                stroke="red"
-                strokeWidth="1"
-              ></path>
-            </svg>
-
-            <svg
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                height: "30px",
-                width: "25px",
-                fill: "red", // Using the CSS variable for fill color
-              }}
-              width="39.4rem"
-              height="8rem"
-              viewBox="0 0 394 80"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M261.919 0.0330722H330.547V12.7H303.323V79.339H289.71V12.7H261.919V0.0330722Z"
-                fill="current-color"
-              ></path>
-              <path
-                d="M149.052 0.0330722V12.7H94.0421V33.0772H138.281V45.7441H94.0421V66.6721H149.052V79.339H80.43V12.7H80.4243V0.0330722H149.052Z"
-                fill="current-color"
-              ></path>
-              <path
-                d="M183.32 0.0661486H165.506L229.312 79.3721H247.178L215.271 39.7464L247.127 0.126654L229.312 0.154184L206.352 28.6697L183.32 0.0661486Z"
-                fill="current-color"
-              ></path>
-              <path
-                d="M201.6 56.7148L192.679 45.6229L165.455 79.4326H183.32L201.6 56.7148Z"
-                fill="current-color"
-              ></path>
-              <path
-                d="M80.907 79.339L17.0151 0H0V79.3059H13.6121V16.9516L63.8067 79.339H80.907Z"
-                fill="current-color"
-              ></path>
-              <path
-                d="M333.607 78.8546C332.61 78.8546 331.762 78.5093 331.052 77.8186C330.342 77.1279 329.991 76.2917 330 75.3011C329.991 74.3377 330.342 73.5106 331.052 72.8199C331.762 72.1292 332.61 71.7838 333.607 71.7838C334.566 71.7838 335.405 72.1292 336.115 72.8199C336.835 73.5106 337.194 74.3377 337.204 75.3011C337.194 75.9554 337.028 76.5552 336.696 77.0914C336.355 77.6368 335.922 78.064 335.377 78.373C334.842 78.6911 334.252 78.8546 333.607 78.8546Z"
-                fill="current-color"
-              ></path>
-              <path
-                d="M356.84 45.4453H362.872V68.6846C362.863 70.8204 362.401 72.6472 361.498 74.1832C360.585 75.7191 359.321 76.8914 357.698 77.7185C356.084 78.5364 354.193 78.9546 352.044 78.9546C350.079 78.9546 348.318 78.6001 346.75 77.9094C345.182 77.2187 343.937 76.1826 343.024 74.8193C342.101 73.456 341.649 71.7565 341.649 69.7207H347.691C347.7 70.6114 347.903 71.3838 348.29 72.0291C348.677 72.6744 349.212 73.1651 349.895 73.5105C350.586 73.8559 351.38 74.0286 352.274 74.0286C353.243 74.0286 354.073 73.8286 354.746 73.4196C355.419 73.0197 355.936 72.4199 356.296 71.6201C356.646 70.8295 356.831 69.8479 356.84 68.6846V45.4453Z"
-                fill="current-color"
-              ></path>
-              <path
-                d="M387.691 54.5338C387.544 53.1251 386.898 52.0254 385.773 51.2438C384.638 50.4531 383.172 50.0623 381.373 50.0623C380.11 50.0623 379.022 50.2532 378.118 50.6258C377.214 51.0075 376.513 51.5164 376.033 52.1617C375.554 52.807 375.314 53.5432 375.295 54.3703C375.295 55.061 375.461 55.6608 375.784 56.1607C376.107 56.6696 376.54 57.0968 377.103 57.4422C377.656 57.7966 378.274 58.0874 378.948 58.3237C379.63 58.56 380.313 58.76 380.995 58.9236L384.14 59.6961C385.404 59.9869 386.631 60.3778 387.802 60.8776C388.973 61.3684 390.034 61.9955 390.965 62.7498C391.897 63.5042 392.635 64.413 393.179 65.4764C393.723 66.5397 394 67.7848 394 69.2208C394 71.1566 393.502 72.8562 392.496 74.3285C391.491 75.7917 390.043 76.9369 388.143 77.764C386.252 78.582 383.965 79 381.272 79C378.671 79 376.402 78.6002 374.493 77.8004C372.575 77.0097 371.08 75.8463 370.001 74.3194C368.922 72.7926 368.341 70.9294 368.258 68.7391H374.235C374.318 69.8842 374.687 70.8386 375.314 71.6111C375.95 72.3745 376.78 72.938 377.795 73.3197C378.819 73.6923 379.962 73.8832 381.226 73.8832C382.545 73.8832 383.707 73.6832 384.712 73.2924C385.708 72.9016 386.492 72.3564 387.055 71.6475C387.627 70.9476 387.913 70.1206 387.922 69.1754C387.913 68.312 387.654 67.5939 387.156 67.0304C386.649 66.467 385.948 65.9944 385.053 65.6127C384.15 65.231 383.098 64.8856 381.899 64.5857L378.081 63.6223C375.323 62.9225 373.137 61.8592 371.541 60.4323C369.937 59.0054 369.143 57.115 369.143 54.7429C369.143 52.798 369.678 51.0894 370.758 49.6261C371.827 48.1629 373.294 47.0268 375.148 46.2179C377.011 45.4 379.114 45 381.456 45C383.836 45 385.92 45.4 387.719 46.2179C389.517 47.0268 390.929 48.1538 391.952 49.5897C392.976 51.0257 393.511 52.6707 393.539 54.5338H387.691Z"
-                fill="current-color"
-              ></path>
-            </svg>
-          </div>{" "}
-          <div style={{ position: "relative", display: "inline-block" }}>
-            <svg
-              style={{
-                stroke: "red",
-                height: "40px",
-                width: "40px",
-              }}
-              fill="none"
-              height="20px"
-              viewBox="0 0 52 60"
-              width="20px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
-                stroke="red"
-                strokeWidth="1"
-              ></path>
-            </svg>
-            {/* <svg
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                height: "20px",
-                width: "20px",
-                fill: "red", // Using the CSS variable for fill color
-              }}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 128 128"
-            >
-              <path
-                fill="red"
-                d="M88.69 88.11c-9 18.4-24.76 30.78-45.61 34.85a39.73 39.73 0 0 1-9.77 1.14c-12 0-23-5-28.34-13.19C-2.2 100-4.64 76.87 19 59.76c.48 2.61 1.46 6.19 2.11 8.31A38.24 38.24 0 0 0 10 81.1c-4.4 8.64-3.91 17.27 1.3 25.25 3.6 5.38 9.3 8.65 16.63 9.65a44 44 0 0 0 26.55-5c12.71-6.68 21.18-14.66 26.72-25.57a9.32 9.32 0 0 1-2.61-6A9.12 9.12 0 0 1 87.37 70h.34a9.15 9.15 0 0 1 1 18.25zm28.67-20.2c12.21 13.84 12.54 30.13 7.82 39.58-4.4 8.63-16 17.27-31.6 17.27a50.48 50.48 0 0 1-21-5.05c2.29-1.63 5.54-4.24 7.33-5.87a41.54 41.54 0 0 0 16 3.42c10.1 0 17.75-4.72 22.31-13.35 2.93-5.7 3.1-12.38.33-19.22a43.61 43.61 0 0 0-17.27-20.85 62 62 0 0 0-34.74-10.59h-2.93a9.21 9.21 0 0 1-8 5.54h-.31a9.13 9.13 0 0 1-.3-18.25h.33a9 9 0 0 1 8 4.89h2.61c20.8 0 39.06 7.98 51.42 22.48zm-82.75 23a7.31 7.31 0 0 1 1.14-4.73c-9.12-15.8-14-35.83-6.51-56.68C34.61 13.83 48.13 3.24 62.79 3.24c15.64 0 31.93 13.69 33.88 40.07-2.44-.81-6-2-8.14-2.44-.53-8.63-7.82-30.13-25.09-29.81-6.19.17-15.31 3.1-20 9.12a43.69 43.69 0 0 0-9.64 25.25 59.61 59.61 0 0 0 8.47 36.16 2.75 2.75 0 0 1 1.14-.16h.32a9.121 9.121 0 0 1 .33 18.24h-.33a9.16 9.16 0 0 1-9.12-8.79z"
-              ></path>
-            </svg> */}
-
-            <svg
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                height: "20px",
-                width: "20px",
-                fill: "red", // Using the CSS variable for fill color
-              }}
-              fill="#000000"
-              width="800px"
-              height="800px"
-              viewBox="0 0 512 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>ionicons-v5_logos</title>
-              <path d="M410.66,180.72h0q-7.67-2.62-15.45-4.88,1.29-5.25,2.38-10.56c11.7-56.9,4.05-102.74-22.06-117.83-25-14.48-66,.61-107.36,36.69q-6.1,5.34-11.95,11-3.9-3.76-8-7.36c-43.35-38.58-86.8-54.83-112.88-39.69-25,14.51-32.43,57.6-21.9,111.53q1.58,8,3.55,15.93c-6.15,1.75-12.09,3.62-17.77,5.6C48.46,198.9,16,226.73,16,255.59c0,29.82,34.84,59.72,87.77,77.85q6.44,2.19,13,4.07Q114.64,346,113,354.68c-10,53-2.2,95.07,22.75,109.49,25.77,14.89,69-.41,111.14-37.31q5-4.38,10-9.25,6.32,6.11,13,11.86c40.8,35.18,81.09,49.39,106,34.93,25.75-14.94,34.12-60.14,23.25-115.13q-1.25-6.3-2.88-12.86,4.56-1.35,8.93-2.79c55-18.27,90.83-47.81,90.83-78C496,226.62,462.5,198.61,410.66,180.72Zm-129-81.08c35.43-30.91,68.55-43.11,83.65-34.39h0c16.07,9.29,22.32,46.75,12.22,95.88q-1,4.8-2.16,9.57a487.83,487.83,0,0,0-64.18-10.16,481.27,481.27,0,0,0-40.57-50.75Q276,104.57,281.64,99.64ZM157.73,280.25q6.51,12.6,13.61,24.89,7.23,12.54,15.07,24.71a435.28,435.28,0,0,1-44.24-7.13C146.41,309,151.63,294.75,157.73,280.25Zm0-48.33c-6-14.19-11.08-28.15-15.25-41.63,13.7-3.07,28.3-5.58,43.52-7.48q-7.65,11.94-14.72,24.23T157.7,231.92Zm10.9,24.17q9.48-19.77,20.42-38.78h0q10.93-19,23.27-37.13c14.28-1.08,28.92-1.65,43.71-1.65s29.52.57,43.79,1.66q12.21,18.09,23.13,37t20.69,38.6Q334,275.63,323,294.73h0q-10.91,19-23,37.24c-14.25,1-29,1.55-44,1.55s-29.47-.47-43.46-1.38q-12.43-18.19-23.46-37.29T168.6,256.09ZM340.75,305q7.25-12.58,13.92-25.49h0a440.41,440.41,0,0,1,16.12,42.32A434.44,434.44,0,0,1,326,329.48Q333.62,317.39,340.75,305Zm13.72-73.07q-6.64-12.65-13.81-25h0q-7-12.18-14.59-24.06c15.31,1.94,30,4.52,43.77,7.67A439.89,439.89,0,0,1,354.47,231.93ZM256.23,124.48h0a439.75,439.75,0,0,1,28.25,34.18q-28.35-1.35-56.74,0C237.07,146.32,246.62,134.87,256.23,124.48ZM145.66,65.86c16.06-9.32,51.57,4,89,37.27,2.39,2.13,4.8,4.36,7.2,6.67A491.37,491.37,0,0,0,201,160.51a499.12,499.12,0,0,0-64.06,10q-1.83-7.36-3.3-14.82h0C124.59,109.46,130.58,74.61,145.66,65.86ZM122.25,317.71q-6-1.71-11.85-3.71c-23.4-8-42.73-18.44-56-29.81C42.52,274,36.5,263.83,36.5,255.59c0-17.51,26.06-39.85,69.52-55q8.19-2.85,16.52-5.21a493.54,493.54,0,0,0,23.4,60.75A502.46,502.46,0,0,0,122.25,317.71Zm111.13,93.67c-18.63,16.32-37.29,27.89-53.74,33.72h0c-14.78,5.23-26.55,5.38-33.66,1.27-15.14-8.75-21.44-42.54-12.85-87.86q1.53-8,3.5-16a480.85,480.85,0,0,0,64.69,9.39,501.2,501.2,0,0,0,41.2,51C239.54,405.83,236.49,408.65,233.38,411.38Zm23.42-23.22c-9.72-10.51-19.42-22.14-28.88-34.64q13.79.54,28.08.54c9.78,0,19.46-.21,29-.64A439.33,439.33,0,0,1,256.8,388.16Zm124.52,28.59c-2.86,15.44-8.61,25.74-15.72,29.86-15.13,8.78-47.48-2.63-82.36-32.72-4-3.44-8-7.13-12.07-11a484.54,484.54,0,0,0,40.23-51.2,477.84,477.84,0,0,0,65-10.05q1.47,5.94,2.6,11.64h0C383.81,377.58,384.5,399.56,381.32,416.75Zm17.4-102.64h0c-2.62.87-5.32,1.71-8.06,2.53a483.26,483.26,0,0,0-24.31-60.94,481.52,481.52,0,0,0,23.36-60.06c4.91,1.43,9.68,2.93,14.27,4.52,44.42,15.32,71.52,38,71.52,55.43C475.5,274.19,446.23,298.33,398.72,314.11Z" />
-              <path d="M256,298.55a43,43,0,1,0-42.86-43A42.91,42.91,0,0,0,256,298.55Z" />
-            </svg>
-          </div>{" "}
-          <div style={{ position: "relative", display: "inline-block" }}>
-            <svg
-              style={{
-                stroke: "red",
-                height: "40px",
-                width: "40px",
-              }}
-              fill="none"
-              height="20px"
-              viewBox="0 0 52 60"
-              width="20px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
-                stroke="red"
-                strokeWidth="1"
-              ></path>
-            </svg>
-            <svg
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                height: "20px",
-                width: "20px",
-                fill: "red", // Using the CSS variable for fill color
-              }}
-              width="800px"
-              height="800px"
-              viewBox="0 0 32 32"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <title>file_type_js</title>
-              <path d="M18.774,19.7a3.727,3.727,0,0,0,3.376,2.078c1.418,0,2.324-.709,2.324-1.688,0-1.173-.931-1.589-2.491-2.272l-.856-.367c-2.469-1.052-4.11-2.37-4.11-5.156,0-2.567,1.956-4.52,5.012-4.52A5.058,5.058,0,0,1,26.9,10.52l-2.665,1.711a2.327,2.327,0,0,0-2.2-1.467,1.489,1.489,0,0,0-1.638,1.467c0,1.027.636,1.442,2.1,2.078l.856.366c2.908,1.247,4.549,2.518,4.549,5.376,0,3.081-2.42,4.769-5.671,4.769a6.575,6.575,0,0,1-6.236-3.5ZM6.686,20c.538.954,1.027,1.76,2.2,1.76,1.124,0,1.834-.44,1.834-2.15V7.975h3.422V19.658c0,3.543-2.078,5.156-5.11,5.156A5.312,5.312,0,0,1,3.9,21.688Z" />
-            </svg>
+    <div className="overflow-hidden relative col-span-4 border border-[#FFD6D6]   ">
+      <p className="border-b border-[#FFD6D6]  p-[16px] font-bold text-md">
+        REACT DEVELOPER
+      </p>
+      <div className="p-[24px] py-[24px] overflow-scroll h-[calc(100%-57px)]">
+        <div className="flex flex-col  border border-[#FFD6D6] ">
+          <div>
+            <p className="border-b border-[#FFD6D6]  py-[8px] px-[16px] font-bold text-md">
+              ABOUT ME
+            </p>
+            <p className="text-sm text-red p-[16px] uppercase">
+              I’m Giorgi, a Front-End Developer with 4 years of experience. I
+              specialize in React, Next.js, and TypeScript to create dynamic and
+              responsive web applications. Throughout my career, I have focused
+              on delivering high-quality solutions, always striving to combine
+              functionality with a seamless user experience.
+            </p>
           </div>
-          <div style={{ position: "relative", display: "inline-block" }}>
-            <svg
-              style={{
-                stroke: "red",
-                height: "40px",
-                width: "40px",
-              }}
-              fill="none"
-              height="20px"
-              viewBox="0 0 52 60"
-              width="20px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
-                stroke="red"
-                strokeWidth="1"
-              ></path>
-            </svg>
-
-            <svg
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                height: "20px",
-                width: "20px",
-                fill: "red", // Using the CSS variable for fill color
-              }}
-              xmlns="http://www.w3.org/2000/svg"
-              height="800"
-              width="1200"
-              viewBox="-74.4 -120.90175 644.8 725.4105"
-            >
-              <path d="M165.9 389.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2 .6-2-1.3-4.3-4.3-5.2-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 0C106.1 0 0 105.3 0 244c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5 21.3 0 42.8 2.9 62.8 8.5 0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 449.8 496 354.9 496 244 496 105.3 383.5 0 244.8 0zM97.2 344.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-            </svg>
-          </div>
-          <div style={{ position: "relative", display: "inline-block" }}>
-            <svg
-              style={{
-                stroke: "red",
-                height: "40px",
-                width: "40px",
-              }}
-              fill="none"
-              height="20px"
-              viewBox="0 0 52 60"
-              width="20px"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
-                stroke="red"
-                strokeWidth="1"
-              ></path>
-            </svg>
-
-            <svg
-              style={{
-                position: "absolute",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                height: "20px",
-                width: "20px",
-                fill: "red", // Using the CSS variable for fill color
-              }}
-              xmlns="http://www.w3.org/2000/svg"
-              width="92pt"
-              height="92pt"
-              viewBox="0 0 92 92"
-            >
-              <defs>
-                <clipPath id="a">
-                  <path d="M0 .113h91.887V92H0Z"></path>
-                </clipPath>
-              </defs>
-              <g clipPath="url(#a)">
-                <path
+          <div className="border border-[#FFD6D6]  border-l-0 border-r-0">
+            <p className=" text-md font-bold border-b border-[#FFD6D6]   mb-[24px] py-[8px] px-[16px]">
+              SKILLS
+            </p>
+            <div className="flex gap-[16px] ml-[16px] mb-[24px]">
+              <div style={{ position: "relative", display: "inline-block" }}>
+                <svg
                   style={{
-                    stroke: "none",
-                    fillRule: "nonzero",
-                    fill: "#f03c2e",
-                    fillOpacity: 1,
+                    stroke: "red",
+                    height: "40px",
+                    width: "36px",
                   }}
-                  d="M90.156 41.965 50.036 1.848a5.918 5.918 0 0 0-8.372 0l-8.328 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.034 7.034 0 0 1 1.669 7.277l10.187 10.184a7.028 7.028 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.05 7.05 0 0 1-9.965 0 7.044 7.044 0 0 1-1.528-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.06 7.06 0 0 1 2.304-1.539V33.926a7.049 7.049 0 0 1-3.82-9.234L29.242 14.272 1.73 41.777a5.925 5.925 0 0 0 0 8.371L41.852 90.27a5.925 5.925 0 0 0 8.37 0l39.934-39.934a5.925 5.925 0 0 0 0-8.371"
+                  fill="none"
+                  height="20px"
+                  viewBox="0 0 52 60"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
+                    stroke="red"
+                    strokeWidth="1"
+                  ></path>
+                </svg>
+                <svg
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    height: "20px",
+                    width: "20px",
+                    fill: "red", // Using the CSS variable for fill color
+                  }}
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>file_type_js</title>
+                  <path d="M18.774,19.7a3.727,3.727,0,0,0,3.376,2.078c1.418,0,2.324-.709,2.324-1.688,0-1.173-.931-1.589-2.491-2.272l-.856-.367c-2.469-1.052-4.11-2.37-4.11-5.156,0-2.567,1.956-4.52,5.012-4.52A5.058,5.058,0,0,1,26.9,10.52l-2.665,1.711a2.327,2.327,0,0,0-2.2-1.467,1.489,1.489,0,0,0-1.638,1.467c0,1.027.636,1.442,2.1,2.078l.856.366c2.908,1.247,4.549,2.518,4.549,5.376,0,3.081-2.42,4.769-5.671,4.769a6.575,6.575,0,0,1-6.236-3.5ZM6.686,20c.538.954,1.027,1.76,2.2,1.76,1.124,0,1.834-.44,1.834-2.15V7.975h3.422V19.658c0,3.543-2.078,5.156-5.11,5.156A5.312,5.312,0,0,1,3.9,21.688Z" />
+                </svg>
+              </div>
+              <div style={{ position: "relative", display: "inline-block" }}>
+                <svg
+                  style={{
+                    stroke: "red",
+                    height: "40px",
+                    width: "36px",
+                  }}
+                  fill="none"
+                  height="20px"
+                  viewBox="0 0 52 60"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
+                    stroke="red"
+                    strokeWidth="1"
+                  ></path>
+                </svg>
+                <svg
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    height: "20px",
+                    width: "20px",
+                    fill: "red", // Using the CSS variable for fill color
+                  }}
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>file_type_js</title>
+                  <path d="M18.774,19.7a3.727,3.727,0,0,0,3.376,2.078c1.418,0,2.324-.709,2.324-1.688,0-1.173-.931-1.589-2.491-2.272l-.856-.367c-2.469-1.052-4.11-2.37-4.11-5.156,0-2.567,1.956-4.52,5.012-4.52A5.058,5.058,0,0,1,26.9,10.52l-2.665,1.711a2.327,2.327,0,0,0-2.2-1.467,1.489,1.489,0,0,0-1.638,1.467c0,1.027.636,1.442,2.1,2.078l.856.366c2.908,1.247,4.549,2.518,4.549,5.376,0,3.081-2.42,4.769-5.671,4.769a6.575,6.575,0,0,1-6.236-3.5ZM6.686,20c.538.954,1.027,1.76,2.2,1.76,1.124,0,1.834-.44,1.834-2.15V7.975h3.422V19.658c0,3.543-2.078,5.156-5.11,5.156A5.312,5.312,0,0,1,3.9,21.688Z" />
+                </svg>
+              </div>
+              <div style={{ position: "relative", display: "inline-block" }}>
+                <svg
+                  style={{
+                    stroke: "red",
+                    height: "40px",
+                    width: "36px",
+                  }}
+                  fill="none"
+                  height="20px"
+                  viewBox="0 0 52 60"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
+                    stroke="red"
+                    strokeWidth="1"
+                  ></path>
+                </svg>
+                <svg
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    height: "20px",
+                    width: "20px",
+                    fill: "red", // Using the CSS variable for fill color
+                  }}
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 32 32"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>file_type_js</title>
+                  <path d="M18.774,19.7a3.727,3.727,0,0,0,3.376,2.078c1.418,0,2.324-.709,2.324-1.688,0-1.173-.931-1.589-2.491-2.272l-.856-.367c-2.469-1.052-4.11-2.37-4.11-5.156,0-2.567,1.956-4.52,5.012-4.52A5.058,5.058,0,0,1,26.9,10.52l-2.665,1.711a2.327,2.327,0,0,0-2.2-1.467,1.489,1.489,0,0,0-1.638,1.467c0,1.027.636,1.442,2.1,2.078l.856.366c2.908,1.247,4.549,2.518,4.549,5.376,0,3.081-2.42,4.769-5.671,4.769a6.575,6.575,0,0,1-6.236-3.5ZM6.686,20c.538.954,1.027,1.76,2.2,1.76,1.124,0,1.834-.44,1.834-2.15V7.975h3.422V19.658c0,3.543-2.078,5.156-5.11,5.156A5.312,5.312,0,0,1,3.9,21.688Z" />
+                </svg>
+              </div>
+              <div style={{ position: "relative", display: "inline-block" }}>
+                <svg
+                  style={{
+                    stroke: "red",
+                    height: "40px",
+                    width: "36px",
+                  }}
+                  fill="none"
+                  height="20px"
+                  viewBox="0 0 52 60"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
+                    stroke="red"
+                    strokeWidth="1"
+                  ></path>
+                </svg>
+
+                <svg
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    height: "20px",
+                    width: "20px",
+                    fill: "red", // Using the CSS variable for fill color
+                  }}
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="800"
+                  width="1200"
+                  viewBox="-74.4 -120.90175 644.8 725.4105"
+                >
+                  <path d="M165.9 389.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2 .6-2-1.3-4.3-4.3-5.2-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 0C106.1 0 0 105.3 0 244c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5 21.3 0 42.8 2.9 62.8 8.5 0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 449.8 496 354.9 496 244 496 105.3 383.5 0 244.8 0zM97.2 344.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                </svg>
+              </div>
+              <div style={{ position: "relative", display: "inline-block" }}>
+                <svg
+                  style={{
+                    stroke: "red",
+                    height: "40px",
+                    width: "36px",
+                  }}
+                  fill="none"
+                  height="20px"
+                  viewBox="0 0 52 60"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0.519238 15.2887L26 0.57735L51.4808 15.2887V44.7113L26 59.4226L0.519238 44.7113V15.2887Z"
+                    stroke="red"
+                    strokeWidth="1"
+                  ></path>
+                </svg>
+
+                <svg
+                  style={{
+                    position: "absolute",
+                    top: "50%",
+                    left: "50%",
+                    transform: "translate(-50%, -50%)",
+                    height: "20px",
+                    width: "20px",
+                    fill: "red", // Using the CSS variable for fill color
+                  }}
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="92pt"
+                  height="92pt"
+                  viewBox="0 0 92 92"
+                >
+                  <defs>
+                    <clipPath id="a">
+                      <path d="M0 .113h91.887V92H0Z"></path>
+                    </clipPath>
+                  </defs>
+                  <g clipPath="url(#a)">
+                    <path
+                      style={{
+                        stroke: "none",
+                        fillRule: "nonzero",
+                        fill: "#f03c2e",
+                        fillOpacity: 1,
+                      }}
+                      d="M90.156 41.965 50.036 1.848a5.918 5.918 0 0 0-8.372 0l-8.328 8.332 10.566 10.566a7.03 7.03 0 0 1 7.23 1.684 7.034 7.034 0 0 1 1.669 7.277l10.187 10.184a7.028 7.028 0 0 1 7.278 1.672 7.04 7.04 0 0 1 0 9.957 7.05 7.05 0 0 1-9.965 0 7.044 7.044 0 0 1-1.528-7.66l-9.5-9.497V59.36a7.04 7.04 0 0 1 1.86 11.29 7.04 7.04 0 0 1-9.957 0 7.04 7.04 0 0 1 0-9.958 7.06 7.06 0 0 1 2.304-1.539V33.926a7.049 7.049 0 0 1-3.82-9.234L29.242 14.272 1.73 41.777a5.925 5.925 0 0 0 0 8.371L41.852 90.27a5.925 5.925 0 0 0 8.37 0l39.934-39.934a5.925 5.925 0 0 0 0-8.371"
+                    />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div className="grid ">
+            <div className="grid gap-[16px] p-[16px] text-red">
+              <div className="flex gap-[8px] items-start">
+                <img
+                  className="w-[30px] h-[30px] mt-[4px]"
+                  src="/iliauni.svg"
+                  alt=""
                 />
-              </g>
-            </svg>
+                <div>
+                  <p className="text-sm mb-[8px]">
+                    Tbilisi School Of Communication - Angular course
+                  </p>
+                  <p className="text-sm">Sept 2024 – Present</p>
+                </div>
+              </div>{" "}
+              <div className="flex gap-[8px] items-start">
+                <img
+                  className="w-[30px] h-[30px] mt-[4px]"
+                  src="/udemy-3.svg"
+                  alt=""
+                />
+                <div>
+                  <p className="text-sm mb-[8px]">
+                    Udemy - Certified Internet Webmaster JavaScript Specialist
+                  </p>
+                  <p className="text-sm">Sept 2022 – Aug 2022</p>
+                </div>
+              </div>
+              <div className="flex gap-[8px] items-start">
+                <img
+                  className="w-[30px] h-[30px] mt-[4px]"
+                  src="/geolab.svg"
+                  alt=""
+                />
+
+                <div>
+                  <p className="text-sm mb-[8px]">
+                    Geolab - Front End Development
+                  </p>
+                  <p className="text-sm">Sept 2022 – May 2022</p>
+                </div>
+              </div>{" "}
+              <div className="flex gap-[8px] items-start">
+                <img
+                  className="w-[30px] h-[30px] mt-[4px]"
+                  src="/iliauni.svg"
+                  alt=""
+                />
+
+                <div>
+                  <p className="text-sm mb-[8px]">
+                    Ilia State University - Faculty of Business and Information
+                    Technology
+                  </p>
+                  <p className="text-sm">Sept 2022 – May 2022</p>
+                </div>
+              </div>
+            </div>
           </div>
+          <svg
+            fill="none"
+            height="0.9rem"
+            viewBox="0 0 9 9"
+            width="0.9rem"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{
+              position: "absolute",
+              top: "-0.1rem",
+              left: "-0.1rem",
+              stroke: "red",
+              zIndex: 3,
+              // backgroundColor: "red", // Uncomment if background color is needed
+            }}
+          >
+            <path
+              d="M1 9L1 1L9 1"
+              stroke="current-color"
+              strokeWidth="1"
+            ></path>
+          </svg>
+          <svg
+            fill="none"
+            height="0.9rem"
+            viewBox="0 0 9 9"
+            width="0.9rem"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{
+              position: "absolute",
+              top: "-0.1rem",
+              right: "-0.1rem",
+              stroke: "red",
+              zIndex: 3,
+              // backgroundColor: "red", // Uncomment if background color is needed
+            }}
+          >
+            <path
+              d="M0 1L8 1L8 9"
+              stroke="current-color"
+              strokeWidth="1"
+            ></path>
+          </svg>
+          <svg
+            fill="none"
+            height="0.9rem"
+            viewBox="0 0 9 9"
+            width="0.9rem"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{
+              position: "absolute",
+              bottom: "-0.1rem",
+              left: "-0.1rem",
+              stroke: "red",
+              zIndex: 3,
+              // backgroundColor: "red", // Uncomment if background color is needed
+            }}
+          >
+            <path
+              d="M9 8L1 8L0.999999 6.99382e-07"
+              stroke="current-color"
+              strokeWidth="1"
+            ></path>
+          </svg>
+          <svg
+            fill="none"
+            height="0.9rem"
+            viewBox="0 0 9 9"
+            width="0.9rem"
+            xmlns="http://www.w3.org/2000/svg"
+            style={{
+              position: "absolute",
+              bottom: "-0.1rem",
+              right: "-0.1rem",
+              stroke: "red",
+              zIndex: 3,
+              // backgroundColor: "red", // Uncomment if background color is needed
+            }}
+          >
+            <path
+              d="M8 0L8 8L1.04907e-06 8"
+              stroke="current-color"
+              strokeWidth="1"
+            ></path>
+          </svg>
         </div>
-        <div className="grid gap-[10px]">
-          <p>EDUCATION</p>
-          <div>
-            <p className="text-sm">
-              Tbilisi School Of Communication - Angular course
-            </p>
-            <p className="text-sm">Sept 2024 – Present</p>
-          </div>{" "}
-          <div>
-            <p className="text-sm">
-              Udemy - Certified Internet Webmaster JavaScript Specialist
-            </p>
-            <p className="text-sm">Sept 2022 – Aug 2022</p>
-          </div>
-          <div>
-            <p className="text-sm">Geolab - Front End Development</p>
-            <p className="text-sm">Sept 2022 – May 2022</p>
-          </div>{" "}
-          <div>
-            <p className="text-sm">
-              Ilia State University - Faculty of Business and Information
-              Technology
-            </p>
-            <p className="text-sm">Sept 2022 – May 2022</p>
-          </div>
-        </div>
-        <svg
-          fill="none"
-          height="0.9rem"
-          viewBox="0 0 9 9"
-          width="0.9rem"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{
-            position: "absolute",
-            top: "-0.1rem",
-            left: "-0.1rem",
-            stroke: "red",
-            zIndex: 3,
-            // backgroundColor: "red", // Uncomment if background color is needed
-          }}
-        >
-          <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="1"></path>
-        </svg>
-        <svg
-          fill="none"
-          height="0.9rem"
-          viewBox="0 0 9 9"
-          width="0.9rem"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{
-            position: "absolute",
-            top: "-0.1rem",
-            right: "-0.1rem",
-            stroke: "red",
-            zIndex: 3,
-            // backgroundColor: "red", // Uncomment if background color is needed
-          }}
-        >
-          <path d="M0 1L8 1L8 9" stroke="current-color" strokeWidth="1"></path>
-        </svg>
-        <svg
-          fill="none"
-          height="0.9rem"
-          viewBox="0 0 9 9"
-          width="0.9rem"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{
-            position: "absolute",
-            bottom: "-0.1rem",
-            left: "-0.1rem",
-            stroke: "red",
-            zIndex: 3,
-            // backgroundColor: "red", // Uncomment if background color is needed
-          }}
-        >
-          <path
-            d="M9 8L1 8L0.999999 6.99382e-07"
-            stroke="current-color"
-            strokeWidth="1"
-          ></path>
-        </svg>
-        <svg
-          fill="none"
-          height="0.9rem"
-          viewBox="0 0 9 9"
-          width="0.9rem"
-          xmlns="http://www.w3.org/2000/svg"
-          style={{
-            position: "absolute",
-            bottom: "-0.1rem",
-            right: "-0.1rem",
-            stroke: "red",
-            zIndex: 3,
-            // backgroundColor: "red", // Uncomment if background color is needed
-          }}
-        >
-          <path
-            d="M8 0L8 8L1.04907e-06 8"
-            stroke="current-color"
-            strokeWidth="1"
-          ></path>
-        </svg>
       </div>
     </div>
   );
