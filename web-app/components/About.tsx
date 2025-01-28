@@ -2,8 +2,8 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="overflow-hidden relative col-span-4 border border-l-0 border-[#FFD6D6]   ">
-      <p className="border-l border-[#FFD6D6]  p-[16px] font-bold text-md">
+    <div className="overflow-hidden relative col-span-3 border border-l-0 border-[#FFD6D6]   ">
+      <p className="border-l border-[#FFD6D6]  py-[24px] px-[16px] font-bold text-md">
         REACT DEVELOPER
       </p>
       <div className="overflow-scroll h-[calc(100%-57px)]">
