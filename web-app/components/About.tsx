@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="overflow-hidden relative col-span-4 border border-[#FFD6D6]   ">
+    <div className="overflow-hidden relative col-span-3 border border-[#FFD6D6]   ">
       <p className="border-b border-[#FFD6D6]  p-[16px] font-bold text-md">
         REACT DEVELOPER
       </p>
