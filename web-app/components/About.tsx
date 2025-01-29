@@ -2,17 +2,17 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="overflow-hidden relative col-span-3 border border-l-0 border-[#FFD6D6]   ">
-      <p className="border-l border-[#FFD6D6]  py-[24px] px-[16px] font-bold text-md">
+    <div className="overflow-hidden relative col-span-3 border border-l-0 border-[#FFD6D673]  ">
+      <p className="border-l border-[#FFD6D673] py-[10px] px-[16px] font-medium text-sm">
         REACT DEVELOPER
       </p>
       <div className="overflow-scroll h-[calc(100%-57px)]">
-        <div className="flex flex-col  border border-b-0 border-[#FFD6D6] ">
+        <div className="flex flex-col  border border-b-0 border-[#FFD6D673]">
           <div>
-            <p className="border-b border-[#FFD6D6]  py-[8px] px-[16px] font-bold text-md">
+            <p className="border-b border-[#FFD6D673] py-[8px] px-[16px] font-bold text-md">
               ABOUT ME
             </p>
-            <p className="text-sm text-red p-[16px] uppercase">
+            <p className="text-xs text-red p-[16px] uppercase">
               I’m Giorgi, a Front-End Developer with 4 years of experience. I
               specialize in React, Next.js, and TypeScript to create dynamic and
               responsive web applications. Throughout my career, I have focused
@@ -20,8 +20,8 @@ export default function About() {
               functionality with a seamless user experience.
             </p>
           </div>
-          <div className="border border-[#FFD6D6]  border-l-0 border-r-0">
-            <p className=" text-md font-bold border-b border-[#FFD6D6]   mb-[24px] py-[8px] px-[16px]">
+          <div className="border border-[#FFD6D673] border-l-0 border-r-0">
+            <p className=" text-md font-bold border-b border-[#FFD6D673]  mb-[24px] py-[8px] px-[16px]">
               SKILLS
             </p>
             <div className="flex gap-[16px] ml-[16px] mb-[24px]">
@@ -241,7 +241,7 @@ export default function About() {
                   alt=""
                 />
                 <div>
-                  <p className="text-sm mb-[8px]">
+                  <p className="text-xs mb-[8px]">
                     Tbilisi School Of Communication - Angular course
                   </p>
                   <p className="text-sm">Sept 2024 – Present</p>
@@ -254,7 +254,7 @@ export default function About() {
                   alt=""
                 />
                 <div>
-                  <p className="text-sm mb-[8px]">
+                  <p className="text-xs mb-[8px]">
                     Udemy - Certified Internet Webmaster JavaScript Specialist
                   </p>
                   <p className="text-sm">Sept 2022 – Aug 2022</p>
@@ -268,7 +268,7 @@ export default function About() {
                 />
 
                 <div>
-                  <p className="text-sm mb-[8px]">
+                  <p className="text-xs mb-[8px]">
                     Geolab - Front End Development
                   </p>
                   <p className="text-sm">Sept 2022 – May 2022</p>
@@ -282,7 +282,7 @@ export default function About() {
                 />
 
                 <div>
-                  <p className="text-sm mb-[8px]">
+                  <p className="text-xs mb-[8px]">
                     Ilia State University - Faculty of Business and Information
                     Technology
                   </p>
@@ -310,7 +310,7 @@ export default function About() {
             <path
               d="M0 1L8 1L8 9"
               stroke="current-color"
-              strokeWidth="1"
+              strokeWidth="2"
             ></path>
           </svg>
 
@@ -332,7 +332,7 @@ export default function About() {
             <path
               d="M8 0L8 8L1.04907e-06 8"
               stroke="current-color"
-              strokeWidth="1"
+              strokeWidth="2"
             ></path>
           </svg>
         </div>

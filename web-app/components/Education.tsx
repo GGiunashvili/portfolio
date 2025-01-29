@@ -2,25 +2,25 @@ import React from "react";
 
 export default function Education() {
   return (
-    <div className="relative col-span-9 grid grid-cols-9 border border-r-0 border-[#FFD6D6] overflow-hidden">
-      <div className="flex justify-center items-center col-span-9 border-b border-[#FFD6D6] py-[24px] bg-gradient-to-r from-black via-red to-black">
-        <p>CREATIONS</p>
+    <div className="relative col-span-9 grid grid-cols-9 border border-r-0 border-[#FFD6D673] overflow-hidden">
+      <div className="flex justify-center items-center col-span-9 border-b border-[#FFD6D673] py-[10px]">
+        <p className="text-sm">CREATIONS</p>
       </div>
       <div
-        className="col-span-2  p-[16px] pr-0"
+        className="col-span-2  pb-[16px] px-0 border-r border-[#FFD6D673]"
         style={{ height: "-webkit-fill-available" }}
       >
-        <p className="border border-r-0 border-[#FFD6D6]  py-[8px] px-[16px] font-bold text-md">
+        <p className="border border-[#FFD6D673] py-[8px] px-[16px] font-bold text-md">
           DETAILS
         </p>
-        <p className="text-sm text-red p-[16px] uppercase border border-r-0 border-[#FFD6D6] ">
+        <p className="text-xs text-red p-[16px] uppercase border border-r-0 border-[#FFD6D673]">
           PROJECT
         </p>
         <div>
-          <p className="border-b border-[#FFD6D6]  py-[8px] px-[16px] font-bold text-md">
+          <p className="border-b border-[#FFD6D673] py-[8px] px-[16px] font-bold text-md">
             ABOUT ME
           </p>
-          <p className="text-sm text-red p-[16px] uppercase">
+          <p className="text-xs text-red p-[16px] uppercase">
             I’m Giorgi, a Front-End Developer with 4 years of experience. I
             specialize in React, Next.js, and TypeScript to create dynamic and
             responsive web applications. Throughout my career, I have focused on
@@ -30,20 +30,20 @@ export default function Education() {
         </div>
       </div>
       <div
-        className="col-span-7 p-[16px] pl-0"
+        className="col-span-7 p-[16px] "
         style={{ height: "-webkit-fill-available" }}
       >
         {" "}
-        <p className="border border-[#FFD6D6]  py-[8px] px-[16px] font-bold text-md bg-gradient-to-r from-black via-red to-black">
+        <p className="border border-[#FFD6D673] py-[8px] px-[16px] font-bold text-md bg-gradient-to-r from-black via-red to-black">
           FILE XPLORER
         </p>
-        <p className="text-sm text-red p-[16px] uppercase border border-[#FFD6D6] bg-black">
+        <p className="text-xs text-red p-[16px] uppercase border border-[#FFD6D673] bg-black">
           LOCATION: /PROJECTS
         </p>
-        <div className="flex flex-wrap gap-x-[60px]  text-sm text-red p-[16px] uppercase border border-[#FFD6D6] bg-black">
-          {Array.from({ length: 8 }).map((_, index) => (
-            <div key={index} className="flex items-center mb-4">
-              <div className="flex items-center justify-center bg-[#f78888] w-[48px] h-[48px]">
+        <div className="grid grid-cols-6 flex-wrap gap-x-[10px]  text-xs text-red p-[16px] uppercase border border-[#FFD6D673] bg-black">
+          {Array.from({ length: 4 }).map((_, index) => (
+            <div key={index} className="flex items-center mb-4 col-span-3">
+              <div className="flex items-center justify-center bg-[#F7888838] w-[48px] h-[48px]">
                 <svg
                   style={{
                     display: "flex",
@@ -66,9 +66,12 @@ export default function Education() {
                 </svg>
               </div>
               <div className="flex">
-                <div className="flex flex-col">
+                <div className="flex items-center ">
                   <p className="ml-[12px]">extra.ge</p>
-                  <p className="ml-[12px]">e commerce</p>
+                  <p className="text-xs ml-[4px]">e commerce</p>
+                  <p className="border border-[#FFD6D673] text-[#b2b7ba] rounded-full ml-[8px] text-xs p-[6px]">
+                    public
+                  </p>
                 </div>
                 {/* <p>2021 - Present</p> */}
               </div>
@@ -107,7 +110,7 @@ export default function Education() {
           // backgroundColor: "red", // Uncomment if background color is needed
         }}
       >
-        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="1"></path>
+        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
       </svg>
       <svg
         fill="none"
@@ -127,7 +130,7 @@ export default function Education() {
         <path
           d="M9 8L1 8L0.999999 6.99382e-07"
           stroke="current-color"
-          strokeWidth="1"
+          strokeWidth="2"
         ></path>
       </svg>
     </div>
