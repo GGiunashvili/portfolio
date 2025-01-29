@@ -6,10 +6,7 @@ export default function Education() {
       <div className="flex justify-center items-center col-span-9 border-b border-[#FFD6D673] py-[10px]">
         <p className="text-sm">CREATIONS</p>
       </div>
-      <div
-        className="col-span-2  pb-[16px] px-0 border-r border-[#FFD6D673]"
-        style={{ height: "-webkit-fill-available" }}
-      >
+      <div className="col-span-2  pb-[16px] px-0 border-r border-[#FFD6D673] lex flex-col h-screen">
         <p className="border border-[#FFD6D673] py-[8px] px-[16px] font-bold text-md">
           DETAILS
         </p>
@@ -29,10 +26,7 @@ export default function Education() {
           </p>
         </div>
       </div>
-      <div
-        className="col-span-7 p-[16px] "
-        style={{ height: "-webkit-fill-available" }}
-      >
+      <div className="col-span-7 p-[16px] flex flex-col h-screen">
         {" "}
         <p className="border border-[#FFD6D673] py-[8px] px-[16px] font-bold text-md bg-gradient-to-r from-black via-red to-black">
           FILE XPLORER
