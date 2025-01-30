@@ -4,7 +4,7 @@
 
 /* :root {
   --color-regal-blue: #243c5a;
-  --background: #ffffff;
+  --background: red;
   --foreground: #000000;
 } */
 
@@ -14,7 +14,9 @@
     --foreground: #ededed;
   }
 } */
-
+::selection {
+  background-color: #d93636;
+}
 body {
   color: #b2b7ba;
   background: var(--background);

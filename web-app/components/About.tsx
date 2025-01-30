@@ -2,14 +2,14 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="overflow-hidden relative col-span-3 border border-l-0 border-[#FFD6D673]  ">
-      <p className="border-l border-[#FFD6D673] py-[10px] px-[16px] font-medium text-sm">
+    <div className="overflow-hidden relative col-span-3 border border-l-0 border-[#ffd6d642]  ">
+      <p className="border-l border-[#ffd6d642] py-[10px] px-[16px] font-medium text-sm">
         REACT DEVELOPER
       </p>
-      <div className="overflow-scroll h-[calc(100%-57px)]">
-        <div className="flex flex-col  border border-b-0 border-[#FFD6D673]">
+      <div className="overflow-scroll h-[calc(100%-38px)] border border-b-0 border-[#ffd6d642]">
+        <div className="flex flex-col">
           <div>
-            <p className="border-b border-[#FFD6D673] py-[8px] px-[16px] font-bold text-md">
+            <p className="border-b border-[#ffd6d642] py-[8px] px-[16px] font-bold text-md">
               ABOUT ME
             </p>
             <p className="text-xs text-red p-[16px] uppercase">
@@ -20,11 +20,11 @@ export default function About() {
               functionality with a seamless user experience.
             </p>
           </div>
-          <div className="border border-[#FFD6D673] border-l-0 border-r-0">
-            <p className=" text-md font-bold border-b border-[#FFD6D673]  mb-[24px] py-[8px] px-[16px]">
+          <div className="border border-[#ffd6d642] border-l-0 border-r-0">
+            <p className=" text-md font-bold border-b border-[#ffd6d642]  mb-[24px] py-[8px] px-[16px]">
               SKILLS
             </p>
-            <div className="flex gap-[16px] ml-[16px] mb-[24px]">
+            <div className="flex flex-wrap gap-[10px] mx-[16px] mb-[24px]">
               <div style={{ position: "relative", display: "inline-block" }}>
                 <svg
                   style={{
@@ -236,7 +236,7 @@ export default function About() {
             <div className="grid gap-[16px] p-[16px] text-red">
               <div className="flex gap-[8px] items-start">
                 <img
-                  className="w-[30px] h-[30px] mt-[4px]"
+                  className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
                   src="/iliauni.svg"
                   alt=""
                 />
@@ -249,7 +249,7 @@ export default function About() {
               </div>{" "}
               <div className="flex gap-[8px] items-start">
                 <img
-                  className="w-[30px] h-[30px] mt-[4px]"
+                  className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
                   src="/udemy-3.svg"
                   alt=""
                 />
@@ -262,7 +262,7 @@ export default function About() {
               </div>
               <div className="flex gap-[8px] items-start">
                 <img
-                  className="w-[30px] h-[30px] mt-[4px]"
+                  className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
                   src="/geolab.svg"
                   alt=""
                 />
@@ -276,7 +276,7 @@ export default function About() {
               </div>{" "}
               <div className="flex gap-[8px] items-start">
                 <img
-                  className="w-[30px] h-[30px] mt-[4px]"
+                  className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
                   src="/iliauni.svg"
                   alt=""
                 />
