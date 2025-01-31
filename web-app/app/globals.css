@@ -16,6 +16,7 @@
 } */
 ::selection {
   background-color: #d93636;
+  color: white;
 }
 body {
   color: #b2b7ba;

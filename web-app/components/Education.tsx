@@ -26,7 +26,7 @@ export default function Education() {
           <p className="border border-[#ffd6d642] py-[8px] px-[16px] font-bold text-md bg-gradient-to-r from-black via-red to-black">
             FILE XPLORER
           </p>
-          <p className="text-xs text-red p-[16px] uppercase border border-[#ffd6d642] bg-black">
+          <p className="text-xs text-red p-[16px] uppercase border border-b-0 border-t-0 border-[#ffd6d642] bg-black">
             LOCATION: /PROJECTS
           </p>
           <div className="grid grid-cols-6 flex-wrap gap-x-[10px]  text-xs text-red p-[16px] uppercase border border-[#ffd6d642] bg-black">
@@ -169,11 +169,13 @@ export default function Education() {
             >
               <div className="flex justify-between w-full">
                 <div>
-                  <p>Front End Developer</p>
+                  <p className="font-bold">Front End Developer</p>
 
-                  <p className="text-xs mb-[8px]">extra.ge</p>
+                  <p className="text-x text-red font-bold mb-[8px]">extra.ge</p>
                 </div>
-                <p className="text-sm">Sept 2024 – Present</p>
+                <p className="text-sm text-red font-bold">
+                  Sept 2024 – Present
+                </p>
               </div>
               <p>
                 Leading UI developers in creating responsive web/mobile

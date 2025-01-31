@@ -32,11 +32,11 @@ const App: React.FC = () => {
       body.style.transition = "transform 0.5s ease, background-color 0.5s ease";
       body.style.transform =
         "perspective(75rem) rotateX(25deg) translateY(-6.2rem) translateZ(-4rem)";
-      body.classList.add("bg-blue-500", "text-white");
+      body.classList.add("bg-red", "text-black!important");
     } else {
       body.style.transition = "transform 0.5s ease, background-color 0.5s ease";
       body.style.transform = ""; // წაშლის transform სტილს
-      body.classList.remove("bg-blue-500", "text-white");
+      body.classList.remove("bg-red", "text-black!important");
     }
   };
 

@@ -233,60 +233,65 @@ export default function About() {
             </div>
           </div>
           <div className="grid ">
-            <div className="grid gap-[16px] p-[16px] text-red">
-              <div className="flex gap-[8px] items-start">
-                <img
-                  className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
-                  src="/iliauni.svg"
-                  alt=""
-                />
-                <div>
-                  <p className="text-xs mb-[8px]">
-                    Tbilisi School Of Communication - Angular course
-                  </p>
-                  <p className="text-sm">Sept 2024 – Present</p>
+            <div className="grid ">
+              <p className=" text-md font-bold border-b border-[#ffd6d642] py-[8px] px-[16px]">
+                EDUCATIOON
+              </p>{" "}
+              <div className="p-[16px] text-red">
+                <div className="flex gap-[8px] items-start">
+                  <img
+                    className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
+                    src="/iliauni.svg"
+                    alt=""
+                  />
+                  <div>
+                    <p className="text-xs mb-[8px]">
+                      Tbilisi School Of Communication - Angular course
+                    </p>
+                    <p className="text-sm">Sept 2024 – Present</p>
+                  </div>
+                </div>{" "}
+                <div className="flex gap-[8px] items-start">
+                  <img
+                    className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
+                    src="/udemy-3.svg"
+                    alt=""
+                  />
+                  <div>
+                    <p className="text-xs mb-[8px]">
+                      Udemy - Certified Internet Webmaster JavaScript Specialist
+                    </p>
+                    <p className="text-sm">Sept 2022 – Aug 2022</p>
+                  </div>
                 </div>
-              </div>{" "}
-              <div className="flex gap-[8px] items-start">
-                <img
-                  className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
-                  src="/udemy-3.svg"
-                  alt=""
-                />
-                <div>
-                  <p className="text-xs mb-[8px]">
-                    Udemy - Certified Internet Webmaster JavaScript Specialist
-                  </p>
-                  <p className="text-sm">Sept 2022 – Aug 2022</p>
-                </div>
-              </div>
-              <div className="flex gap-[8px] items-start">
-                <img
-                  className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
-                  src="/geolab.svg"
-                  alt=""
-                />
+                <div className="flex gap-[8px] items-start">
+                  <img
+                    className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
+                    src="/geolab.svg"
+                    alt=""
+                  />
 
-                <div>
-                  <p className="text-xs mb-[8px]">
-                    Geolab - Front End Development
-                  </p>
-                  <p className="text-sm">Sept 2022 – May 2022</p>
-                </div>
-              </div>{" "}
-              <div className="flex gap-[8px] items-start">
-                <img
-                  className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
-                  src="/iliauni.svg"
-                  alt=""
-                />
+                  <div>
+                    <p className="text-xs mb-[8px]">
+                      Geolab - Front End Development
+                    </p>
+                    <p className="text-sm">Sept 2022 – May 2022</p>
+                  </div>
+                </div>{" "}
+                <div className="flex gap-[8px] items-start">
+                  <img
+                    className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#ffd6d642]"
+                    src="/iliauni.svg"
+                    alt=""
+                  />
 
-                <div>
-                  <p className="text-xs mb-[8px]">
-                    Ilia State University - Faculty of Business and Information
-                    Technology
-                  </p>
-                  <p className="text-sm">Sept 2022 – May 2022</p>
+                  <div>
+                    <p className="text-xs mb-[8px]">
+                      Ilia State University - Faculty of Business and
+                      Information Technology
+                    </p>
+                    <p className="text-sm">Sept 2022 – May 2022</p>
+                  </div>
                 </div>
               </div>
             </div>
