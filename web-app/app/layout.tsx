@@ -27,7 +27,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
       >
-        {children}
+        <div id="root">{children}</div>
+        <div
+          id="modal"
+          className="fixed top-0 w-[300px] h-[300px] bg-white z-[999] hidden"
+        >
+          pop up
+        </div>
       </body>
     </html>
   );

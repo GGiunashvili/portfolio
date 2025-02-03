@@ -27,16 +27,19 @@ const App: React.FC = () => {
   const [active, setActive] = useState(false);
   const handleClick = () => {
     setActive(!active);
-    const body = document.body;
+    const body = document.getElementById("root") as HTMLBodyElement;
+    const modal = document.getElementById("modal") as HTMLDivElement;
     if (!active) {
       body.style.transition = "transform 0.5s ease, background-color 0.5s ease";
       body.style.transform =
         "perspective(75rem) rotateX(25deg) translateY(-6.2rem) translateZ(-4rem)";
       body.classList.add("bg-red", "text-black!important");
+      modal.classList.remove("hidden");
     } else {
       body.style.transition = "transform 0.5s ease, background-color 0.5s ease";
       body.style.transform = ""; // წაშლის transform სტილს
       body.classList.remove("bg-red", "text-black!important");
+      modal.classList.add("hidden");
     }
   };
 
