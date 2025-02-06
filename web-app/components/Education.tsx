@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Education() {
   return (
-    <div className="relative col-span-9 grid grid-cols-9 border border-r-0 border-[#ffd6d642] overflow-hidden">
-      <div className="flex justify-center items-center col-span-9 border-b border-[#ffd6d642] py-[10px]">
+    <div className="relative col-span-9 grid grid-cols-9 border border-r-0 border-[#FE010130] overflow-hidden">
+      <div className="flex justify-center items-center col-span-9 border-b border-[#FE010130] py-[10px]">
         <p className="text-sm">CREATIONS</p>
       </div>
-      <div className="col-span-2  pb-[16px] px-0 border-r border-[#ffd6d642] lex flex-col ">
+      <div className="col-span-2  pb-[16px] px-0 border-r border-[#FE010130] lex flex-col ">
         <div>
-          <p className="border-b border-[#ffd6d642] py-[8px] px-[16px] font-bold text-md">
+          <p className="border-b border-[#FE010130] py-[8px] px-[16px] font-bold text-md">
             ABOUT ME
           </p>
           <p className="text-xs text-red p-[16px] uppercase">
@@ -23,13 +23,13 @@ export default function Education() {
       <div className="col-span-7 relative  flex flex-col  p-[16px] overflow-scroll">
         {" "}
         <div className="relative mb-[24px]">
-          <p className="border border-[#ffd6d642] py-[8px] px-[16px] font-bold text-md bg-gradient-to-r from-black via-red to-black">
+          <p className="border border-[#FE010130] py-[8px] px-[16px] font-bold text-md bg-gradient-to-r from-black via-red to-black">
             FILE XPLORER
           </p>
-          <p className="text-xs text-red p-[16px] uppercase border border-b-0 border-t-0 border-[#ffd6d642] bg-black">
+          <p className="text-xs text-red p-[16px] uppercase border border-b-0 border-t-0 border-[#FE010130] bg-black">
             LOCATION: /PROJECTS
           </p>
-          <div className="grid grid-cols-6 flex-wrap gap-x-[10px]  text-xs text-red p-[16px] uppercase border border-[#ffd6d642] bg-black">
+          <div className="grid grid-cols-6 flex-wrap gap-x-[10px]  text-xs text-red p-[16px] uppercase border border-[#FE010130] bg-black">
             {Array.from({ length: 4 }).map((_, index) => (
               <div
                 key={index}
@@ -63,7 +63,7 @@ export default function Education() {
                       <p>extra.ge</p>
                       <p className="text-xs">e commerce</p>
                     </div>
-                    <p className="border border-[#ffd6d642] text-[#b2b7ba] rounded-full ml-[8px] text-xs p-[6px]">
+                    <p className="border border-[#FE010130] text-[#b2b7ba] rounded-full ml-[8px] text-xs p-[6px]">
                       public
                     </p>
                   </div>
@@ -163,7 +163,7 @@ export default function Education() {
             <a
               href="https://extra.ge"
               key={i}
-              className="hover:bg-[#D9363642] flex justify-between flex-col items-start border border-[#ffd6d642] mb-[12px] p-[16px]"
+              className="hover:bg-[#D9363642] flex justify-between flex-col items-start border border-[#FE010130] mb-[12px] p-[16px]"
               target="_blank"
               rel="noopener noreferrer"
             >

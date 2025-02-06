@@ -55,17 +55,15 @@ const App: React.FC = () => {
       {/* ღილაკი რომელიც სრულ ეკრანზე გადაგიყვანს ან დააბრუნებს */}
       <button
         onClick={toggleFullscreen}
-        className="absolute bottom-10 left-10 p-4 bg-blue-500 text-white rounded-lg z-10"
+        className="absolute bottom-10 left-10 p-4  text-white rounded-lg z-10"
       >
         Toggle Fullscreen Mode
       </button>
       <button
         onClick={handleClick}
-        className="absolute left-10 px-4 py-2 bg-gray-300 rounded-lg hover:bg-gray-400 bottom-[100px] "
+        className="absolute left-10 px-4 py-2  rounded-lg bottom-[80px] "
       >
-        {active
-          ? "Remove Transform and Tailwind Classes"
-          : "Add Transform and Tailwind Classes"}
+        {active ? "Remove Tailwind Classes" : "Add Tailwind Classes"}
       </button>
     </div>
   );
