@@ -7,7 +7,7 @@ export default function Education() {
         <p className="text-sm text-red font-bold">CREATIONS</p>
       </div>
 
-      <div className="col-span-8 relative  flex flex-col py-[18px] px-[40px] overflow-scroll">
+      <div className="col-span-8 relative  flex flex-col py-[18px] px-[40px] overflow-scroll scrollbar-thin">
         {" "}
         <div className="relative mb-[24px]">
           <p className="border border-[#FE010130] py-[8px] px-[16px] font-bold text-md ">
