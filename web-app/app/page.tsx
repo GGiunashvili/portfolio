@@ -44,11 +44,11 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex p-[24px] h-screen w-full">
-      <div className="max-w-[300px] mr-[24px]">
+    <div className="flex flex-col sm:flex-row p-[24px] h-screen w-full">
+      <div className="max-w-full sm:max-w-[200px] xl:max-w-[300px] mr-[24px]">
         <Profile />
       </div>
-      <div className="grid grid-cols-12 h-full w-full">
+      <div className="grid-unset md:grid grid-cols-12 h-full w-full">
         <About />
 
         <Education />

@@ -2,15 +2,15 @@ import React from "react";
 import { useState } from "react";
 export default function Education() {
   return (
-    <div className="relative col-span-8 grid grid-cols-8 border border-l-0 border-[#FE010130] overflow-hidden">
+    <div className="relative col-span-8 grid grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden">
       <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] p-[16px]">
         <p className="text-sm text-red font-bold">CREATIONS</p>
       </div>
 
-      <div className="col-span-8 relative  flex flex-col py-[18px] px-[40px] overflow-scroll scrollbar-thin">
+      <div className="col-span-8 relative  flex flex-col py-[18px] px-[16px] xl:px-[40px] overflow-scroll scrollbar-thin">
         {" "}
         <div className="relative mb-[24px]">
-          <p className="border border-[#FE010130] py-[8px] px-[16px] font-bold text-md ">
+          <p className="border border-[#FE010130] gap-x-[16px] py-[8px] px-[16px] font-bold text-md ">
             {/* bg-gradient-to-r from-black via-red to-black */}
             FILE XPLORER
           </p>
@@ -21,7 +21,7 @@ export default function Education() {
             {Array.from({ length: 4 }).map((_, index) => (
               <div
                 key={index}
-                className="flex items-center mb-4 col-span-4 hover:bg-[#D9363642] border border-transparent hover:border-[#FE010130]"
+                className="flex items-center mb-4 col-span-8 xl:col-span-4 hover:bg-[#D9363642] border border-transparent hover:border-[#FE010130]"
               >
                 <div className="flex items-center justify-center bg-[#F7888838] w-[48px] h-[48px]">
                   <svg

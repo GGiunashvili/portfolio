@@ -10,7 +10,7 @@ export default function Profile() {
 
   return (
     <div className="w-full">
-      <div className="w-[260px] relative bg-[#D9363642] border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
+      <div className="w-full sm:w-[200px] xl:w-[260px] relative bg-[#D9363642] border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
         {/* bg-gradient-to-r from-black via-red to-black */}
         <Image
           className="m-auto"
