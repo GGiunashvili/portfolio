@@ -3,7 +3,7 @@ import React from "react";
 export default function About() {
   return (
     <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130]  ">
-      <p className="border-r border-[#FE010130] py-[10px] px-[16px] text-sm text-red font-bold">
+      <p className="border-r border-[#FE010130] p-[16px] text-sm text-red font-bold">
         REACT DEVELOPER
       </p>
       <div className="overflow-scroll h-[calc(100%-38px)] border border-b-0 border-[#FE010130]">
@@ -24,7 +24,7 @@ export default function About() {
             <p className=" text-md font-bold border-b border-[#FE010130]  mb-[24px] py-[8px] px-[16px]">
               SKILLS
             </p>
-            <div className="flex flex-wrap gap-[16px] mx-[16px] mb-[24px]">
+            <div className="flex justify-around flex-wrap gap-[16px] mx-[16px] mb-[24px]">
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
@@ -659,6 +659,9 @@ export default function About() {
             ></path>
           </svg>
         </div>
+      </div>
+      <div className="absolute bottom-0 left-0 w-full bg-black border-t border-r border-[#FE010130] p-[16px] text-sm text-red font-bold">
+        REACT DEVELOPER
       </div>
     </div>
   );

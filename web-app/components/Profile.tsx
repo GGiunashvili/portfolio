@@ -10,7 +10,8 @@ export default function Profile() {
 
   return (
     <div className="w-full">
-      <div className="w-[260px] relative bg-gradient-to-r from-black via-red to-black border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
+      <div className="w-[260px] relative bg-[#D9363642] border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
+        {/* bg-gradient-to-r from-black via-red to-black */}
         <Image
           className="m-auto"
           src="/2807482.svg" // Replace with the direct image URL
