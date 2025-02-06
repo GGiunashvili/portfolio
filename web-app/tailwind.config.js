@@ -12,6 +12,10 @@ export default {
         background: "#ffffff",
         foreground: "#000000",
       },
+      transform: {
+        "custom-transform":
+          "perspective(60rem) rotateX(24deg) translateY(0rem) translateZ(0rem)",
+      },
     },
   },
   plugins: [],
