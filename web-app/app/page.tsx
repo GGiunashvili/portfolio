@@ -49,8 +49,9 @@ const App: React.FC = () => {
         <Profile />
       </div>
       <div className="grid grid-cols-12 h-full w-full">
-        <Education />
         <About />
+
+        <Education />
       </div>
       {/* ღილაკი რომელიც სრულ ეკრანზე გადაგიყვანს ან დააბრუნებს */}
       <button

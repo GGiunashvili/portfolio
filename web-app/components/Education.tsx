@@ -2,25 +2,12 @@ import React from "react";
 import { useState } from "react";
 export default function Education() {
   return (
-    <div className="relative col-span-9 grid grid-cols-9 border border-r-0 border-[#FE010130] overflow-hidden">
+    <div className="relative col-span-9 grid grid-cols-9 border border-l-0 border-[#FE010130] overflow-hidden">
       <div className="flex justify-center items-center col-span-9 border-b border-[#FE010130] py-[10px]">
         <p className="text-sm">CREATIONS</p>
       </div>
-      <div className="col-span-2  pb-[16px] px-0 border-r border-[#FE010130] lex flex-col ">
-        <div>
-          <p className="border-b border-[#FE010130] py-[8px] px-[16px] font-bold text-md">
-            ABOUT ME
-          </p>
-          <p className="text-xs text-red p-[16px] uppercase">
-            I’m Giorgi, a Front-End Developer with 4 years of experience. I
-            specialize in React, Next.js, and TypeScript to create dynamic and
-            responsive web applications. Throughout my career, I have focused on
-            delivering high-quality solutions, always striving to combine
-            functionality with a seamless user experience.
-          </p>
-        </div>
-      </div>
-      <div className="col-span-7 relative  flex flex-col  p-[16px] overflow-scroll">
+
+      <div className="col-span-9 relative  flex flex-col  p-[16px] overflow-scroll">
         {" "}
         <div className="relative mb-[24px]">
           <p className="border border-[#FE010130] py-[8px] px-[16px] font-bold text-md bg-gradient-to-r from-black via-red to-black">
@@ -218,7 +205,8 @@ export default function Education() {
         style={{
           position: "absolute",
           top: "-0.1rem",
-          left: "-0.1rem",
+          right: "-0.1rem",
+          rotate: "90deg",
           stroke: "red",
           zIndex: 3,
           // backgroundColor: "red", // Uncomment if background color is needed
@@ -235,7 +223,8 @@ export default function Education() {
         style={{
           position: "absolute",
           bottom: "-0.1rem",
-          left: "-0.1rem",
+          right: "-0.1rem",
+          rotate: "-90deg",
           stroke: "red",
           zIndex: 3,
           // backgroundColor: "red", // Uncomment if background color is needed
