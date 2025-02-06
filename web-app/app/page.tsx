@@ -44,7 +44,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex p-[32px] h-screen w-full">
+    <div className="flex p-[24px] h-screen w-full">
       <div className="max-w-[300px] mr-[24px]">
         <Profile />
       </div>

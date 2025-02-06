@@ -2,12 +2,12 @@ import React from "react";
 import { useState } from "react";
 export default function Education() {
   return (
-    <div className="relative col-span-9 grid grid-cols-9 border border-l-0 border-[#FE010130] overflow-hidden">
-      <div className="flex justify-center items-center col-span-9 border-b border-[#FE010130] py-[10px]">
-        <p className="text-sm">CREATIONS</p>
+    <div className="relative col-span-8 grid grid-cols-8 border border-l-0 border-[#FE010130] overflow-hidden">
+      <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] py-[10px]">
+        <p className="text-sm text-red font-bold">CREATIONS</p>
       </div>
 
-      <div className="col-span-9 relative  flex flex-col  p-[16px] overflow-scroll">
+      <div className="col-span-8 relative  flex flex-col  p-[16px] overflow-scroll">
         {" "}
         <div className="relative mb-[24px]">
           <p className="border border-[#FE010130] py-[8px] px-[16px] font-bold text-md bg-gradient-to-r from-black via-red to-black">
@@ -16,11 +16,11 @@ export default function Education() {
           <p className="text-xs text-red p-[16px] uppercase border border-b-0 border-t-0 border-[#FE010130] bg-black">
             LOCATION: /PROJECTS
           </p>
-          <div className="grid grid-cols-6 flex-wrap gap-x-[10px]  text-xs text-red p-[16px] uppercase border border-[#FE010130] bg-black">
+          <div className="grid grid-cols-8 flex-wrap gap-x-[10px]  text-xs text-red p-[16px] uppercase border border-[#FE010130] bg-black">
             {Array.from({ length: 4 }).map((_, index) => (
               <div
                 key={index}
-                className="flex items-center mb-4 col-span-3 hover:bg-[#D9363642]"
+                className="flex items-center mb-4 col-span-4 hover:bg-[#D9363642] border border-transparent hover:border-[#FE010130]"
               >
                 <div className="flex items-center justify-center bg-[#F7888838] w-[48px] h-[48px]">
                   <svg
@@ -162,7 +162,7 @@ export default function Education() {
 
                   transition: "transform 0.3s ease", // Optional: for smooth transition
                 }}
-                className="group hover:bg-[#D9363642] hover:border-black flex justify-between flex-col items-start border border-[#FE010130] mb-[20px] p-[16px]"
+                className="relative group hover:bg-[#D9363642] hover:border-black flex justify-between flex-col items-start border border-[#FE010130] mb-[20px] p-[16px]"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -190,6 +190,94 @@ export default function Education() {
                   </p>
                   <p>Delivered custom UI designs for remote clients.</p>
                 </div>
+                <svg
+                  className="hidden group-hover:flex"
+                  fill="none"
+                  height="0.9rem"
+                  viewBox="0 0 9 9"
+                  width="0.9rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    position: "absolute",
+                    top: "-0.1rem",
+                    left: "-0.1rem",
+                    stroke: "red",
+                    zIndex: 3,
+                    // backgroundColor: "red", // Uncomment if background color is needed
+                  }}
+                >
+                  <path
+                    d="M1 9L1 1L9 1"
+                    stroke="current-color"
+                    strokeWidth="1"
+                  ></path>
+                </svg>
+                <svg
+                  className="hidden group-hover:flex"
+                  fill="none"
+                  height="0.9rem"
+                  viewBox="0 0 9 9"
+                  width="0.9rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    position: "absolute",
+                    top: "-0.1rem",
+                    right: "-0.1rem",
+                    stroke: "red",
+                    zIndex: 3,
+                    // backgroundColor: "red", // Uncomment if background color is needed
+                  }}
+                >
+                  <path
+                    d="M0 1L8 1L8 9"
+                    stroke="current-color"
+                    strokeWidth="1"
+                  ></path>
+                </svg>
+                <svg
+                  className="hidden group-hover:flex"
+                  fill="none"
+                  height="0.9rem"
+                  viewBox="0 0 9 9"
+                  width="0.9rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    position: "absolute",
+                    bottom: "-0.1rem",
+                    left: "-0.1rem",
+                    stroke: "red",
+                    zIndex: 3,
+                    // backgroundColor: "red", // Uncomment if background color is needed
+                  }}
+                >
+                  <path
+                    d="M9 8L1 8L0.999999 6.99382e-07"
+                    stroke="current-color"
+                    strokeWidth="1"
+                  ></path>
+                </svg>
+                <svg
+                  className="hidden group-hover:flex"
+                  fill="none"
+                  height="0.9rem"
+                  viewBox="0 0 9 9"
+                  width="0.9rem"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{
+                    position: "absolute",
+                    bottom: "-0.1rem",
+                    right: "-0.1rem",
+                    stroke: "red",
+                    zIndex: 3,
+                    // backgroundColor: "red", // Uncomment if background color is needed
+                  }}
+                >
+                  <path
+                    d="M8 0L8 8L1.04907e-06 8"
+                    stroke="current-color"
+                    strokeWidth="1"
+                  ></path>
+                </svg>
               </a>
             );
           })}

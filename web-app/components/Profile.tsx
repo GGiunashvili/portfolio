@@ -10,7 +10,7 @@ export default function Profile() {
 
   return (
     <div className="w-full">
-      <div className="w-[200px] relative bg-gradient-to-r from-black via-red to-black border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
+      <div className="w-[260px] relative bg-gradient-to-r from-black via-red to-black border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
         <Image
           className="m-auto"
           src="/2807482.svg" // Replace with the direct image URL
@@ -98,12 +98,12 @@ export default function Profile() {
 
       <div>
         {profileDetails.map((detail) => (
-          <div key={detail.label} className="mb-[8px]">
+          <div key={detail.label} className="mb-[16px]">
             <p className="text-xs font-normal mb-[4px]">{detail.label}</p>
             <p className="text-red text-xs font-bold">{detail.value}</p>
           </div>
         ))}
-        <div className="mb-[8px]">
+        <div className="mb-[16px]">
           <p className="text-xs font-normal mb-[6px]">SOCIAL</p>
           <p className="text-red text-xs font-bold border border-red p-[6px]">
             OPEN CONNECTION

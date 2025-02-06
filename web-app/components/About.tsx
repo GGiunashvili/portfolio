@@ -2,8 +2,8 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="overflow-hidden relative col-span-3 border border-l-0 border-[#FE010130]  ">
-      <p className="border-l border-[#FE010130] py-[10px] px-[16px] font-medium text-sm">
+    <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130]  ">
+      <p className="border-r border-[#FE010130] py-[10px] px-[16px] text-sm text-red font-bold">
         REACT DEVELOPER
       </p>
       <div className="overflow-scroll h-[calc(100%-38px)] border border-b-0 border-[#FE010130]">
@@ -39,8 +39,8 @@ export default function About() {
                   className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
                   style={{
                     stroke: "red",
-                    height: "40px",
-                    width: "36px",
+                    height: "50px",
+                    width: "46px",
                   }}
                   fill="none"
                   height="20px"
@@ -63,7 +63,7 @@ export default function About() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     height: "24px",
-                    width: "22px",
+                    width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
                   viewBox="0 0 15 15"
@@ -90,8 +90,8 @@ export default function About() {
                   className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
                   style={{
                     stroke: "red",
-                    height: "40px",
-                    width: "36px",
+                    height: "50px",
+                    width: "46px",
                   }}
                   fill="none"
                   height="20px"
@@ -114,7 +114,7 @@ export default function About() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     height: "24px",
-                    width: "22px",
+                    width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
                   viewBox="0 0 24 24"
@@ -139,8 +139,8 @@ export default function About() {
                   className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
                   style={{
                     stroke: "red",
-                    height: "40px",
-                    width: "36px",
+                    height: "50px",
+                    width: "46px",
                   }}
                   fill="none"
                   height="20px"
@@ -162,7 +162,7 @@ export default function About() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     height: "24px",
-                    width: "22px",
+                    width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
                   viewBox="0 0 32 32"
@@ -189,8 +189,8 @@ export default function About() {
                   className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
                   style={{
                     stroke: "red",
-                    height: "40px",
-                    width: "36px",
+                    height: "50px",
+                    width: "46px",
                   }}
                   fill="none"
                   height="20px"
@@ -213,7 +213,7 @@ export default function About() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     height: "24px",
-                    width: "22px",
+                    width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
                   viewBox="0 0 15 15"
@@ -243,8 +243,8 @@ export default function About() {
                   className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
                   style={{
                     stroke: "red",
-                    height: "40px",
-                    width: "36px",
+                    height: "50px",
+                    width: "46px",
                   }}
                   fill="none"
                   height="20px"
@@ -267,7 +267,7 @@ export default function About() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     height: "24px",
-                    width: "22px",
+                    width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
                   viewBox="0 0 24 24"
@@ -292,8 +292,8 @@ export default function About() {
                   className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
                   style={{
                     stroke: "red",
-                    height: "40px",
-                    width: "36px",
+                    height: "50px",
+                    width: "46px",
                   }}
                   fill="none"
                   height="20px"
@@ -316,7 +316,7 @@ export default function About() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     height: "24px",
-                    width: "22px",
+                    width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
                   viewBox="0 0 24 24"
@@ -346,8 +346,8 @@ export default function About() {
                   className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
                   style={{
                     stroke: "red",
-                    height: "40px",
-                    width: "36px",
+                    height: "50px",
+                    width: "46px",
                   }}
                   fill="none"
                   height="20px"
@@ -369,7 +369,7 @@ export default function About() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     height: "24px",
-                    width: "22px",
+                    width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
                   width="800px"
@@ -395,8 +395,8 @@ export default function About() {
                   className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
                   style={{
                     stroke: "red",
-                    height: "40px",
-                    width: "36px",
+                    height: "50px",
+                    width: "46px",
                   }}
                   fill="none"
                   height="20px"
@@ -419,7 +419,7 @@ export default function About() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     height: "24px",
-                    width: "22px",
+                    width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
                   viewBox="0 0 17 17"
@@ -446,8 +446,8 @@ export default function About() {
                   className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
                   style={{
                     stroke: "red",
-                    height: "40px",
-                    width: "36px",
+                    height: "50px",
+                    width: "46px",
                   }}
                   fill="none"
                   height="20px"
@@ -470,7 +470,7 @@ export default function About() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     height: "24px",
-                    width: "22px",
+                    width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
                   viewBox="0 0 32 32"
@@ -495,8 +495,8 @@ export default function About() {
                   className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
                   style={{
                     stroke: "red",
-                    height: "40px",
-                    width: "36px",
+                    height: "50px",
+                    width: "46px",
                   }}
                   fill="none"
                   height="20px"
@@ -519,7 +519,7 @@ export default function About() {
                     left: "50%",
                     transform: "translate(-50%, -50%)",
                     height: "24px",
-                    width: "22px",
+                    width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
                   fill="#000000"
@@ -552,7 +552,7 @@ export default function About() {
               <p className=" text-md font-bold border-b border-[#FE010130] py-[8px] px-[16px]">
                 EDUCATIOON
               </p>{" "}
-              <div className="p-[16px] text-red">
+              <div className="grid gap-[20px] p-[16px] text-red">
                 <div className="flex gap-[8px] items-start">
                   <img
                     className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
@@ -621,7 +621,8 @@ export default function About() {
             style={{
               position: "absolute",
               top: "-0.1rem",
-              right: "-0.1rem",
+              left: "-0.1rem",
+              rotate: "-90deg",
               stroke: "red",
               zIndex: 3,
               // backgroundColor: "red", // Uncomment if background color is needed
@@ -643,7 +644,9 @@ export default function About() {
             style={{
               position: "absolute",
               bottom: "-0.1rem",
-              right: "-0.1rem",
+              left: "-0.1rem",
+              rotate: "90deg",
+
               stroke: "red",
               zIndex: 3,
               // backgroundColor: "red", // Uncomment if background color is needed
