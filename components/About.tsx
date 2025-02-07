@@ -24,7 +24,7 @@ export default function About() {
             <p className=" text-md font-bold border-b border-[#FE010130]  mb-[24px] py-[8px] px-[16px]">
               SKILLS
             </p>
-            <div className="flex justify-around flex-wrap gap-[16px] mx-[16px] mb-[24px]">
+            <div className="flex justify-center flex-wrap gap-[16px] mx-[16px] mb-[24px]">
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}

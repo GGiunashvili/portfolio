@@ -534,10 +534,6 @@ img, video {
   justify-content: space-between;
 }
 
-.justify-around {
-  justify-content: space-around;
-}
-
 .gap-\[16px\] {
   gap: 16px;
 }
