@@ -15,13 +15,13 @@ export default function Profile() {
   };
   return (
     <div className="w-full">
-      <div className="w-full sm:w-[200px] xl:w-[260px] relative bg-[#D9363642] border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
+      <div className="w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
         {/* bg-gradient-to-r from-black via-red to-black */}
         <Image
           className="m-auto"
-          src="/2807482.svg" // Replace with the direct image URL
+          src="/m.webp" // Replace with the direct image URL
           alt="Sci-fi Skull"
-          width={100} // Set the width of the image
+          width={150} // Set the width of the image
           height={100} // Set the height of the image
         />
         <svg

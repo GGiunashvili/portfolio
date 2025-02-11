@@ -39,14 +39,14 @@ function Profile() {
         className: "w-full",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "w-full sm:w-[200px] xl:w-[260px] relative bg-[#D9363642] border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500",
+                className: "w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         className: "m-auto",
-                        src: "/2807482.svg" // Replace with the direct image URL
+                        src: "/m.webp" // Replace with the direct image URL
                         ,
                         alt: "Sci-fi Skull",
-                        width: 100,
+                        width: 150,
                         height: 100
                     }, void 0, false, {
                         fileName: "[project]/components/Profile.tsx",
