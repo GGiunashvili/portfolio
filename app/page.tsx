@@ -7,11 +7,6 @@ import { useState } from "react";
 import HoverButton from "../components/HoverButton"; //  სხვა კომპონენტიდან დავაკავშიროთ
 
 const App: React.FC = () => {
-  const [hasPermission, setHasPermission] = useState(false);
-
-  const handlePermissionButton = () => {
-    setHasPermission(true);
-  };
   // სრული ეკრანის რეჟიმში გადასვლის ფუნქცია
   const toggleFullscreen = () => {
     const element = document.documentElement;
@@ -72,17 +67,6 @@ const App: React.FC = () => {
       >
         {active ? "Remove Tailwind Classes" : "Add Tailwind Classes"}
       </button>
-      <div>
-        {/* Button for giving permission */}
-        <button
-          onClick={handlePermissionButton}
-          className="px-6 py-2 bg-green-500 text-white rounded hover:bg-green-400"
-        >
-          Enable Sound
-        </button>
-
-        {/* Pass permission state to the HoverButton component */}
-      </div>
     </div>
   );
 };
