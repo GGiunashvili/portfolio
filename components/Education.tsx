@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import HoverButton from "./HoverButton";
 export default function Education() {
   return (
     <div className="relative col-span-8 grid grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden">
@@ -328,6 +329,7 @@ export default function Education() {
       <div className="absolute bottom-0 left-0 w-full bg-black flex justify-center items-center col-span-8 border-t border-[#FE010130] p-[16px]">
         <p className="text-sm text-red font-bold">CREATIONS</p>
       </div>
+      <HoverButton hasPermission={true} />
     </div>
   );
 }
