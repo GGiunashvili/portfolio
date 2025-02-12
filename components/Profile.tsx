@@ -8,11 +8,7 @@ export default function Profile() {
     { label: "OCCUPATION", value: "FRONT END DEVELOPER" },
     { label: "CORPORATION", value: "EXTRA.GE" },
   ];
-  const [hasPermission, setHasPermission] = useState(false);
 
-  const handlePermissionButton = () => {
-    setHasPermission(true);
-  };
   return (
     <div className="w-full">
       <div className="w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
@@ -115,12 +111,6 @@ export default function Profile() {
             OPEN CONNECTION
           </p>
         </div>
-        <button
-          onClick={handlePermissionButton}
-          className="px-6 py-2 bg-green-500 text-white rounded hover:bg-green-400"
-        >
-          Enable Sound
-        </button>
       </div>
     </div>
   );
