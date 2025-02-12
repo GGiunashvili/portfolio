@@ -1,8 +1,16 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useSound } from "./SoundProvider";
 import HoverDiv from "./HoverDiv";
 export default function Education() {
+  const { allowSound } = useSound();
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const handleHover = () => {
+    if (allowSound && audioRef.current) {
+      audioRef.current.play(); // აუდიოს დაკვრა
+    }
+  };
   return (
     <div className="relative col-span-8 grid grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden">
       <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] p-[16px]">
@@ -21,9 +29,12 @@ export default function Education() {
           <div className="grid grid-cols-8 flex-wrap gap-x-[10px]  text-xs text-red pb-[8px] p-[16px] uppercase border border-[#FE010130] bg-black">
             {Array.from({ length: 4 }).map((_, index) => (
               <div
+                onMouseEnter={handleHover}
                 key={index}
                 className="flex items-center mb-4 col-span-8 xl:col-span-4 hover:bg-[#D9363642] border border-transparent hover:border-[#FE010130]"
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
+
                 <div className="flex items-center justify-center bg-[#F7888838] w-[48px] h-[48px]">
                   <svg
                     style={{
@@ -153,9 +164,10 @@ export default function Education() {
             const [hover, setHover] = useState(false);
             return (
               <a
+                onMouseEnter={handleHover}
                 href="https://extra.ge"
                 key={i}
-                onMouseEnter={() => setHover(true)}
+                // onMouseEnter={() => setHover(true)}
                 onMouseLeave={() => setHover(false)}
                 style={{
                   transform: hover
@@ -168,6 +180,8 @@ export default function Education() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
+
                 <div className="flex justify-between w-full">
                   <div>
                     <p className="font-bold group-hover:text-red">
@@ -325,10 +339,14 @@ export default function Education() {
           strokeWidth="2"
         ></path>
       </svg>
-      <div className="absolute bottom-0 left-0 w-full bg-black flex justify-center items-center col-span-8 border-t border-[#FE010130] p-[16px]">
+      {/* this is how handleHover sound works */}
+      <div
+        onMouseEnter={handleHover}
+        className="absolute bottom-0 left-0 w-full bg-black flex justify-center items-center col-span-8 border-t border-[#FE010130] p-[16px]"
+      >
         <p className="text-sm text-red font-bold">CREATIONS</p>
+        <audio ref={audioRef} src="/sound.mp3" preload="auto" />
       </div>
-      <HoverDiv />
     </div>
   );
 }

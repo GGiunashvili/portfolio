@@ -1,24 +1,23 @@
-"use client";
-import { useRef } from "react";
-import { useSound } from "./SoundProvider"; // გზავნილი `useSound`-ის აქ
+import React, { ReactNode } from "react";
 
-export default function HoverDiv() {
-  const { allowSound } = useSound(); // კონტექსტიდან allowSound-ი
-  const audioRef = useRef<HTMLAudioElement | null>(null);
+interface HoverDivProps {
+  children: ReactNode;
+}
 
-  const handleHover = () => {
-    if (allowSound && audioRef.current) {
-      audioRef.current.play();
-    }
-  };
-
+const HoverDiv: React.FC<HoverDivProps> = ({ children }) => {
   return (
     <div
-      className="w-40 h-40 bg-gray-300 flex items-center justify-center cursor-pointer mt-4"
-      onMouseEnter={handleHover}
+      onMouseEnter={() => {
+        // ამ დროს შეიძლება აუდიო ან სხვა რამ განხორციელდეს
+      }}
+      onMouseLeave={() => {
+        // ამ დროს შესაძლებელია სხვა მოქმედება
+      }}
+      className="hover:bg-[#D9363642] border border-transparent hover:border-[#FE010130]"
     >
-      <p>ჰოვერი</p>
-      <audio ref={audioRef} src="/sound.mp3" preload="auto" />
+      {children}
     </div>
   );
-}
+};
+
+export default HoverDiv;
