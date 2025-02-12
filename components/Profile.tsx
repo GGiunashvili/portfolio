@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { useRef, useState } from "react";
-
+import Button from "./Button";
 export default function Profile() {
   const profileDetails = [
     { label: "NAME", value: "GIORGI GIUNASHVILI" },
@@ -110,6 +110,9 @@ export default function Profile() {
           <p className="text-red text-xs font-bold border border-red p-[6px]">
             OPEN CONNECTION
           </p>
+        </div>
+        <div>
+          <Button />
         </div>
       </div>
     </div>

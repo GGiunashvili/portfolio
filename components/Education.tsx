@@ -1,15 +1,13 @@
 import React from "react";
 import { useState } from "react";
-
+import { useSound } from "./SoundProvider";
+import HoverDiv from "./HoverDiv";
 export default function Education() {
-  const [hover, setHover] = useState(false);
-
   return (
     <div className="relative col-span-8 grid grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden">
       <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] p-[16px]">
         <p className="text-sm text-red font-bold">CREATIONS</p>
       </div>
-
       <div className="col-span-8 relative  flex flex-col py-[18px] px-[16px] xl:px-[40px] overflow-scroll scrollbar-thin">
         {" "}
         <div className="relative mb-[24px]">
@@ -287,7 +285,6 @@ export default function Education() {
           })}
         </div>
       </div>
-
       <svg
         fill="none"
         height="0.9rem"
@@ -331,6 +328,7 @@ export default function Education() {
       <div className="absolute bottom-0 left-0 w-full bg-black flex justify-center items-center col-span-8 border-t border-[#FE010130] p-[16px]">
         <p className="text-sm text-red font-bold">CREATIONS</p>
       </div>
+      <HoverDiv />
     </div>
   );
 }

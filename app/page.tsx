@@ -4,7 +4,9 @@ import Profile from "../components/Profile";
 import About from "../components/About";
 import Education from "../components/Education";
 import { useState } from "react";
-
+import Button from "components/Button";
+import HoverDiv from "components/HoverDiv";
+import { SoundProvider } from "components/SoundProvider";
 const App: React.FC = () => {
   // სრული ეკრანის რეჟიმში გადასვლის ფუნქცია
   const toggleFullscreen = () => {
@@ -44,29 +46,31 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="flex flex-col sm:flex-row p-[24px] h-screen w-full">
-      <div className="max-w-full sm:max-w-[200px] xl:max-w-[300px] mr-[24px]">
-        <Profile />
-      </div>
-      <div className="grid-unset md:grid grid-cols-12 h-full w-full">
-        <About />
+    <SoundProvider>
+      <div className="flex flex-col sm:flex-row p-[24px] h-screen w-full">
+        <div className="max-w-full sm:max-w-[200px] xl:max-w-[300px] mr-[24px]">
+          <Profile />
+        </div>
+        <div className="grid-unset md:grid grid-cols-12 h-full w-full">
+          <About />
 
-        <Education />
+          <Education />
+        </div>
+        {/* ღილაკი რომელიც სრულ ეკრანზე გადაგიყვანს ან დააბრუნებს */}
+        <button
+          onClick={toggleFullscreen}
+          className="absolute bottom-10 left-10 p-4  text-white rounded-lg z-10"
+        >
+          Toggle Fullscreen Mode
+        </button>
+        <button
+          onClick={handleClick}
+          className="absolute left-10 px-4 py-2  rounded-lg bottom-[80px] "
+        >
+          {active ? "Remove Tailwind Classes" : "Add Tailwind Classes"}
+        </button>
       </div>
-      {/* ღილაკი რომელიც სრულ ეკრანზე გადაგიყვანს ან დააბრუნებს */}
-      <button
-        onClick={toggleFullscreen}
-        className="absolute bottom-10 left-10 p-4  text-white rounded-lg z-10"
-      >
-        Toggle Fullscreen Mode
-      </button>
-      <button
-        onClick={handleClick}
-        className="absolute left-10 px-4 py-2  rounded-lg bottom-[80px] "
-      >
-        {active ? "Remove Tailwind Classes" : "Add Tailwind Classes"}
-      </button>
-    </div>
+    </SoundProvider>
   );
 };
 
