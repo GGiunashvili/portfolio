@@ -47,9 +47,15 @@ export default function Profile() {
     <div className="w-full">
       <div className="w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
         {/* bg-gradient-to-r from-black via-red to-black */}
-        <video className="w-full" autoPlay muted loop>
+        <video
+          className="w-full"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+        >
           <source src="/mp.mp4" type="video/mp4" />
-          თქვენი ბრაუზერი არ უჭერს მხარს ვიდეო ტეგს.
         </video>
         {/* <Image
           className="m-auto"
