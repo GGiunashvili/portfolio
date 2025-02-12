@@ -22,7 +22,7 @@ export default function Profile() {
           src="/m.webp" // Replace with the direct image URL
           alt="Sci-fi Skull"
           width={150} // Set the width of the image
-          height={100} // Set the height of the image
+          height={112} // Set the height of the image
         />
         <svg
           fill="none"
