@@ -4,7 +4,6 @@ import Profile from "../components/Profile";
 import About from "../components/About";
 import Education from "../components/Education";
 import { useState } from "react";
-import HoverButton from "../components/HoverButton"; //  სხვა კომპონენტიდან დავაკავშიროთ
 
 const App: React.FC = () => {
   // სრული ეკრანის რეჟიმში გადასვლის ფუნქცია
