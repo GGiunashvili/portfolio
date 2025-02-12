@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         red: "#E84A4A", // პირდაპირ ფერის კოდი
+        hoverRed: "#D9363642",
         test: "#2C0F14",
         background: "#ffffff",
         foreground: "#000000",

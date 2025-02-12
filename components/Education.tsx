@@ -30,7 +30,7 @@ export default function Education() {
               <div
                 onMouseEnter={handleHover}
                 key={index}
-                className="flex items-center mb-4 col-span-8 xl:col-span-4 hover:bg-[#D9363642] border border-transparent hover:border-[#FE010130]"
+                className="flex items-center mb-4 col-span-8 xl:col-span-4 hover:bg-hoverRed border border-transparent hover:border-[#FE010130]"
               >
                 <audio ref={audioRef} src="/sound.mp3" preload="auto" />
 
@@ -175,7 +175,7 @@ export default function Education() {
 
                   transition: "transform 0.3s ease", // Optional: for smooth transition
                 }}
-                className="relative group hover:bg-[#D9363642] hover:border-black flex justify-between flex-col items-start border border-[#FE010130] mb-[20px] p-[16px]"
+                className="relative group hover:bg-hoverRed hover:border-black flex justify-between flex-col items-start border border-[#FE010130] mb-[20px] p-[16px]"
                 target="_blank"
                 rel="noopener noreferrer"
               >

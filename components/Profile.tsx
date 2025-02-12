@@ -8,7 +8,41 @@ export default function Profile() {
     { label: "OCCUPATION", value: "FRONT END DEVELOPER" },
     { label: "CORPORATION", value: "EXTRA.GE" },
   ];
+  const [active, setActive] = useState(false);
+  const handleClick = () => {
+    setActive(!active);
+    const body = document.getElementById("root") as HTMLBodyElement;
+    const modal = document.getElementById("modal") as HTMLDivElement;
+    if (!active) {
+      body.style.transition = "transform 0.5s ease, background-color 0.5s ease";
+      body.style.transform =
+        "perspective(75rem) rotateX(25deg) translateY(-6.2rem) translateZ(-4rem)";
+      body.classList.add("bg-red-100", "text-black!important");
+      modal.classList.remove("hidden");
+    } else {
+      body.style.transition = "transform 0.5s ease, background-color 0.5s ease";
+      body.style.transform = ""; // წაშლის transform სტილს
+      body.classList.remove("bg-red", "text-black!important");
+      modal.classList.add("hidden");
+    }
+  };
+  const toggleFullscreen = () => {
+    const element = document.documentElement;
 
+    // თუ უკვე სრულ ეკრანზე ვართ, გამოვიდეთ
+    if (document.fullscreenElement) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      }
+    } else {
+      // თუ არ ვართ სრულ ეკრანზე, გადავიდეთ
+      if (element.requestFullscreen) {
+        element.requestFullscreen();
+      } else {
+        console.log("Your browser does not support fullscreen mode");
+      }
+    }
+  };
   return (
     <div className="w-full">
       <div className="w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
@@ -114,6 +148,18 @@ export default function Profile() {
         <div>
           <Button />
         </div>
+        <button
+          onClick={handleClick}
+          className="flex items-center gap-[12px] text-red text-xs font-bold border border-red p-[6px]"
+        >
+          {active ? "Remove Tailwind Classes" : "Personal Info"}
+        </button>
+        <button
+          onClick={toggleFullscreen}
+          className="flex items-center gap-[12px] text-red text-xs font-bold border border-red p-[6px]"
+        >
+          Toggle Fullscreen Mode
+        </button>
       </div>
     </div>
   );

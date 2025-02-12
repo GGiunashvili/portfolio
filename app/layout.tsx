@@ -30,7 +30,7 @@ export default function RootLayout({
         <div id="root">{children}</div>
         <div
           id="modal"
-          className="fixed top-0 w-[300px] h-[300px] bg-white z-[999] hidden"
+          className="fixed left-[40px] bottom-[60px] w-[300px] h-[300px] bg-hoverRed z-[999] hidden text-red text-xs font-bold border border-red p-[6px]"
         >
           pop up
         </div>
