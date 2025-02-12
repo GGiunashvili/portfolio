@@ -47,13 +47,17 @@ export default function Profile() {
     <div className="w-full">
       <div className="w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
         {/* bg-gradient-to-r from-black via-red to-black */}
-        <Image
+        <video className="w-full" autoPlay muted loop>
+          <source src="/mp.mp4" type="video/mp4" />
+          თქვენი ბრაუზერი არ უჭერს მხარს ვიდეო ტეგს.
+        </video>
+        {/* <Image
           className="m-auto"
           src="/m.webp" // Replace with the direct image URL
           alt="Sci-fi Skull"
           width={150} // Set the width of the image
           height={112} // Set the height of the image
-        />
+        /> */}
         <svg
           fill="none"
           height="0.9rem"

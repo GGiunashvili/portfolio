@@ -11,7 +11,7 @@ const App: React.FC = () => {
   return (
     <SoundProvider>
       <div className="flex flex-col sm:flex-row p-[24px] h-screen w-full">
-        <div className="max-w-full sm:max-w-[200px] xl:max-w-[300px] mr-[24px]">
+        <div className="max-w-full sm:max-w-[200px] xl:max-w-[300px] sm:mr-[24px]">
           <Profile />
         </div>
         <div className="grid-unset md:grid grid-cols-12 h-full w-full">
