@@ -1,7 +1,6 @@
 import React from "react";
 import { useState, useRef } from "react";
 import { useSound } from "./SoundProvider";
-import HoverDiv from "./HoverDiv";
 export default function Education() {
   const { allowSound } = useSound();
   const audioRef = useRef<HTMLAudioElement | null>(null);

@@ -4,8 +4,6 @@ import Profile from "../components/Profile";
 import About from "../components/About";
 import Education from "../components/Education";
 import { useState } from "react";
-import Button from "components/Button";
-import HoverDiv from "components/HoverDiv";
 import { SoundProvider } from "components/SoundProvider";
 const App: React.FC = () => {
   // სრული ეკრანის რეჟიმში გადასვლის ფუნქცია
