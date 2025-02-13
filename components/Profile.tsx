@@ -8,6 +8,8 @@ export default function Profile() {
     { label: "OCCUPATION", value: "REACT DEVELOPER" },
     { label: "CORPORATION", value: "EXTRA.GE" },
   ];
+  const [isHovered, setIsHovered] = useState(false);
+
   const [active, setActive] = useState(false);
   const handleClick = () => {
     setActive(!active);
@@ -45,7 +47,17 @@ export default function Profile() {
   };
   return (
     <div className="w-full">
-      <div className="w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500">
+      <div
+        className="w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500"
+        style={{
+          transition: "transform 0.5s, background-color 0.5s",
+          transform: isHovered
+            ? "perspective(75rem) rotateX(25deg) translateY(-2.2rem) translateZ(-4rem)"
+            : "none",
+        }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
         {/* bg-gradient-to-r from-black via-red to-black */}
         <video
           className="w-full"

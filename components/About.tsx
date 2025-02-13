@@ -6,7 +6,7 @@ export default function About() {
       <p className="border-r border-[#FE010130] p-[16px] text-sm text-red font-bold">
         PERSONAL REPO
       </p>
-      <div className="overflow-scroll scrollbar-thin h-[calc(100%-38px)] border border-b-0 border-[#FE010130]">
+      <div className="overflow-scroll scrollbar-thin h-[calc(100%-80px)] border border-b-0 border-[#FE010130]">
         <div className="flex flex-col">
           <div>
             <p className="border-b border-[#FE010130] py-[8px] px-[16px] font-bold text-md">

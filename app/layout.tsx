@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import PopupForm from "../components/PopupForm";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,9 +31,26 @@ export default function RootLayout({
         <div id="root">{children}</div>
         <div
           id="modal"
-          className="fixed left-[40px] bottom-[60px] w-[300px] h-[300px] bg-hoverRed z-[999] hidden text-red text-xs font-bold border border-red p-[6px]"
+          className="fixed bg-black sm:bg-transparent h-screen sm:h-auto sm:left-[20px] bottom-0 sm:bottom-[0px] w-full sm:w-[500px] bg-yellow z-[999] hidden p-[20px]"
         >
-          pop up
+          <p className="font-bold text-red text-xl mb-[8px]">CONNECT WITH ME</p>
+          <p className="font-bold text-white text-sm mb-[16px]">
+            WANNA CHAT? OR JUST SHARE SOMETHING COOL?
+          </p>
+          <div className="text-red text-xs font-bold border border-red p-[20px] bg-hoverRed mb-[24px]">
+            <PopupForm />
+          </div>
+          <div className="flex gap-[16px]">
+            <button
+              type="submit"
+              className="w-full bg-red text-black font-bold border border-white p-2 "
+            >
+              SEND MESSAGE [ENTER]
+            </button>
+            <button className="w-full bg-black text-white font-bold border border-white p-2 ">
+              DISCARD [ESC]
+            </button>
+          </div>
         </div>
       </body>
     </html>
