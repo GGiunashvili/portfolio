@@ -4,13 +4,13 @@ export default function About() {
   return (
     <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130]  ">
       <p className="border-r border-[#FE010130] p-[16px] text-sm text-red font-bold">
-        REACT DEVELOPER
+        PERSONAL REPO
       </p>
       <div className="overflow-scroll scrollbar-thin h-[calc(100%-38px)] border border-b-0 border-[#FE010130]">
         <div className="flex flex-col">
           <div>
             <p className="border-b border-[#FE010130] py-[8px] px-[16px] font-bold text-md">
-              ABOUT ME
+              FRONT END DEVELOPER
             </p>
             <p className="text-xs text-red p-[16px] uppercase">
               I’m Giorgi, a Front-End Developer with 4 years of experience. I
@@ -22,14 +22,14 @@ export default function About() {
           </div>
           <div className="border border-[#FE010130] border-l-0 border-r-0">
             <p className=" text-md font-bold border-b border-[#FE010130]  mb-[24px] py-[8px] px-[16px]">
-              SKILLS
+              CORE COMPETENCIES
             </p>
-            <div className="flex justify-center flex-wrap gap-[16px] mx-[16px] mb-[24px]">
+            <div className="flex justify-center flex-wrap gap-[24px] mx-[12px] mb-[24px]">
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[32%] justify-center text-center  ">
+                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
                     {" "}
                     NEXT JS
@@ -80,7 +80,7 @@ export default function About() {
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[32%] justify-center text-center  ">
+                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
                     {" "}
                     REACT
@@ -129,7 +129,7 @@ export default function About() {
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[32%] justify-center text-center  ">
+                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
                     {" "}
                     TYPESCRIPT
@@ -179,7 +179,7 @@ export default function About() {
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[32%] justify-center text-center  ">
+                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
                     {" "}
                     TAILWIND
@@ -233,7 +233,7 @@ export default function About() {
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[32%] justify-center text-center  ">
+                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
                     {" "}
                     GITHUB
@@ -282,7 +282,7 @@ export default function About() {
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[32%] justify-center text-center  ">
+                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
                     {" "}
                     GIT
@@ -336,7 +336,7 @@ export default function About() {
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[32%] justify-center text-center  ">
+                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
                     {" "}
                     JAVASCRIPT
@@ -385,7 +385,7 @@ export default function About() {
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[32%] justify-center text-center  ">
+                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
                     {" "}
                     HTML
@@ -436,7 +436,7 @@ export default function About() {
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[32%] justify-center text-center  ">
+                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
                     {" "}
                     SCSS
@@ -485,7 +485,7 @@ export default function About() {
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
               >
-                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[32%] justify-center text-center  ">
+                <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
                     {" "}
                     CSS
@@ -550,7 +550,7 @@ export default function About() {
           <div className="grid ">
             <div className="grid ">
               <p className=" text-md font-bold border-b border-[#FE010130] py-[8px] px-[16px]">
-                EDUCATIOON
+                PROFESSIONAL STUDY ZONES
               </p>{" "}
               <div className="grid gap-[20px] p-[16px] text-red">
                 <div className="flex gap-[8px] items-start">

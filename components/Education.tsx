@@ -13,7 +13,8 @@ export default function Education() {
   return (
     <div className="relative col-span-8 grid grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden">
       <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] p-[16px]">
-        <p className="text-sm text-red font-bold">CREATIONS</p>
+        <p className="text-sm text-red font-bold">TECH ODYSSEY</p>
+        {/* SCRIPTS & BUILDS */}
       </div>
       <div className="col-span-8 relative  flex flex-col py-[18px] px-[16px] xl:px-[40px] overflow-scroll scrollbar-thin">
         {" "}
@@ -157,13 +158,17 @@ export default function Education() {
           </svg>
         </div>
         <div className="flex flex-col justify-between flex-wrap ">
-          <p className="mb-[24px] text-sm">WORKING EXPERIENCE</p>
+          <p className="mb-[24px] text-sm">PROFESSIONAL ROLES</p>
           {Array.from({ length: 6 }, (_, i) => {
             // თითოეული ელემენტისთვის hover სტეიტი
             const [hover, setHover] = useState(false);
             return (
               <a
-                onMouseEnter={handleHover}
+                // onMouseEnter={handleHover}
+                onMouseEnter={() => {
+                  setHover(true); // პირველი ფუნქცია
+                  handleHover(); // მეორე ფუნქცია
+                }}
                 href="https://extra.ge"
                 key={i}
                 // onMouseEnter={() => setHover(true)}

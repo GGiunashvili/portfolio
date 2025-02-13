@@ -5,7 +5,7 @@ import Button from "./Button";
 export default function Profile() {
   const profileDetails = [
     { label: "NAME", value: "GIORGI GIUNASHVILI" },
-    { label: "OCCUPATION", value: "FRONT END DEVELOPER" },
+    { label: "OCCUPATION", value: "REACT DEVELOPER" },
     { label: "CORPORATION", value: "EXTRA.GE" },
   ];
   const [active, setActive] = useState(false);
@@ -146,27 +146,29 @@ export default function Profile() {
         {profileDetails.map((detail) => (
           <div key={detail.label} className="mb-[16px]">
             <p className="text-xs font-normal mb-[4px]">{detail.label}</p>
-            <p className="text-red text-xs font-bold">{detail.value}</p>
+            <p className="text-black text-sm font-bold bg-red">
+              {detail.value}
+            </p>
           </div>
         ))}
-        <div className="mb-[16px]">
+        <div className="mb-[12px]">
           <p className="text-xs font-normal mb-[6px]">SOCIAL</p>
-          <p className="text-red text-xs font-bold border border-red p-[6px]">
+          <p className="text-center text-red text-xs font-bold border border-red p-[6px]">
             OPEN CONNECTION
           </p>
         </div>
-        <div>
+        <div className="w-full flex justify-center mb-[12px]">
           <Button />
         </div>
         <button
           onClick={handleClick}
-          className="flex items-center gap-[12px] text-red text-xs font-bold border border-red p-[6px]"
+          className="w-full flex justify-center text-red text-xs font-bold border border-red p-[6px] mb-[12px]"
         >
           {active ? "Remove Tailwind Classes" : "Personal Info"}
         </button>
         <button
           onClick={toggleFullscreen}
-          className="flex items-center gap-[12px] text-red text-xs font-bold border border-red p-[6px]"
+          className="w-full flex justify-center items-center text-red text-xs font-bold border border-red p-[6px] mb-[24px]"
         >
           Toggle Fullscreen Mode
         </button>

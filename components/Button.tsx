@@ -27,7 +27,7 @@ export default function Button() {
 
   return (
     <button
-      className="flex items-center gap-[12px] text-red text-xs font-bold border border-red p-[6px]"
+      className="w-full flex justify-center items-center gap-[12px] text-red text-xs font-bold border border-red p-[6px]"
       onClick={toggleSound} // toggle sound permission and play/pause music
     >
       Sound
