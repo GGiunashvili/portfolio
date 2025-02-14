@@ -36,7 +36,7 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
+                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
                   style={{
                     stroke: "red",
                     height: "50px",
@@ -87,7 +87,7 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
+                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
                   style={{
                     stroke: "red",
                     height: "50px",
@@ -136,7 +136,7 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
+                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
                   style={{
                     stroke: "red",
                     height: "50px",
@@ -186,7 +186,7 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
+                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
                   style={{
                     stroke: "red",
                     height: "50px",
@@ -240,7 +240,7 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
+                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
                   style={{
                     stroke: "red",
                     height: "50px",
@@ -289,7 +289,7 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
+                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
                   style={{
                     stroke: "red",
                     height: "50px",
@@ -343,7 +343,7 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
+                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
                   style={{
                     stroke: "red",
                     height: "50px",
@@ -392,7 +392,7 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
+                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
                   style={{
                     stroke: "red",
                     height: "50px",
@@ -443,7 +443,7 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
+                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
                   style={{
                     stroke: "red",
                     height: "50px",
@@ -492,7 +492,7 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[360deg] transition-transform duration-[1000ms]"
+                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
                   style={{
                     stroke: "red",
                     height: "50px",

@@ -4,7 +4,7 @@ import { useSound } from "./SoundProvider";
 export default function Education() {
   const { allowSound } = useSound();
   const audioRef = useRef<HTMLAudioElement | null>(null);
-
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const handleHover = () => {
     if (allowSound && audioRef.current) {
       audioRef.current.play(); // აუდიოს დაკვრა
@@ -164,23 +164,31 @@ export default function Education() {
             const [hover, setHover] = useState(false);
             return (
               <a
-                // onMouseEnter={handleHover}
-                onMouseEnter={() => {
-                  setHover(true); // პირველი ფუნქცია
-                  handleHover(); // მეორე ფუნქცია
-                }}
-                href="https://extra.ge"
                 key={i}
-                // onMouseEnter={() => setHover(true)}
-                onMouseLeave={() => setHover(false)}
-                style={{
-                  transform: hover
-                    ? "perspective(60rem) rotateX(10deg) translateY(0rem) translateZ(0rem)"
-                    : "none",
-
-                  transition: "transform 0.3s ease", // Optional: for smooth transition
+                href="https://extra.ge"
+                onMouseEnter={() => {
+                  setHover(true);
+                  handleHover();
+                  setHoveredIndex(i);
                 }}
-                className="relative group hover:bg-hoverRed hover:border-black flex justify-between flex-col items-start border border-[#FE010130] mb-[20px] p-[16px]"
+                // onMouseLeave={() => setHover(false)}
+                onMouseLeave={() => {
+                  setHover(true);
+                  handleHover();
+                  setHoveredIndex(i);
+                }}
+                style={{
+                  transform:
+                    hoveredIndex === i || (i === 0 && hoveredIndex === null)
+                      ? "perspective(60rem) rotateX(10deg) translateY(0rem) translateZ(0rem)"
+                      : "none",
+                  transition: "transform 0.3s ease",
+                }}
+                className={`relative group hover:bg-hoverRed hover:border-black flex justify-between flex-col items-start border border-[#FE010130] mb-[20px] p-[16px] ${
+                  (i === 0 && hoveredIndex === null) || hoveredIndex === i
+                    ? "bg-hoverRed w-full border-none"
+                    : ""
+                }`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -188,18 +196,42 @@ export default function Education() {
 
                 <div className="flex justify-between w-full">
                   <div>
-                    <p className="font-bold group-hover:text-red">
+                    <p
+                      className={`${
+                        hoveredIndex === i || (i === 0 && hoveredIndex === null)
+                          ? "text-red font-bold"
+                          : "font-bold text-[#b2b7ba] group-hover:text-red"
+                      }`}
+                    >
                       Front End Developer
                     </p>
-                    <p className="text-x text-red font-bold mb-[8px] group-hover:text-[#b2b7ba]">
+                    <p
+                      className={`${
+                        hoveredIndex === i || (i === 0 && hoveredIndex === null)
+                          ? "text-xs text-[#b2b7ba] font-bold mb-[8px] group-hover:text-[#b2b7ba]"
+                          : "text-xs text-red font-bold mb-[8px] group-hover:text-[#b2b7ba]"
+                      }`}
+                    >
                       extra.ge
                     </p>
                   </div>
-                  <p className="text-sm text-red font-bold group-hover:text-[#b2b7ba]">
+                  <p
+                    className={`${
+                      hoveredIndex === i || (i === 0 && hoveredIndex === null)
+                        ? " text-sm text-[#b2b7ba] font-bold group-hover:text-[#b2b7ba]"
+                        : "text-sm text-red font-bold group-hover:text-[#b2b7ba]"
+                    }`}
+                  >
                     Sept 2024 – Present
                   </p>
                 </div>
-                <div className="group-hover:text-red">
+                <div
+                  className={`${
+                    hoveredIndex === i || (i === 0 && hoveredIndex === null)
+                      ? "text-red"
+                      : "group-hover:text-red"
+                  }`}
+                >
                   <p>
                     Leading UI developers in creating responsive web/mobile
                     interfaces with cross-functional teams.
@@ -211,7 +243,11 @@ export default function Education() {
                   <p>Delivered custom UI designs for remote clients.</p>
                 </div>
                 <svg
-                  className="hidden group-hover:flex"
+                  className={`${
+                    hoveredIndex === i || (i === 0 && hoveredIndex === null)
+                      ? "flex"
+                      : "hidden group-hover:flex"
+                  }`}
                   fill="none"
                   height="0.9rem"
                   viewBox="0 0 9 9"
@@ -233,7 +269,11 @@ export default function Education() {
                   ></path>
                 </svg>
                 <svg
-                  className="hidden group-hover:flex"
+                  className={`${
+                    hoveredIndex === i || (i === 0 && hoveredIndex === null)
+                      ? "flex"
+                      : "hidden group-hover:flex"
+                  }`}
                   fill="none"
                   height="0.9rem"
                   viewBox="0 0 9 9"
@@ -255,7 +295,11 @@ export default function Education() {
                   ></path>
                 </svg>
                 <svg
-                  className="hidden group-hover:flex"
+                  className={`${
+                    hoveredIndex === i || (i === 0 && hoveredIndex === null)
+                      ? "flex"
+                      : "hidden group-hover:flex"
+                  }`}
                   fill="none"
                   height="0.9rem"
                   viewBox="0 0 9 9"
@@ -277,7 +321,11 @@ export default function Education() {
                   ></path>
                 </svg>
                 <svg
-                  className="hidden group-hover:flex"
+                  className={`${
+                    hoveredIndex === i || (i === 0 && hoveredIndex === null)
+                      ? "flex"
+                      : "hidden group-hover:flex"
+                  }`}
                   fill="none"
                   height="0.9rem"
                   viewBox="0 0 9 9"
