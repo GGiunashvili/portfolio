@@ -40,9 +40,11 @@ export default function RootLayout({
         </div>
         <div
           id="modal"
-          className="fixed bg-black sm:bg-transparent h-screen sm:h-auto sm:left-[20px] bottom-0 sm:bottom-[0px] w-full sm:w-[500px] bg-yellow z-[999] hidden p-[20px]"
+          className="flex flex-col justify-end fixed bg-black sm:bg-transparent h-screen sm:h-auto sm:left-[20px] bottom-0 sm:bottom-[0px] w-full sm:w-[500px] bg-yellow z-[999] hidden p-[20px]"
         >
-          <p className="font-bold text-red text-xl mb-[8px]">CONNECT WITH ME</p>
+          <p className="font-bold text-red text-xl mb-[8px] font-rubik-glitch">
+            CONNECT WITH ME
+          </p>
           <p className="font-bold text-white text-sm mb-[16px]">
             WANNA CHAT? OR JUST SHARE SOMETHING COOL?
           </p>
@@ -52,11 +54,11 @@ export default function RootLayout({
           <div className="flex gap-[16px]">
             <button
               type="submit"
-              className="w-full bg-red text-black font-bold border border-white p-2 "
+              className="w-full bg-red text-black font-bold p-2 "
             >
               SEND MESSAGE [ENTER]
             </button>
-            <button className="w-full bg-black text-white font-bold border border-white p-2 ">
+            <button className="w-full bg-black text-red font-bold border border-[#b2b7ba] p-2 ">
               DISCARD [ESC]
             </button>
           </div>

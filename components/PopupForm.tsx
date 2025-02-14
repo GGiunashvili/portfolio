@@ -46,7 +46,7 @@ const PopupForm = () => {
                 id="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="w-full p-2 border border-white bg-black h-[48px]"
+                className="w-full p-2 border border-[#b2b7ba] bg-black h-[48px]"
                 required
               />
             </div>
@@ -63,7 +63,7 @@ const PopupForm = () => {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full p-2 border border-white bg-black h-[48px]"
+                className="w-full p-2 border border-[#b2b7ba] bg-black h-[48px]"
                 required
               />
             </div>
@@ -78,7 +78,7 @@ const PopupForm = () => {
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="flex w-full p-2 border border-white h-[150px] bg-black"
+              className="flex w-full p-2 border border-[#b2b7ba] h-[150px] bg-black"
               required
             />
 

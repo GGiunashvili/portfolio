@@ -24,7 +24,7 @@ export default function About() {
             <p className=" text-md font-bold border-b border-[#FE010130]  mb-[24px] py-[8px] px-[16px]">
               CORE COMPETENCIES
             </p>
-            <div className="flex justify-center flex-wrap gap-[24px] mx-[12px] mb-[24px]">
+            <div className="flex justify-center flex-wrap gap-[18px] mx-[12px] mb-[24px]">
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
