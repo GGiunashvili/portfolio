@@ -17,6 +17,10 @@ export default {
         "custom-transform":
           "perspective(60rem) rotateX(24deg) translateY(0rem) translateZ(0rem)",
       },
+      fontFamily: {
+        "rubik-glitch": ["Rubik Glitch", "sans-serif"],
+        "geist-mono": ["Geist Mono", "monospace"],
+      },
     },
   },
   plugins: [],

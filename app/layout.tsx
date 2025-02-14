@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Rubik_Glitch } from "next/font/google";
 import "./globals.css";
 import PopupForm from "../components/PopupForm";
-
 const geistSans = Geist({
-  variable: "--font-geist-sans",
   subsets: ["latin"],
+  weight: "400", // დაამატე სიმძლავრე
 });
 
 const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: "400", // დაამატე სიმძლავრე
+});
+
+const rubikGlitch = Rubik_Glitch({
+  subsets: ["latin"],
+  weight: "400", // დაამატე სიმძლავრე
 });
 
 export const metadata: Metadata = {
@@ -26,9 +30,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
+        style={{
+          fontFamily: `${geistSans.style.fontFamily}, ${geistMono.style.fontFamily}, ${rubikGlitch.style.fontFamily}`,
+        }}
+        className="antialiased bg-black "
       >
-        <div id="root">{children}</div>
+        <div id="root" className="">
+          {children}
+        </div>
         <div
           id="modal"
           className="fixed bg-black sm:bg-transparent h-screen sm:h-auto sm:left-[20px] bottom-0 sm:bottom-[0px] w-full sm:w-[500px] bg-yellow z-[999] hidden p-[20px]"

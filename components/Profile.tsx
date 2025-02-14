@@ -46,9 +46,9 @@ export default function Profile() {
     }
   };
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div
-        className="w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500"
+        className="group w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500 overflow-hidden"
         style={{
           transition: "transform 0.5s, background-color 0.5s",
           transform: isHovered
@@ -60,7 +60,7 @@ export default function Profile() {
       >
         {/* bg-gradient-to-r from-black via-red to-black */}
         <video
-          className="w-full"
+          className="w-full  group-hover:scale-[1.1] duration-[1000ms]"
           autoPlay
           muted
           loop
@@ -158,14 +158,14 @@ export default function Profile() {
         {profileDetails.map((detail) => (
           <div key={detail.label} className="mb-[16px]">
             <p className="text-xs font-normal mb-[4px]">{detail.label}</p>
-            <p className="text-black text-sm font-bold bg-red">
+            <p className="text-black text-base font-bold font-rubik-glitch bg-[#AA0000]">
               {detail.value}
             </p>
           </div>
         ))}
         <div className="mb-[12px]">
           <p className="text-xs font-normal mb-[6px]">SOCIAL</p>
-          <p className="text-center text-red text-xs font-bold border border-red p-[6px]">
+          <p className="text-center text-red text-xs font-bold border border-red p-[6px] ">
             OPEN CONNECTION
           </p>
         </div>
