@@ -28,7 +28,7 @@ export default function Education() {
           </p>
           <div className="grid grid-cols-8 flex-wrap gap-x-[10px]  text-xs text-red pb-[8px] p-[16px] uppercase border border-[#FE010130] bg-black">
             {Array.from({ length: 4 }).map((_, index) => (
-              <div
+              <button
                 onMouseEnter={handleHover}
                 key={index}
                 className="flex items-center mb-4 col-span-8 xl:col-span-4 hover:bg-hoverRed border border-transparent hover:border-[#FE010130]"
@@ -69,7 +69,7 @@ export default function Education() {
                   </div>
                   {/* <p>2021 - Present</p> */}
                 </div>
-              </div>
+              </button>
             ))}
           </div>
           <svg

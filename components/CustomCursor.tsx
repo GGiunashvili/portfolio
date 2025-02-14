@@ -4,32 +4,67 @@ import Image from "next/image";
 
 const CustomCursor = () => {
   const cursorRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const moveCursor = (e: MouseEvent) => {
       if (cursorRef.current) {
         requestAnimationFrame(() => {
-          cursorRef.current!.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+          cursorRef.current!.style.left = `${e.clientX}px`;
+          cursorRef.current!.style.top = `${e.clientY}px`;
         });
       }
     };
 
+    const handleMouseEnter = () => {
+      setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+      setIsHovered(false);
+    };
+
+    document.querySelectorAll("button, a").forEach((el) => {
+      el.addEventListener("mouseenter", handleMouseEnter);
+      el.addEventListener("mouseleave", handleMouseLeave);
+    });
+
     window.addEventListener("mousemove", moveCursor);
-    return () => window.removeEventListener("mousemove", moveCursor);
+
+    return () => {
+      document.querySelectorAll("button, a").forEach((el) => {
+        el.removeEventListener("mouseenter", handleMouseEnter);
+        el.removeEventListener("mouseleave", handleMouseLeave);
+      });
+      window.removeEventListener("mousemove", moveCursor);
+    };
   }, []);
 
   return (
     <div
       ref={cursorRef}
-      className="fixed top-0 left-0 pointer-events-none transition-transform duration-100 ease-out "
-      style={{ zIndex: 9999 }}
+      className="fixed pointer-events-none"
+      style={{
+        width: "50px",
+        height: "50px",
+        // backgroundColor: isHovered ? "rgba(255, 0, 0, 0.5)" : "transparent", // Hover-ზე წითელი background
+
+        transform: isHovered
+          ? "perspective(25rem) rotateX(30deg) translateX(-2rem) translateZ(2em) "
+          : "translate(1%, -1%) rotateX(0deg)",
+        transition: "transform 0.3s ease-out",
+        zIndex: 9999,
+        willChange: "transform",
+        WebkitBackfaceVisibility: "hidden",
+        backfaceVisibility: "hidden",
+      }}
     >
       <Image
         src="/crs.svg"
         alt="Custom Cursor"
         width={50}
         height={50}
-        className="w-[50px] h-[50px]"
+        className="w-[50px] h-[50px] "
       />
     </div>
   );
