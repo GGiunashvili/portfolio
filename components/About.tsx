@@ -6,7 +6,7 @@ export default function About() {
       <p className="border-r border-[#FE010130] p-[16px] text-sm text-red font-bold">
         PERSONAL REPO
       </p>
-      <div className="overflow-scroll scrollbar-thin h-[calc(100%-80px)] border border-b-0 border-[#FE010130]">
+      <div className="overflow-scroll scrollbar-thin h-[calc(100%-89px)] border border-b-0 border-[#FE010130]">
         <div className="flex flex-col">
           <div>
             <p className="border-b border-[#FE010130] py-[8px] px-[16px] font-bold text-md">
@@ -21,10 +21,10 @@ export default function About() {
             </p>
           </div>
           <div className="border border-[#FE010130] border-l-0 border-r-0">
-            <p className=" text-md font-bold border-b border-[#FE010130]  mb-[24px] py-[8px] px-[16px]">
+            <p className=" text-md font-bold border-b border-[#FE010130]  py-[8px] px-[16px]">
               CORE COMPETENCIES
             </p>
-            <div className="flex justify-center flex-wrap gap-[18px] mx-[12px] mb-[24px]">
+            <div className="flex justify-center flex-wrap gap-[18px] p-[16px]">
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}

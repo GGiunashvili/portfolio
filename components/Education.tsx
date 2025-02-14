@@ -16,7 +16,7 @@ export default function Education() {
         <p className="text-sm text-red font-bold">TECH ODYSSEY</p>
         {/* SCRIPTS & BUILDS */}
       </div>
-      <div className="col-span-8 relative  flex flex-col py-[18px] px-[16px] xl:px-[40px] overflow-scroll scrollbar-thin">
+      <div className="col-span-8 relative  flex flex-col p-[16px] xl:px-[40px] overflow-scroll scrollbar-thin h-[calc(100%-38px)] ">
         {" "}
         <div className="relative mb-[24px]">
           <p className="border border-[#FE010130] gap-x-[16px] py-[8px] px-[16px] font-bold text-md ">

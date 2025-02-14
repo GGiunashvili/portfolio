@@ -48,7 +48,7 @@ export default function Profile() {
   return (
     <div className="w-full ">
       <div
-        className="group w-full sm:w-[200px] xl:w-[260px] relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500 overflow-hidden"
+        className="group w-full sm:w-full xl:w-full relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500 overflow-hidden"
         style={{
           transition: "transform 0.5s, background-color 0.5s",
           transform: isHovered
