@@ -43,3 +43,11 @@ body {
     background: transparent; /* Tailwind gray-200 */
   }
 }
+[data-cursor="hover"] ~ .custom-cursor {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+}
+* {
+  cursor: none !important;
+}

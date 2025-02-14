@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Rubik_Glitch } from "next/font/google";
 import "./globals.css";
 import PopupForm from "../components/PopupForm";
+import CustomCursor from "../components/CustomCursor";
 const geistSans = Geist({
   subsets: ["latin"],
   weight: "400", // დაამატე სიმძლავრე
@@ -36,6 +37,8 @@ export default function RootLayout({
         className="antialiased bg-black "
       >
         <div id="root" className="">
+          <CustomCursor />
+
           {children}
         </div>
         <div
