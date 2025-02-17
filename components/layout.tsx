@@ -47,18 +47,18 @@ export default function RootLayout({
         </div>
         <div
           id="modal"
-          className="flex flex-col justify-end fixed bg-black sm:bg-[#00000096] w-full h-screen sm:h-full sm:left-[20px] bottom-0 sm:bottom-[0px] w-full z-[999] hidden p-[20px]"
+          className="flex flex-col justify-end fixed h-screen sm:h-auto sm:left-[20px] bottom-0 sm:bottom-[0px] w-full sm:w-[500px] bg-yellow-100 w-full z-[999] hidden p-[20px] "
         >
           <p className="font-bold text-red text-xl mb-[8px] font-rubik-glitch">
-            CONNECT WITH ME
+            ME
           </p>
           <p className="font-bold text-white text-xs mb-[16px]">
             WANNA CHAT? OR JUST SHARE SOMETHING COOL?
           </p>
-          <div className="text-red text-xs font-bold border border-red p-[20px] bg-hoverRed mb-[24px] sm:w-[500px]">
+          <div className="text-red text-xs font-bold border border-red p-[20px] bg-hoverRed mb-[24px]">
             <PopupForm />
           </div>
-          <div className="flex gap-[16px] sm:w-[500px]">
+          <div className="flex gap-[16px]">
             <button
               type="submit"
               className="w-full bg-red text-black font-bold p-2 "
