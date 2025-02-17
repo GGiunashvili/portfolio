@@ -60,7 +60,7 @@ export default function Profile() {
       >
         {/* bg-gradient-to-r from-black via-red to-black */}
         <video
-          className="w-full  group-hover:scale-[1.1] duration-[1000ms] "
+          className="w-full  group-hover:scale-[1.1] duration-[1000ms] invisible"
           muted
           loop
           playsInline

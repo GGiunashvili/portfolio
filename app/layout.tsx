@@ -41,7 +41,7 @@ export default function RootLayout({
         </div>
         <div
           id="modal"
-          className="flex flex-col justify-center overflow-hidden fixed right-0 left-0 bottom-0 top-0 m-auto bg-black sm:bg-[#00000096] w-[90%] rounded-[8px] h-screen sm:h-fit sm:left-[20px] bottom-0 sm:bottom-[0px] w-full z-[999] hidden p-[20px] border border-[#b2b7ba]"
+          className="flex flex-col justify-center overflow-hidden fixed right-0 left-0 bottom-0 top-0 m-auto bg-black sm:bg-[#00000096] rounded-[8px] h-screen sm:h-fit w-[90%] z-[999] hidden p-[20px] border border-[#b2b7ba]"
         >
           <p className="font-bold text-red text-xl mb-[8px] font-rubik-glitch">
             CONNECT WITH ME
