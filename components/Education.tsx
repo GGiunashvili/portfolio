@@ -13,12 +13,12 @@ export default function Education() {
   return (
     <div className="relative col-span-8 grid grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden text-xs">
       <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] py-[12px] px-[16px]">
-        <p className="text-sm text-red font-bold">TECH ODYSSEY</p>
+        <p className="text-x text-red font-bold">TECH ODYSSEY</p>
         {/* SCRIPTS & BUILDS */}
       </div>
       <div className="col-span-8 relative  flex flex-col p-[16px]  overflow-scroll scrollbar-thin ">
         {" "}
-        <div className="relative mb-[30px]">
+        <div className="relative mb-[24px] sm:mb-[30px]">
           <p className="border border-[#FE010130] gap-x-[16px] py-[12px] px-[16px] font-bold texs-xs ">
             {/* bg-gradient-to-r from-black via-red to-black */}
             FILE XPLORER
@@ -94,6 +94,7 @@ export default function Education() {
               strokeWidth="1"
             ></path>
           </svg>
+
           <svg
             fill="none"
             height="0.9rem"
@@ -159,7 +160,7 @@ export default function Education() {
           </svg>
         </div>
         <div className="flex flex-col justify-between flex-wrap ">
-          <p className="mb-[20px] text-xs">PROFESSIONAL ROLES</p>
+          <p className="mb-[16px] sm:mb-[20px] text-xs">PROFESSIONAL ROLES</p>
           {Array.from({ length: 6 }, (_, i) => {
             // თითოეული ელემენტისთვის hover სტეიტი
             const [hover, setHover] = useState(false);
@@ -200,8 +201,8 @@ export default function Education() {
                     <p
                       className={`${
                         hoveredIndex === i || (i === 0 && hoveredIndex === null)
-                          ? "text-red font-bold"
-                          : "font-bold text-[#b2b7ba] group-hover:text-red"
+                          ? "text-red font-bold text-[10px]"
+                          : "font-bold text-[#b2b7ba] group-hover:text-red text-[10px]"
                       }`}
                     >
                       Front End Developer
@@ -209,8 +210,8 @@ export default function Education() {
                     <p
                       className={`${
                         hoveredIndex === i || (i === 0 && hoveredIndex === null)
-                          ? "text-xs text-[#b2b7ba] font-bold mb-[8px] group-hover:text-[#b2b7ba]"
-                          : "text-xs text-red font-bold mb-[8px] group-hover:text-[#b2b7ba]"
+                          ? "text-[10px] text-[#b2b7ba] font-bold mb-[8px] group-hover:text-[#b2b7ba]"
+                          : "text-[10px] text-red font-bold mb-[8px] group-hover:text-[#b2b7ba]"
                       }`}
                     >
                       extra.ge
@@ -219,8 +220,8 @@ export default function Education() {
                   <p
                     className={`${
                       hoveredIndex === i || (i === 0 && hoveredIndex === null)
-                        ? " text-xs text-[#b2b7ba] font-bold group-hover:text-[#b2b7ba]"
-                        : "text-xs text-red font-bold group-hover:text-[#b2b7ba]"
+                        ? " text-[10px] text-[#b2b7ba] font-bold group-hover:text-[#b2b7ba]"
+                        : "text-[10px] text-red font-bold group-hover:text-[#b2b7ba]"
                     }`}
                   >
                     Sept 2024 – Present
@@ -376,11 +377,31 @@ export default function Education() {
         viewBox="0 0 9 9"
         width="0.9rem"
         xmlns="http://www.w3.org/2000/svg"
+        className="sm:hidden"
         style={{
           position: "absolute",
-          bottom: "-0.1rem",
+          top: "-0.1rem",
           right: "-0.1rem",
-          rotate: "-90deg",
+          rotate: "90deg",
+          stroke: "red",
+          zIndex: 3,
+          // backgroundColor: "red", // Uncomment if background color is needed
+        }}
+      >
+        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
+      </svg>
+      <svg
+        fill="none"
+        height="0.9rem"
+        viewBox="0 0 9 9"
+        width="0.9rem"
+        xmlns="http://www.w3.org/2000/svg"
+        className="sm:hidden"
+        style={{
+          position: "absolute",
+          top: "-0.1rem",
+          left: "-0.1rem",
+          rotate: "90deg",
           stroke: "red",
           zIndex: 3,
           // backgroundColor: "red", // Uncomment if background color is needed
@@ -392,6 +413,62 @@ export default function Education() {
           strokeWidth="2"
         ></path>
       </svg>
+      <svg
+        fill="none"
+        height="0.9rem"
+        viewBox="0 0 9 9"
+        width="0.9rem"
+        xmlns="http://www.w3.org/2000/svg"
+        className="sm:hidden"
+        style={{
+          position: "absolute",
+          bottom: "-0.1rem",
+          left: "-0.1rem",
+          rotate: "-90deg",
+          stroke: "red",
+          zIndex: 3,
+          // backgroundColor: "red", // Uncomment if background color is needed
+        }}
+      >
+        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
+      </svg>
+      <svg
+        fill="none"
+        height="0.9rem"
+        viewBox="0 0 9 9"
+        width="0.9rem"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{
+          position: "absolute",
+          top: "-0.1rem",
+          right: "-0.1rem",
+          rotate: "90deg",
+          stroke: "red",
+          zIndex: 3,
+          // backgroundColor: "red", // Uncomment if background color is needed
+        }}
+      >
+        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
+      </svg>
+      <svg
+        fill="none"
+        height="0.9rem"
+        viewBox="0 0 9 9"
+        width="0.9rem"
+        xmlns="http://www.w3.org/2000/svg"
+        style={{
+          position: "absolute",
+          bottom: "-0.1rem",
+          right: "-0.1rem",
+          rotate: "180deg",
+          stroke: "red",
+          zIndex: 3,
+          // backgroundColor: "red", // Uncomment if background color is needed
+        }}
+      >
+        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
+      </svg>
+
       {/* this is how handleHover sound works */}
       <div
         onMouseEnter={handleHover}

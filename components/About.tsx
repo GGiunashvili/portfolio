@@ -2,7 +2,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130]  ">
+    <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130] mb-[24px] sm:mb-0">
       <p className="border-r border-[#FE010130] px-[16px] py-[12px] text-xs text-red font-bold text-sm">
         PERSONAL REPO
       </p>
@@ -552,8 +552,8 @@ export default function About() {
               <p className=" texs-xs font-bold border-b border-[#FE010130] py-[12px] px-[16px]">
                 PROFESSIONAL STUDY ZONES
               </p>{" "}
-              <div className="grid gap-[10px] p-[16px] text-red">
-                <div className="flex gap-[8px] items-start hover:bg-hoverRed ">
+              <div className="grid gap-[10px] p-[16px] text-red  pb-[40px] sm:pb-[16px] ">
+                <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
                   {/* <img
                     className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
                     src="/iliauni.svg"
@@ -563,10 +563,12 @@ export default function About() {
                     <p className="text-xs mb-[4px]">
                       Tbilisi School Of Communication - Angular course
                     </p>
-                    <p className="text-xs">Sept 2024 – Present</p>
+                    <p className="text-xs text-[#b2b7ba]">
+                      Sept 2024 – Present
+                    </p>
                   </div>
                 </div>{" "}
-                <div className="flex gap-[8px] items-start hover:bg-hoverRed ">
+                <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
                   {/* <img
                     className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
                     src="/udemy-3.svg"
@@ -576,10 +578,12 @@ export default function About() {
                     <p className="text-xs mb-[4px]">
                       Udemy - Certified Internet Webmaster JavaScript Specialist
                     </p>
-                    <p className="text-xs">Sept 2022 – Aug 2022</p>
+                    <p className="text-xs text-[#b2b7ba]">
+                      Sept 2022 – Aug 2022
+                    </p>
                   </div>
                 </div>
-                <div className="flex gap-[8px] items-start hover:bg-hoverRed ">
+                <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
                   {/* <img
                     className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
                     src="/geolab.svg"
@@ -590,10 +594,12 @@ export default function About() {
                     <p className="text-xs mb-[4px]">
                       Geolab - Front End Development
                     </p>
-                    <p className="text-xs">Sept 2022 – May 2022</p>
+                    <p className="text-xs text-[#b2b7ba]">
+                      Sept 2022 – May 2022
+                    </p>
                   </div>
                 </div>{" "}
-                <div className="flex gap-[8px] items-start hover:bg-hoverRed ">
+                <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
                   {/* <img
                     className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
                     src="/iliauni.svg"
@@ -605,7 +611,9 @@ export default function About() {
                       Ilia State University - Faculty of Business and
                       Information Technology
                     </p>
-                    <p className="text-xs">Sept 2022 – May 2022</p>
+                    <p className="text-xs text-[#b2b7ba]">
+                      Sept 2022 – May 2022
+                    </p>
                   </div>
                 </div>
               </div>
@@ -630,6 +638,56 @@ export default function About() {
           >
             <path
               d="M0 1L8 1L8 9"
+              stroke="current-color"
+              strokeWidth="2"
+            ></path>
+          </svg>
+
+          <svg
+            fill="none"
+            height="0.9rem"
+            viewBox="0 0 9 9"
+            width="0.9rem"
+            xmlns="http://www.w3.org/2000/svg"
+            className="sm:hidden"
+            style={{
+              position: "absolute",
+              top: "-0.1rem",
+              right: "-0.1rem",
+              rotate: "270deg",
+
+              stroke: "red",
+              zIndex: 3,
+              // backgroundColor: "red", // Uncomment if background color is needed
+            }}
+          >
+            <path
+              d="M8 0L8 8L1.04907e-06 8"
+              stroke="current-color"
+              strokeWidth="2"
+            ></path>
+          </svg>
+
+          <svg
+            fill="none"
+            height="0.9rem"
+            viewBox="0 0 9 9"
+            width="0.9rem"
+            xmlns="http://www.w3.org/2000/svg"
+            className="sm:hidden"
+            style={{
+              position: "absolute",
+              bottom: "-0.1rem",
+              right: "-0.1rem",
+              rotate: "0deg",
+
+              stroke: "red",
+              zIndex: 3,
+              // backgroundColor: "red", // Uncomment if background color is needed
+            }}
+          >
+            <path
+              d="M8 0L8 8L1.04907e-06 8"
               stroke="current-color"
               strokeWidth="2"
             ></path>

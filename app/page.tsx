@@ -10,11 +10,11 @@ const App: React.FC = () => {
 
   return (
     <SoundProvider>
-      <div className="flex flex-col sm:flex-row p-[24px] h-screen w-full">
-        <div className="max-w-full sm:max-w-[20%] sm:mr-[24px]">
+      <div className="flex flex-col sm:flex-row p-[24px] h-unset sm:h-screen  w-full">
+        <div className="max-w-full sm:max-w-[20%] sm:mr-[24px]  mb-[24px] sm:mb-0">
           <Profile />
         </div>
-        <div className="grid-unset md:grid grid-cols-12 h-full w-full">
+        <div className="grid-unset md:grid grid-cols-12 h-full w-full ">
           <About />
 
           <Education />

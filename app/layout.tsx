@@ -40,7 +40,7 @@ export default function RootLayout({
         }}
         className="antialiased bg-black "
       >
-        <div id="root" className="font-Audiowide text-[12px]">
+        <div id="root" className="font-Audiowide text-[12px] ">
           <CustomCursor />
 
           {children}
