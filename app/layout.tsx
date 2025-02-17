@@ -34,20 +34,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        style={{
-          fontFamily: `${geistSans.style.fontFamily}, ${geistMono.style.fontFamily}, ${rubikGlitch.style.fontFamily}`,
-        }}
-        className="antialiased bg-black "
-      >
+      <body className="antialiased bg-black ">
+        <CustomCursor />
         <div id="root" className="font-Audiowide text-[12px] ">
-          <CustomCursor />
-
           {children}
         </div>
         <div
           id="modal"
-          className="flex flex-col justify-end fixed bg-black sm:bg-[#00000096] w-full h-screen sm:h-full sm:left-[20px] bottom-0 sm:bottom-[0px] w-full z-[999] hidden p-[20px]"
+          className="flex flex-col justify-center overflow-hidden fixed right-0 left-0 bottom-0 top-0 m-auto bg-black sm:bg-[#00000096] w-[90%] rounded-[8px] h-screen sm:h-fit sm:left-[20px] bottom-0 sm:bottom-[0px] w-full z-[999] hidden p-[20px] border border-[#b2b7ba]"
         >
           <p className="font-bold text-red text-xl mb-[8px] font-rubik-glitch">
             CONNECT WITH ME
@@ -61,11 +55,11 @@ export default function RootLayout({
           <div className="flex gap-[16px] sm:w-[500px]">
             <button
               type="submit"
-              className="w-full bg-red text-black font-bold p-2 "
+              className="w-full bg-red text-black font-bold p-2 text-xs"
             >
               SEND MESSAGE [ENTER]
             </button>
-            <button className="w-full bg-black text-red font-bold border border-[#b2b7ba] p-2 ">
+            <button className="w-full bg-black text-red font-bold border border-[#b2b7ba] p-2 text-xs">
               DISCARD [ESC]
             </button>
           </div>

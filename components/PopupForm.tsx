@@ -37,7 +37,7 @@ const PopupForm = () => {
             <div className="mb-4">
               <label
                 htmlFor="name"
-                className="block text-lg font-bold text-red bg-black p-[10px] mb-[8px]"
+                className="block text-xs font-bold text-red bg-black p-[10px] mb-[8px]"
               >
                 HOW SHOULD I CALL YOU?
               </label>
@@ -45,8 +45,9 @@ const PopupForm = () => {
                 type="text"
                 id="name"
                 value={name}
+                placeholder="YOUR NAME"
                 onChange={(e) => setName(e.target.value)}
-                className="w-full p-2 border border-[#b2b7ba] bg-black h-[48px]"
+                className="w-full p-2 border border-[#b2b7ba] bg-black h-[48px] text-xs"
                 required
               />
             </div>
@@ -54,7 +55,7 @@ const PopupForm = () => {
             <div className="mb-4">
               <label
                 htmlFor="email"
-                className="block text-lg font-bold text-red bg-black p-[10px] mb-[8px]"
+                className="block text-xs font-bold text-red bg-black p-[10px] mb-[8px]"
               >
                 SENDING FROM
               </label>
@@ -62,15 +63,16 @@ const PopupForm = () => {
                 type="email"
                 id="email"
                 value={email}
+                placeholder="YOUR.NAME@EXAMPLE.COM"
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full p-2 border border-[#b2b7ba] bg-black h-[48px]"
+                className="w-full p-2 border border-[#b2b7ba] bg-black h-[48px] text-xs"
                 required
               />
             </div>
 
             <label
               htmlFor="message"
-              className="block text-lg font-bold text-red bg-black p-[10px] mb-[8px]"
+              className="block text-xs font-bold text-red bg-black p-[10px] mb-[8px]"
             >
               TRANSMITTED DATA
             </label>
@@ -78,7 +80,8 @@ const PopupForm = () => {
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="flex w-full p-2 border border-[#b2b7ba] h-[150px] bg-black"
+              placeholder="HI, I WRITE YOU ABOUT ..."
+              className="flex w-full p-2 border border-[#b2b7ba] h-[150px] bg-black text-xs"
               required
             />
 
