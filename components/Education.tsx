@@ -11,27 +11,28 @@ export default function Education() {
     }
   };
   return (
-    <div className="relative col-span-8 grid grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden">
-      <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] p-[16px]">
+    <div className="relative col-span-8 grid grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden text-xs">
+      <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] py-[12px] px-[16px]">
         <p className="text-sm text-red font-bold">TECH ODYSSEY</p>
         {/* SCRIPTS & BUILDS */}
       </div>
-      <div className="col-span-8 relative  flex flex-col p-[16px] xl:px-[40px] overflow-scroll scrollbar-thin h-[calc(100%-38px)] ">
+      <div className="col-span-8 relative  flex flex-col p-[16px]  overflow-scroll scrollbar-thin ">
         {" "}
-        <div className="relative mb-[24px]">
-          <p className="border border-[#FE010130] gap-x-[16px] py-[8px] px-[16px] font-bold text-md ">
+        <div className="relative mb-[30px]">
+          <p className="border border-[#FE010130] gap-x-[16px] py-[12px] px-[16px] font-bold texs-xs ">
             {/* bg-gradient-to-r from-black via-red to-black */}
             FILE XPLORER
           </p>
-          <p className="text-xs text-red p-[16px] uppercase border border-b-0 border-t-0 border-[#FE010130] bg-black">
+          <p className="text-xs text-red py-[12px] px-[16px] uppercase border border-b-0 border-t-0 border-[#FE010130] bg-black">
             LOCATION: /PROJECTS
           </p>
-          <div className="grid grid-cols-8 flex-wrap gap-x-[10px]  text-xs text-red pb-[8px] p-[16px] uppercase border border-[#FE010130] bg-black">
+
+          <div className="grid grid-cols-8 flex-wrap gap-x-[10px]  text-xs text-red pb-[8px] p-[16px] pb-0 uppercase border border-[#FE010130] bg-black">
             {Array.from({ length: 4 }).map((_, index) => (
               <button
                 onMouseEnter={handleHover}
                 key={index}
-                className="flex items-center mb-4 col-span-8 xl:col-span-4 hover:bg-hoverRed border border-transparent hover:border-[#FE010130]"
+                className="flex items-center mb-[16px] col-span-8 xl:col-span-4 hover:bg-hoverRed border border-transparent hover:border-[#FE010130]"
               >
                 <audio ref={audioRef} src="/sound.mp3" preload="auto" />
 
@@ -158,7 +159,7 @@ export default function Education() {
           </svg>
         </div>
         <div className="flex flex-col justify-between flex-wrap ">
-          <p className="mb-[24px] text-sm">PROFESSIONAL ROLES</p>
+          <p className="mb-[20px] text-xs">PROFESSIONAL ROLES</p>
           {Array.from({ length: 6 }, (_, i) => {
             // თითოეული ელემენტისთვის hover სტეიტი
             const [hover, setHover] = useState(false);
@@ -184,7 +185,7 @@ export default function Education() {
                       : "none",
                   transition: "transform 0.3s ease",
                 }}
-                className={`relative group hover:bg-hoverRed hover:border-black flex justify-between flex-col items-start border border-[#FE010130] mb-[20px] p-[16px] ${
+                className={`relative group hover:bg-hoverRed hover:border-black flex justify-between flex-col items-start border border-[#FE010130] mb-[20px] p-[16px] text-[10px] ${
                   (i === 0 && hoveredIndex === null) || hoveredIndex === i
                     ? "bg-hoverRed w-full border-none"
                     : ""
@@ -218,8 +219,8 @@ export default function Education() {
                   <p
                     className={`${
                       hoveredIndex === i || (i === 0 && hoveredIndex === null)
-                        ? " text-sm text-[#b2b7ba] font-bold group-hover:text-[#b2b7ba]"
-                        : "text-sm text-red font-bold group-hover:text-[#b2b7ba]"
+                        ? " text-xs text-[#b2b7ba] font-bold group-hover:text-[#b2b7ba]"
+                        : "text-xs text-red font-bold group-hover:text-[#b2b7ba]"
                     }`}
                   >
                     Sept 2024 – Present
@@ -394,9 +395,9 @@ export default function Education() {
       {/* this is how handleHover sound works */}
       <div
         onMouseEnter={handleHover}
-        className="absolute bottom-0 left-0 w-full bg-black flex justify-center items-center col-span-8 border-t border-[#FE010130] p-[16px]"
+        className="absolute bottom-0 left-0 w-full bg-black flex justify-center items-center col-span-8 border-t border-[#FE010130] py-[12px] px-[16px]"
       >
-        <p className="text-sm text-red font-bold">CREATIONS</p>
+        <p className="text-xs text-red font-bold">CREATIONS</p>
         <audio ref={audioRef} src="/sound.mp3" preload="auto" />
       </div>
     </div>

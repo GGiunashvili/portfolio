@@ -20,6 +20,7 @@ export default {
       fontFamily: {
         "rubik-glitch": ["Rubik Glitch", "sans-serif"],
         "geist-mono": ["Geist Mono", "monospace"],
+        Audiowide: ["Audiowide", "cursive"],
       },
     },
   },

@@ -3,16 +3,16 @@ import React from "react";
 export default function About() {
   return (
     <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130]  ">
-      <p className="border-r border-[#FE010130] p-[16px] text-sm text-red font-bold">
+      <p className="border-r border-[#FE010130] px-[16px] py-[12px] text-xs text-red font-bold text-sm">
         PERSONAL REPO
       </p>
-      <div className="overflow-scroll scrollbar-thin h-[calc(100%-89px)] border border-b-0 border-[#FE010130]">
+      <div className="overflow-scroll scrollbar-thin h-[calc(100%-64px)] border border-b-0 border-[#FE010130]">
         <div className="flex flex-col">
           <div>
-            <p className="border-b border-[#FE010130] py-[8px] px-[16px] font-bold text-md">
+            <p className="border-b border-[#FE010130] py-[12px] px-[16px] font-bold text-xs">
               FRONT END DEVELOPER
             </p>
-            <p className="text-xs text-red p-[16px] uppercase">
+            <p className="text-[10px] text-red p-[16px] uppercase">
               I’m Giorgi, a Front-End Developer with 4 years of experience. I
               specialize in React, Next.js, and TypeScript to create dynamic and
               responsive web applications. Throughout my career, I have focused
@@ -21,10 +21,10 @@ export default function About() {
             </p>
           </div>
           <div className="border border-[#FE010130] border-l-0 border-r-0">
-            <p className=" text-md font-bold border-b border-[#FE010130]  py-[8px] px-[16px]">
+            <p className=" texs-xs font-bold border-b border-[#FE010130]  py-[12px] px-[16px]">
               CORE COMPETENCIES
             </p>
-            <div className="flex justify-center flex-wrap gap-[18px] p-[16px]">
+            <div className="flex justify-center flex-wrap gap-x-[4px] gap-y-[16px] p-[16px]">
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
@@ -36,10 +36,10 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
+                  className=" "
                   style={{
                     stroke: "red",
-                    height: "50px",
+                    height: "40px",
                     width: "46px",
                   }}
                   fill="none"
@@ -62,7 +62,7 @@ export default function About() {
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    height: "24px",
+                    height: "20px",
                     width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
@@ -87,10 +87,10 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
+                  className=" "
                   style={{
                     stroke: "red",
-                    height: "50px",
+                    height: "40px",
                     width: "46px",
                   }}
                   fill="none"
@@ -113,7 +113,7 @@ export default function About() {
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    height: "24px",
+                    height: "20px",
                     width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
@@ -136,10 +136,10 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
+                  className=" "
                   style={{
                     stroke: "red",
-                    height: "50px",
+                    height: "40px",
                     width: "46px",
                   }}
                   fill="none"
@@ -161,7 +161,7 @@ export default function About() {
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    height: "24px",
+                    height: "20px",
                     width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
@@ -186,10 +186,10 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
+                  className=" "
                   style={{
                     stroke: "red",
-                    height: "50px",
+                    height: "40px",
                     width: "46px",
                   }}
                   fill="none"
@@ -212,7 +212,7 @@ export default function About() {
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    height: "24px",
+                    height: "20px",
                     width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
@@ -240,10 +240,10 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
+                  className=" "
                   style={{
                     stroke: "red",
-                    height: "50px",
+                    height: "40px",
                     width: "46px",
                   }}
                   fill="none"
@@ -266,7 +266,7 @@ export default function About() {
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    height: "24px",
+                    height: "20px",
                     width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
@@ -289,10 +289,10 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
+                  className=" "
                   style={{
                     stroke: "red",
-                    height: "50px",
+                    height: "40px",
                     width: "46px",
                   }}
                   fill="none"
@@ -315,7 +315,7 @@ export default function About() {
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    height: "24px",
+                    height: "20px",
                     width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
@@ -343,10 +343,10 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
+                  className=" "
                   style={{
                     stroke: "red",
-                    height: "50px",
+                    height: "40px",
                     width: "46px",
                   }}
                   fill="none"
@@ -368,7 +368,7 @@ export default function About() {
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    height: "24px",
+                    height: "20px",
                     width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
@@ -392,10 +392,10 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
+                  className=" "
                   style={{
                     stroke: "red",
-                    height: "50px",
+                    height: "40px",
                     width: "46px",
                   }}
                   fill="none"
@@ -418,7 +418,7 @@ export default function About() {
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    height: "24px",
+                    height: "20px",
                     width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
@@ -443,10 +443,10 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
+                  className=" "
                   style={{
                     stroke: "red",
-                    height: "50px",
+                    height: "40px",
                     width: "46px",
                   }}
                   fill="none"
@@ -469,7 +469,7 @@ export default function About() {
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    height: "24px",
+                    height: "20px",
                     width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
@@ -492,10 +492,10 @@ export default function About() {
                   </p>
                 </div>
                 <svg
-                  className="hover:rotate-[180deg] transition-transform duration-[500ms]"
+                  className=" "
                   style={{
                     stroke: "red",
-                    height: "50px",
+                    height: "40px",
                     width: "46px",
                   }}
                   fill="none"
@@ -518,7 +518,7 @@ export default function About() {
                     top: "50%",
                     left: "50%",
                     transform: "translate(-50%, -50%)",
-                    height: "24px",
+                    height: "20px",
                     width: "24px",
                     fill: "red", // Using the CSS variable for fill color
                   }}
@@ -549,63 +549,63 @@ export default function About() {
           </div>
           <div className="grid ">
             <div className="grid ">
-              <p className=" text-md font-bold border-b border-[#FE010130] py-[8px] px-[16px]">
+              <p className=" texs-xs font-bold border-b border-[#FE010130] py-[12px] px-[16px]">
                 PROFESSIONAL STUDY ZONES
               </p>{" "}
-              <div className="grid gap-[20px] p-[16px] text-red">
-                <div className="flex gap-[8px] items-start">
-                  <img
+              <div className="grid gap-[10px] p-[16px] text-red">
+                <div className="flex gap-[8px] items-start hover:bg-hoverRed ">
+                  {/* <img
                     className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
                     src="/iliauni.svg"
                     alt=""
-                  />
+                  /> */}
                   <div>
-                    <p className="text-xs mb-[8px]">
+                    <p className="text-xs mb-[4px]">
                       Tbilisi School Of Communication - Angular course
                     </p>
-                    <p className="text-sm">Sept 2024 – Present</p>
+                    <p className="text-xs">Sept 2024 – Present</p>
                   </div>
                 </div>{" "}
-                <div className="flex gap-[8px] items-start">
-                  <img
+                <div className="flex gap-[8px] items-start hover:bg-hoverRed ">
+                  {/* <img
                     className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
                     src="/udemy-3.svg"
                     alt=""
-                  />
+                  /> */}
                   <div>
-                    <p className="text-xs mb-[8px]">
+                    <p className="text-xs mb-[4px]">
                       Udemy - Certified Internet Webmaster JavaScript Specialist
                     </p>
-                    <p className="text-sm">Sept 2022 – Aug 2022</p>
+                    <p className="text-xs">Sept 2022 – Aug 2022</p>
                   </div>
                 </div>
-                <div className="flex gap-[8px] items-start">
-                  <img
+                <div className="flex gap-[8px] items-start hover:bg-hoverRed ">
+                  {/* <img
                     className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
                     src="/geolab.svg"
                     alt=""
-                  />
+                  /> */}
 
                   <div>
-                    <p className="text-xs mb-[8px]">
+                    <p className="text-xs mb-[4px]">
                       Geolab - Front End Development
                     </p>
-                    <p className="text-sm">Sept 2022 – May 2022</p>
+                    <p className="text-xs">Sept 2022 – May 2022</p>
                   </div>
                 </div>{" "}
-                <div className="flex gap-[8px] items-start">
-                  <img
+                <div className="flex gap-[8px] items-start hover:bg-hoverRed ">
+                  {/* <img
                     className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
                     src="/iliauni.svg"
                     alt=""
-                  />
+                  /> */}
 
                   <div>
-                    <p className="text-xs mb-[8px]">
+                    <p className="text-xs mb-[4px]">
                       Ilia State University - Faculty of Business and
                       Information Technology
                     </p>
-                    <p className="text-sm">Sept 2022 – May 2022</p>
+                    <p className="text-xs">Sept 2022 – May 2022</p>
                   </div>
                 </div>
               </div>
@@ -660,7 +660,7 @@ export default function About() {
           </svg>
         </div>
       </div>
-      <div className="absolute bottom-0 left-0 w-full bg-black border-t border-r border-[#FE010130] p-[16px] text-sm text-red font-bold">
+      <div className="absolute bottom-0 left-0 w-full bg-black border-t border-r border-[#FE010130] px-[16px] py-[12px] text-xs text-red font-bold">
         REACT DEVELOPER
       </div>
     </div>

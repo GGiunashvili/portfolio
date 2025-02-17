@@ -60,13 +60,14 @@ export default function Profile() {
       >
         {/* bg-gradient-to-r from-black via-red to-black */}
         <video
-          className="w-full  group-hover:scale-[1.1] duration-[1000ms]"
-          autoPlay
+          className="w-full  group-hover:scale-[1.1] duration-[1000ms] "
           muted
           loop
           playsInline
           preload="auto"
         >
+          {/* autoPlay */}
+
           <source src="/mp.mp4" type="video/mp4" />
         </video>
         {/* <Image
@@ -154,21 +155,16 @@ export default function Profile() {
         </svg>
       </div>
 
-      <div>
+      <div className="border border-[#FE010130] p-[16px]">
         {profileDetails.map((detail) => (
           <div key={detail.label} className="mb-[16px]">
             <p className="text-xs font-normal mb-[4px]">{detail.label}</p>
-            <p className="text-black text-base font-bold font-rubik-glitch bg-[#AA0000]">
+            <p className="text-red text-sm font-bold font-rubik-glitch  py-[2px]">
               {detail.value}
             </p>
           </div>
         ))}
-        <div className="mb-[12px]">
-          <p className="text-xs font-normal mb-[6px]">SOCIAL</p>
-          <p className="text-center text-red text-xs font-bold border border-red p-[6px] ">
-            OPEN CONNECTION
-          </p>
-        </div>
+
         <div className="w-full flex justify-center mb-[12px]">
           <Button />
         </div>
@@ -180,7 +176,7 @@ export default function Profile() {
         </button>
         <button
           onClick={toggleFullscreen}
-          className="w-full flex justify-center items-center text-red text-xs font-bold border border-red p-[6px] mb-[24px]"
+          className="w-full flex justify-center items-center text-red text-xs font-bold border border-red p-[6px] "
         >
           Toggle Fullscreen Mode
         </button>

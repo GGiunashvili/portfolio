@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Rubik_Glitch } from "next/font/google";
+import { Geist, Geist_Mono, Rubik_Glitch, Audiowide } from "next/font/google";
 import "./globals.css";
 import PopupForm from "../components/PopupForm";
 import CustomCursor from "../components/CustomCursor";
@@ -14,6 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 const rubikGlitch = Rubik_Glitch({
+  subsets: ["latin"],
+  weight: "400", // დაამატე სიმძლავრე
+});
+const audiowide = Audiowide({
   subsets: ["latin"],
   weight: "400", // დაამატე სიმძლავრე
 });
@@ -36,7 +40,7 @@ export default function RootLayout({
         }}
         className="antialiased bg-black "
       >
-        <div id="root" className="">
+        <div id="root" className="font-Audiowide text-[12px]">
           <CustomCursor />
 
           {children}
@@ -48,7 +52,7 @@ export default function RootLayout({
           <p className="font-bold text-red text-xl mb-[8px] font-rubik-glitch">
             CONNECT WITH ME
           </p>
-          <p className="font-bold text-white text-sm mb-[16px]">
+          <p className="font-bold text-white text-xs mb-[16px]">
             WANNA CHAT? OR JUST SHARE SOMETHING COOL?
           </p>
           <div className="text-red text-xs font-bold border border-red p-[20px] bg-hoverRed mb-[24px]">
