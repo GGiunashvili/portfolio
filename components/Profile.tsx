@@ -246,13 +246,13 @@ export default function Profile() {
         </div>
         <button
           onClick={handleClick}
-          className="w-full flex justify-center text-red text-xs font-bold border border-red p-[6px] mb-[12px]"
+          className="w-full flex justify-center text-red text-xs font-bold p-[6px] mb-[12px]"
         >
           {active ? "Remove Tailwind Classes" : "Personal Info"}
         </button>
         <button
           onClick={toggleFullscreen}
-          className="w-full flex justify-center items-center text-red text-xs font-bold border border-red p-[6px] "
+          className="w-full flex justify-center items-center text-red text-xs font-bold  p-[6px] "
         >
           Toggle Fullscreen Mode
         </button>
