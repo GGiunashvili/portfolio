@@ -60,14 +60,13 @@ export default function Profile() {
       >
         {/* bg-gradient-to-r from-black via-red to-black */}
         <video
-          className="w-full  group-hover:scale-[1.1] duration-[1000ms] invisible"
+          className="w-full  group-hover:scale-[1.1] duration-[1000ms] "
           muted
+          autoPlay
           loop
           playsInline
           preload="auto"
         >
-          {/* autoPlay */}
-
           <source src="/mp.mp4" type="video/mp4" />
         </video>
         {/* <Image
@@ -234,7 +233,7 @@ export default function Profile() {
         </svg>
         {profileDetails.map((detail) => (
           <div key={detail.label} className="mb-[12px]">
-            <p className="text-xs font-normal mb-[0px]">{detail.label}</p>
+            <p className="text-[10px] font-normal mb-[0px]">{detail.label}</p>
             <p className="text-red text-sm font-bold py-[2px]">
               {detail.value}
             </p>
@@ -246,13 +245,13 @@ export default function Profile() {
         </div>
         <button
           onClick={handleClick}
-          className="w-full flex justify-center text-red text-xs font-bold p-[6px] mb-[12px]"
+          className=" w-full flex justify-center  text-black bg-red  text-[10px] font-bold p-[6px] mb-[12px]"
         >
           {active ? "Remove Tailwind Classes" : "Personal Info"}
         </button>
         <button
           onClick={toggleFullscreen}
-          className="w-full flex justify-center items-center text-red text-xs font-bold  p-[6px] "
+          className=" w-full flex justify-center items-center text-black bg-red text-[10px] font-bold  p-[6px] "
         >
           Toggle Fullscreen Mode
         </button>
