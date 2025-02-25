@@ -12,7 +12,7 @@ export default function About() {
     }
   };
   return (
-    <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130] mb-[24px] sm:mb-0">
+    <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130]">
       <p className="border-r border-[#FE010130] px-[16px] py-[12px] text-xs text-red font-bold text-sm">
         PERSONAL REPO
       </p>
@@ -190,7 +190,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
                     TAILWIND
                   </p>
@@ -624,6 +624,10 @@ export default function About() {
               </div>
             </div>
           </div>
+
+          <Svg top="-0.1rem" right="-0.1rem" className="md:hidden" />
+          <Svg bottom="-0.1rem" right="-0.1rem" className="md:hidden" />
+
           <Svg top="-0.1rem" left="-0.1rem" />
           <Svg bottom="-0.1rem" left="-0.1rem" />
         </div>

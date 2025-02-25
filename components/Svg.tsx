@@ -3,10 +3,12 @@ interface SvgProps {
   right?: string;
   bottom?: string;
   left?: string;
+  className?: string;
 }
 
-const Svg = ({ top, right, bottom, left }: SvgProps) => (
+const Svg = ({ top, right, bottom, left, className }: SvgProps) => (
   <svg
+    className={className}
     fill="none"
     height="0.9rem"
     width="0.9rem"

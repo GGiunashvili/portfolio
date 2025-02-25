@@ -109,6 +109,12 @@ const PopupForm = () => {
             </button>
           </div>
         </div>
+        <button
+          onClick={toggleTransform}
+          className="absolute top-[30px] right-[30px] text-[60px]"
+        >
+          x
+        </button>
       </div>
     </>
   );

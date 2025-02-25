@@ -45,7 +45,7 @@ export default function Education() {
     {
       id: "5",
       label: "Front End Developer",
-      value: "Redmed",
+      value: "Redmed.ge",
       year: "2019-2020",
       type: "At REDMED, I focused on ensuring the reliability and quality of our digital health solutions. I conducted rigorous testing and debugging to identify and resolve issues, ensuring our software met the highest standards. My work involved close collaboration with the development team to enhance functionality, user experience, and overall system performance.",
       link: "https://redmed.ge",
@@ -115,11 +115,11 @@ export default function Education() {
     }
   };
   return (
-    <div className="relative col-span-8 grid grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden text-xs">
+    <div className="relative col-span-8 grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden text-xs flex flex-col">
       <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] py-[12px] px-[16px]">
         <p className="text-x text-red font-bold">TECH ODYSSEY</p>
       </div>
-      <div className="col-span-8 relative  flex flex-col p-[16px]  overflow-scroll scrollbar-thin ">
+      <div className="col-span-8 relative  flex flex-col p-[24px]  overflow-scroll scrollbar-thin ">
         {" "}
         <div className="relative mb-[24px] sm:mb-[30px]">
           <p className="border border-[#FE010130] gap-x-[16px] py-[12px] px-[16px] font-bold texs-xs ">
@@ -177,6 +177,7 @@ export default function Education() {
               </a>
             ))}
           </div>
+
           <Svg top="-0.1rem" left="-0.1rem" />
           <Svg top="-0.1rem" right="-0.1rem" />
           <Svg bottom="-0.1rem" left="-0.1rem" />
@@ -277,6 +278,8 @@ export default function Education() {
           })}
         </div>
       </div>
+      <Svg top="-0.1rem" left="-0.1rem" className="md:hidden" />
+      <Svg bottom="-0.1rem" left="-0.1rem" className="md:hidden" />
 
       <Svg top="-0.1rem" right="-0.1rem" />
       <Svg bottom="-0.1rem" right="-0.1rem" />
@@ -287,6 +290,9 @@ export default function Education() {
       >
         <p className="text-xs text-red font-bold">CREATIONS</p>
         <audio ref={audioRef} src="/sound.mp3" preload="auto" />
+        <Svg bottom="-0.1rem" left="-0.1rem" className="md:hidden" />
+
+        <Svg bottom="-0.1rem" right="-0.1rem" />
       </div>
     </div>
   );

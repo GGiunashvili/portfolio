@@ -73,11 +73,11 @@ export default function Profile() {
         <Svg bottom="-0.1rem" right="-0.1rem" />
       </div>
 
-      <div className=" p-[16px] relative">
-        <Svg top="-0.1rem" left="-0.1rem" />
+      <div className=" relative">
+        {/* <Svg top="-0.1rem" left="-0.1rem" />
         <Svg top="-0.1rem" right="-0.1rem" />
         <Svg bottom="-0.1rem" left="-0.1rem" />
-        <Svg bottom="-0.1rem" right="-0.1rem" />
+        <Svg bottom="-0.1rem" right="-0.1rem" /> */}
         {profileDetails.map((detail) => (
           <div key={detail.label} className="mb-[12px]">
             <p className="text-[10px] font-normal mb-[0px] ">{detail.label}</p>
