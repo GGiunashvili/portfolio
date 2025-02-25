@@ -3,6 +3,49 @@ import { useState, useRef } from "react";
 import { useSound } from "./SoundProvider";
 import Svg from "./Svg";
 export default function Education() {
+  const professionalRoles = [
+    {
+      id: "1",
+      label: "Front End Developer",
+      value: "extra.ge",
+      year: "2021-Present",
+      type: [
+        "Leading UI developers in creating responsive web/mobile interfaces with cross-functional teams.",
+        "Built UIs from wireframes using HTML, CSS, JavaScript. Enhanced interactivity with modern frameworks.",
+        "Delivered custom UI designs for remote clients.",
+      ],
+    },
+    {
+      id: "2",
+      label: "FRONT-END DEVELOPER",
+      value: "DigitalArea.ge",
+      year: "2020-2021",
+      type: [
+        "At Digital Area, I crafted over 30 diverse promotion landing pages and web projects, with a special focus on creating smooth, eye-catching animations. Collaborating closely with designers and marketers, I ensured every project delivered engaging, user-friendly experiences that stood out and drove results.",
+      ],
+    },
+    {
+      id: "3",
+      label: "Front End Developer",
+      value: "Freelancer.com",
+      year: "2020-2021",
+      type: "During my time freelancing on Freelancer.com, I took on a few unique projects that really pushed me to expand my skills and adapt to different client needs. Each project had its own set of challenges, making the work both rewarding and educational.",
+    },
+    {
+      id: "4",
+      label: "Front End Developer",
+      value: "Travel Guide app",
+      year: "2020-2020",
+      type: "As a Front-End Developer Intern at Travel Guide App, I gained hands-on experience in web development, focusing on creating intuitive user interfaces. ",
+    },
+    {
+      id: "5",
+      label: "Front End Developer",
+      value: "Redmed",
+      year: "2019-2020",
+      type: "At REDMED, I focused on ensuring the reliability and quality of our digital health solutions. I conducted rigorous testing and debugging to identify and resolve issues, ensuring our software met the highest standards. My work involved close collaboration with the development team to enhance functionality, user experience, and overall system performance.",
+    },
+  ];
   const profileDetails = [
     {
       id: "1",
@@ -145,21 +188,20 @@ export default function Education() {
         </div>
         <div className="flex flex-col justify-between flex-wrap ">
           <p className="mb-[16px] sm:mb-[20px] text-xs">PROFESSIONAL ROLES</p>
-          {Array.from({ length: 6 }, (_, i) => {
-            // თითოეული ელემენტისთვის hover სტეიტი
+          {professionalRoles.map((profile, i) => {
+            // Handle hover state
             const [hover, setHover] = useState(false);
             return (
               <a
-                key={i}
+                key={profile.id}
                 href="https://extra.ge"
                 onMouseEnter={() => {
                   setHover(true);
                   handleHover();
                   setHoveredIndex(i);
                 }}
-                // onMouseLeave={() => setHover(false)}
                 onMouseLeave={() => {
-                  setHover(true);
+                  setHover(false); // Reset hover state here
                   handleHover();
                   setHoveredIndex(i);
                 }}
@@ -189,7 +231,7 @@ export default function Education() {
                           : "font-bold text-[#b2b7ba] group-hover:text-red text-[10px]"
                       }`}
                     >
-                      Front End Developer
+                      {profile.label} {/* Displaying profile value */}
                     </p>
                     <p
                       className={`${
@@ -198,7 +240,7 @@ export default function Education() {
                           : "text-[10px] text-red font-bold mb-[8px] group-hover:text-[#b2b7ba]"
                       }`}
                     >
-                      extra.ge
+                      {profile.value} {/* Displaying profile label */}
                     </p>
                   </div>
                   <p
@@ -208,7 +250,7 @@ export default function Education() {
                         : "text-[10px] text-red font-bold group-hover:text-[#b2b7ba]"
                     }`}
                   >
-                    Sept 2024 – Present
+                    {profile.year} {/* Displaying profile type */}
                   </p>
                 </div>
                 <div
@@ -218,15 +260,12 @@ export default function Education() {
                       : "group-hover:text-red"
                   }`}
                 >
-                  <p>
-                    Leading UI developers in creating responsive web/mobile
-                    interfaces with cross-functional teams.
-                  </p>
-                  <p>
-                    Built UIs from wireframes using HTML, CSS, JavaScript.
-                    Enhanced interactivity with modern frameworks.
-                  </p>
-                  <p>Delivered custom UI designs for remote clients.</p>
+                  {(Array.isArray(profile.type)
+                    ? profile.type
+                    : [profile.type]
+                  ).map((line, idx) => (
+                    <p key={idx}>{line}</p>
+                  ))}
                 </div>
                 <Svg top="-0.1rem" left="-0.1rem" />
                 <Svg top="-0.1rem" right="-0.1rem" />
