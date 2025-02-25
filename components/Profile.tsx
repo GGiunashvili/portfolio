@@ -90,7 +90,7 @@ export default function Profile() {
         <Svg bottom="-0.1rem" right="-0.1rem" />
         {profileDetails.map((detail) => (
           <div key={detail.label} className="mb-[12px]">
-            <p className="text-[10px] font-normal mb-[0px]">{detail.label}</p>
+            <p className="text-[10px] font-normal mb-[0px] ">{detail.label}</p>
             <p className="text-red text-sm font-bold py-[2px]">
               {detail.value}
             </p>

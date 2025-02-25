@@ -3,6 +3,57 @@ import { useState, useRef } from "react";
 import { useSound } from "./SoundProvider";
 import Svg from "./Svg";
 export default function Education() {
+  const profileDetails = [
+    {
+      id: "1",
+      label: "CORPORATION",
+      value: "EXTRA.GE",
+      status: "private",
+      type: "E-Commerce",
+    },
+    {
+      id: "2",
+      label: "CORPORATION",
+      value: "DIGITAL-AREA.GE",
+      status: "public",
+      type: "Inc",
+    },
+    {
+      id: "3",
+      label: "CORPORATION",
+      value: "REDMED.GE",
+      status: "private",
+      type: "Healthcare",
+    },
+    {
+      id: "4",
+      label: "CORPORATION",
+      value: "PORTFOLIO",
+      status: "public",
+      type: "",
+    },
+    // {
+    //   id: "5",
+    //   label: "CORPORATION",
+    //   value: "Colab",
+    //   status: "public",
+    //   type: "",
+    // },
+    // {
+    //   id: "6",
+    //   label: "CORPORATION",
+    //   value: "Promotions",
+    //   status: "public",
+    //   type: "",
+    // },
+    // {
+    //   id: "7",
+    //   label: "CORPORATION",
+    //   value: "GITHUB",
+    //   status: "public",
+    //   type: "",
+    // },
+  ];
   const { allowSound } = useSound();
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -29,10 +80,23 @@ export default function Education() {
           </p>
 
           <div className="grid grid-cols-8 flex-wrap gap-x-[10px]  text-xs text-red pb-[8px] p-[16px] pb-0 uppercase border border-[#FE010130] bg-black">
-            {Array.from({ length: 4 }).map((_, index) => (
+            {/* {profileDetails.map((detail) => (
+              <div
+                key={detail.label}
+                className="flex items-center mb-[16px] col-span-8 xl:col-span-4"
+              >
+                <p className="text-[10px] font-normal mb-[0px]">
+                  {detail.label}
+                </p>
+                <p className="text-red text-sm font-bold py-[2px]">
+                  {detail.value}
+                </p>
+              </div>
+            ))} */}
+            {profileDetails.map((detail) => (
               <button
                 onMouseEnter={handleHover}
-                key={index}
+                key={detail.id}
                 className="flex items-center mb-[16px] col-span-8 xl:col-span-4 hover:bg-hoverRed border border-transparent hover:border-[#FE010130]"
               >
                 <audio ref={audioRef} src="/sound.mp3" preload="auto" />
@@ -61,12 +125,12 @@ export default function Education() {
                 </div>
                 <div className="flex">
                   <div className="flex items-center ">
-                    <div className="flex flex-wrap ml-[12px]">
-                      <p>extra.ge</p>
-                      <p className="text-xs">e commerce</p>
+                    <div className="flex flex-wrap ml-[8px]">
+                      <p>{detail.value}</p>
+                      <p className="text-xs ml-[8px]">{detail.type}</p>
                     </div>
                     <p className="border border-[#FE010130] text-[#b2b7ba] rounded-full ml-[8px] text-xs p-[6px]">
-                      public
+                      {detail.status}
                     </p>
                   </div>
                   {/* <p>2021 - Present</p> */}
