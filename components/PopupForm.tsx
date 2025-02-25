@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
-
+import useTransformStore from "stores/useTransformStore";
 const PopupForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
+  const { toggleTransform } = useTransformStore();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -33,7 +34,10 @@ const PopupForm = () => {
     <>
       <div className="w-full h-full flex justify-center items-center text-xl">
         <div className="w-full flex flex-col">
-          <form className="w-full flex flex-col" onSubmit={handleSubmit}>
+          <form
+            className="w-full flex flex-col mb-[12px]"
+            onSubmit={handleSubmit}
+          >
             <div className="mb-4">
               <label
                 htmlFor="name"
@@ -89,6 +93,21 @@ const PopupForm = () => {
               <p className="text-green-500 mt-4">Message sent successfully!</p>
             )}
           </form>
+
+          <div className="flex gap-[12px]">
+            <button
+              onClick={toggleTransform}
+              className="w-full flex justify-center items-center text-black bg-red text-[10px] font-bold p-[6px]"
+            >
+              esc
+            </button>
+            <button
+              onClick={toggleTransform}
+              className="w-full flex justify-center items-center text-black bg-red text-[10px] font-bold p-[6px]"
+            >
+              esc
+            </button>
+          </div>
         </div>
       </div>
     </>

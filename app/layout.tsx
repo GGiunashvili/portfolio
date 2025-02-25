@@ -53,17 +53,6 @@ export default function RootLayout({
           <div className="text-red text-xs font-bold border border-red p-[20px] bg-hoverRed mb-[24px] sm:w-[500px]">
             <PopupForm />
           </div>
-          <div className="flex gap-[16px] sm:w-[500px]">
-            <button
-              type="submit"
-              className="w-full bg-red text-black font-bold p-2 text-xs"
-            >
-              SEND MESSAGE [ENTER]
-            </button>
-            <button className="w-full bg-black text-red font-bold border border-[#b2b7ba] p-2 text-xs">
-              DISCARD [ESC]
-            </button>
-          </div>
         </div>
       </body>
     </html>

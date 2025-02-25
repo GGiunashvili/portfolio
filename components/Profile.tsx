@@ -4,7 +4,10 @@ import { useRef, useState } from "react";
 import Svg from "./Svg";
 import Button from "./Button";
 import useFullscreenStore from "../stores/useFullscreenStore";
+import useTransformStore from "../stores/useTransformStore";
 export default function Profile() {
+  const { isTransformed, toggleTransform } = useTransformStore();
+
   const { toggleFullscreen } = useFullscreenStore();
 
   const profileDetails = [
@@ -88,10 +91,10 @@ export default function Profile() {
           <Button />
         </div>
         <button
-          onClick={handleClick}
-          className=" w-full flex justify-center  text-black bg-red  text-[10px] font-bold p-[6px] mb-[12px]"
+          onClick={toggleTransform}
+          className="w-full flex justify-center items-center text-black bg-red text-[10px] font-bold p-[6px] mb-[12px]"
         >
-          {active ? "Remove Tailwind Classes" : "Personal Info"}
+          {isTransformed ? "Close Modal" : "Open Modal"}
         </button>
         <button
           onClick={toggleFullscreen}
