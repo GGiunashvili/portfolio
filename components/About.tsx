@@ -1,5 +1,5 @@
 import React from "react";
-
+import Svg from "./Svg";
 export default function About() {
   return (
     <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130] mb-[24px] sm:mb-0">
@@ -619,103 +619,8 @@ export default function About() {
               </div>
             </div>
           </div>
-
-          <svg
-            fill="none"
-            height="0.9rem"
-            viewBox="0 0 9 9"
-            width="0.9rem"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{
-              position: "absolute",
-              top: "-0.1rem",
-              left: "-0.1rem",
-              rotate: "-90deg",
-              stroke: "red",
-              zIndex: 3,
-              // backgroundColor: "red", // Uncomment if background color is needed
-            }}
-          >
-            <path
-              d="M0 1L8 1L8 9"
-              stroke="current-color"
-              strokeWidth="2"
-            ></path>
-          </svg>
-
-          <svg
-            fill="none"
-            height="0.9rem"
-            viewBox="0 0 9 9"
-            width="0.9rem"
-            xmlns="http://www.w3.org/2000/svg"
-            className="sm:hidden"
-            style={{
-              position: "absolute",
-              top: "-0.1rem",
-              right: "-0.1rem",
-              rotate: "270deg",
-
-              stroke: "red",
-              zIndex: 3,
-              // backgroundColor: "red", // Uncomment if background color is needed
-            }}
-          >
-            <path
-              d="M8 0L8 8L1.04907e-06 8"
-              stroke="current-color"
-              strokeWidth="2"
-            ></path>
-          </svg>
-
-          <svg
-            fill="none"
-            height="0.9rem"
-            viewBox="0 0 9 9"
-            width="0.9rem"
-            xmlns="http://www.w3.org/2000/svg"
-            className="sm:hidden"
-            style={{
-              position: "absolute",
-              bottom: "-0.1rem",
-              right: "-0.1rem",
-              rotate: "0deg",
-
-              stroke: "red",
-              zIndex: 3,
-              // backgroundColor: "red", // Uncomment if background color is needed
-            }}
-          >
-            <path
-              d="M8 0L8 8L1.04907e-06 8"
-              stroke="current-color"
-              strokeWidth="2"
-            ></path>
-          </svg>
-
-          <svg
-            fill="none"
-            height="0.9rem"
-            viewBox="0 0 9 9"
-            width="0.9rem"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{
-              position: "absolute",
-              bottom: "-0.1rem",
-              left: "-0.1rem",
-              rotate: "90deg",
-
-              stroke: "red",
-              zIndex: 3,
-              // backgroundColor: "red", // Uncomment if background color is needed
-            }}
-          >
-            <path
-              d="M8 0L8 8L1.04907e-06 8"
-              stroke="current-color"
-              strokeWidth="2"
-            ></path>
-          </svg>
+          <Svg top="-0.1rem" left="-0.1rem" />
+          <Svg bottom="-0.1rem" left="-0.1rem" />
         </div>
       </div>
       <div className="absolute bottom-0 left-0 w-full bg-black border-t border-r border-[#FE010130] px-[16px] py-[12px] text-xs text-red font-bold">

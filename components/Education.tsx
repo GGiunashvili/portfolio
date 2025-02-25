@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useRef } from "react";
 import { useSound } from "./SoundProvider";
+import Svg from "./Svg";
 export default function Education() {
   const { allowSound } = useSound();
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -73,91 +74,10 @@ export default function Education() {
               </button>
             ))}
           </div>
-          <svg
-            fill="none"
-            height="0.9rem"
-            viewBox="0 0 9 9"
-            width="0.9rem"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{
-              position: "absolute",
-              top: "-0.1rem",
-              left: "-0.1rem",
-              stroke: "red",
-              zIndex: 3,
-              // backgroundColor: "red", // Uncomment if background color is needed
-            }}
-          >
-            <path
-              d="M1 9L1 1L9 1"
-              stroke="current-color"
-              strokeWidth="1"
-            ></path>
-          </svg>
-
-          <svg
-            fill="none"
-            height="0.9rem"
-            viewBox="0 0 9 9"
-            width="0.9rem"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{
-              position: "absolute",
-              top: "-0.1rem",
-              right: "-0.1rem",
-              stroke: "red",
-              zIndex: 3,
-              // backgroundColor: "red", // Uncomment if background color is needed
-            }}
-          >
-            <path
-              d="M0 1L8 1L8 9"
-              stroke="current-color"
-              strokeWidth="1"
-            ></path>
-          </svg>
-          <svg
-            fill="none"
-            height="0.9rem"
-            viewBox="0 0 9 9"
-            width="0.9rem"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{
-              position: "absolute",
-              bottom: "-0.1rem",
-              left: "-0.1rem",
-              stroke: "red",
-              zIndex: 3,
-              // backgroundColor: "red", // Uncomment if background color is needed
-            }}
-          >
-            <path
-              d="M9 8L1 8L0.999999 6.99382e-07"
-              stroke="current-color"
-              strokeWidth="1"
-            ></path>
-          </svg>
-          <svg
-            fill="none"
-            height="0.9rem"
-            viewBox="0 0 9 9"
-            width="0.9rem"
-            xmlns="http://www.w3.org/2000/svg"
-            style={{
-              position: "absolute",
-              bottom: "-0.1rem",
-              right: "-0.1rem",
-              stroke: "red",
-              zIndex: 3,
-              // backgroundColor: "red", // Uncomment if background color is needed
-            }}
-          >
-            <path
-              d="M8 0L8 8L1.04907e-06 8"
-              stroke="current-color"
-              strokeWidth="1"
-            ></path>
-          </svg>
+          <Svg top="-0.1rem" left="-0.1rem" />
+          <Svg top="-0.1rem" right="-0.1rem" />
+          <Svg bottom="-0.1rem" left="-0.1rem" />
+          <Svg bottom="-0.1rem" right="-0.1rem" />
         </div>
         <div className="flex flex-col justify-between flex-wrap ">
           <p className="mb-[16px] sm:mb-[20px] text-xs">PROFESSIONAL ROLES</p>
@@ -244,230 +164,18 @@ export default function Education() {
                   </p>
                   <p>Delivered custom UI designs for remote clients.</p>
                 </div>
-                <svg
-                  className={`${
-                    hoveredIndex === i || (i === 0 && hoveredIndex === null)
-                      ? "flex"
-                      : "hidden group-hover:flex"
-                  }`}
-                  fill="none"
-                  height="0.9rem"
-                  viewBox="0 0 9 9"
-                  width="0.9rem"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style={{
-                    position: "absolute",
-                    top: "-0.1rem",
-                    left: "-0.1rem",
-                    stroke: "red",
-                    zIndex: 3,
-                    // backgroundColor: "red", // Uncomment if background color is needed
-                  }}
-                >
-                  <path
-                    d="M1 9L1 1L9 1"
-                    stroke="current-color"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-                <svg
-                  className={`${
-                    hoveredIndex === i || (i === 0 && hoveredIndex === null)
-                      ? "flex"
-                      : "hidden group-hover:flex"
-                  }`}
-                  fill="none"
-                  height="0.9rem"
-                  viewBox="0 0 9 9"
-                  width="0.9rem"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style={{
-                    position: "absolute",
-                    top: "-0.1rem",
-                    right: "-0.1rem",
-                    stroke: "red",
-                    zIndex: 3,
-                    // backgroundColor: "red", // Uncomment if background color is needed
-                  }}
-                >
-                  <path
-                    d="M0 1L8 1L8 9"
-                    stroke="current-color"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-                <svg
-                  className={`${
-                    hoveredIndex === i || (i === 0 && hoveredIndex === null)
-                      ? "flex"
-                      : "hidden group-hover:flex"
-                  }`}
-                  fill="none"
-                  height="0.9rem"
-                  viewBox="0 0 9 9"
-                  width="0.9rem"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style={{
-                    position: "absolute",
-                    bottom: "-0.1rem",
-                    left: "-0.1rem",
-                    stroke: "red",
-                    zIndex: 3,
-                    // backgroundColor: "red", // Uncomment if background color is needed
-                  }}
-                >
-                  <path
-                    d="M9 8L1 8L0.999999 6.99382e-07"
-                    stroke="current-color"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
-                <svg
-                  className={`${
-                    hoveredIndex === i || (i === 0 && hoveredIndex === null)
-                      ? "flex"
-                      : "hidden group-hover:flex"
-                  }`}
-                  fill="none"
-                  height="0.9rem"
-                  viewBox="0 0 9 9"
-                  width="0.9rem"
-                  xmlns="http://www.w3.org/2000/svg"
-                  style={{
-                    position: "absolute",
-                    bottom: "-0.1rem",
-                    right: "-0.1rem",
-                    stroke: "red",
-                    zIndex: 3,
-                    // backgroundColor: "red", // Uncomment if background color is needed
-                  }}
-                >
-                  <path
-                    d="M8 0L8 8L1.04907e-06 8"
-                    stroke="current-color"
-                    strokeWidth="1"
-                  ></path>
-                </svg>
+                <Svg top="-0.1rem" left="-0.1rem" />
+                <Svg top="-0.1rem" right="-0.1rem" />
+                <Svg bottom="-0.1rem" left="-0.1rem" />
+                <Svg bottom="-0.1rem" right="-0.1rem" />
               </a>
             );
           })}
         </div>
       </div>
-      <svg
-        fill="none"
-        height="0.9rem"
-        viewBox="0 0 9 9"
-        width="0.9rem"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{
-          position: "absolute",
-          top: "-0.1rem",
-          right: "-0.1rem",
-          rotate: "90deg",
-          stroke: "red",
-          zIndex: 3,
-          // backgroundColor: "red", // Uncomment if background color is needed
-        }}
-      >
-        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
-      </svg>
-      <svg
-        fill="none"
-        height="0.9rem"
-        viewBox="0 0 9 9"
-        width="0.9rem"
-        xmlns="http://www.w3.org/2000/svg"
-        className="sm:hidden"
-        style={{
-          position: "absolute",
-          top: "-0.1rem",
-          right: "-0.1rem",
-          rotate: "90deg",
-          stroke: "red",
-          zIndex: 3,
-          // backgroundColor: "red", // Uncomment if background color is needed
-        }}
-      >
-        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
-      </svg>
-      <svg
-        fill="none"
-        height="0.9rem"
-        viewBox="0 0 9 9"
-        width="0.9rem"
-        xmlns="http://www.w3.org/2000/svg"
-        className="sm:hidden"
-        style={{
-          position: "absolute",
-          top: "-0.1rem",
-          left: "-0.1rem",
-          rotate: "90deg",
-          stroke: "red",
-          zIndex: 3,
-          // backgroundColor: "red", // Uncomment if background color is needed
-        }}
-      >
-        <path
-          d="M9 8L1 8L0.999999 6.99382e-07"
-          stroke="current-color"
-          strokeWidth="2"
-        ></path>
-      </svg>
-      <svg
-        fill="none"
-        height="0.9rem"
-        viewBox="0 0 9 9"
-        width="0.9rem"
-        xmlns="http://www.w3.org/2000/svg"
-        className="sm:hidden"
-        style={{
-          position: "absolute",
-          bottom: "-0.1rem",
-          left: "-0.1rem",
-          rotate: "-90deg",
-          stroke: "red",
-          zIndex: 3,
-          // backgroundColor: "red", // Uncomment if background color is needed
-        }}
-      >
-        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
-      </svg>
-      <svg
-        fill="none"
-        height="0.9rem"
-        viewBox="0 0 9 9"
-        width="0.9rem"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{
-          position: "absolute",
-          top: "-0.1rem",
-          right: "-0.1rem",
-          rotate: "90deg",
-          stroke: "red",
-          zIndex: 3,
-          // backgroundColor: "red", // Uncomment if background color is needed
-        }}
-      >
-        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
-      </svg>
-      <svg
-        fill="none"
-        height="0.9rem"
-        viewBox="0 0 9 9"
-        width="0.9rem"
-        xmlns="http://www.w3.org/2000/svg"
-        style={{
-          position: "absolute",
-          bottom: "-0.1rem",
-          right: "-0.1rem",
-          rotate: "180deg",
-          stroke: "red",
-          zIndex: 3,
-          // backgroundColor: "red", // Uncomment if background color is needed
-        }}
-      >
-        <path d="M1 9L1 1L9 1" stroke="current-color" strokeWidth="2"></path>
-      </svg>
+
+      <Svg top="-0.1rem" right="-0.1rem" />
+      <Svg bottom="-0.1rem" right="-0.1rem" />
 
       {/* this is how handleHover sound works */}
       <div
