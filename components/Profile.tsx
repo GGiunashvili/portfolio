@@ -3,7 +3,10 @@ import Image from "next/image";
 import { useRef, useState } from "react";
 import Svg from "./Svg";
 import Button from "./Button";
+import useFullscreenStore from "../stores/useFullscreenStore";
 export default function Profile() {
+  const { toggleFullscreen } = useFullscreenStore();
+
   const profileDetails = [
     { label: "NAME", value: "GIORGI GIUNASHVILI" },
     { label: "OCCUPATION", value: "REACT DEVELOPER" },
@@ -29,23 +32,7 @@ export default function Profile() {
       modal.classList.add("hidden");
     }
   };
-  const toggleFullscreen = () => {
-    const element = document.documentElement;
 
-    // თუ უკვე სრულ ეკრანზე ვართ, გამოვიდეთ
-    if (document.fullscreenElement) {
-      if (document.exitFullscreen) {
-        document.exitFullscreen();
-      }
-    } else {
-      // თუ არ ვართ სრულ ეკრანზე, გადავიდეთ
-      if (element.requestFullscreen) {
-        element.requestFullscreen();
-      } else {
-        console.log("Your browser does not support fullscreen mode");
-      }
-    }
-  };
   return (
     <div className="w-full ">
       <div
@@ -108,7 +95,7 @@ export default function Profile() {
         </button>
         <button
           onClick={toggleFullscreen}
-          className=" w-full flex justify-center items-center text-black bg-red text-[10px] font-bold  p-[6px] "
+          className="w-full flex justify-center items-center text-black bg-red text-[10px] font-bold p-[6px]"
         >
           Toggle Fullscreen Mode
         </button>

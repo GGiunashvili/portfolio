@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Rubik_Glitch, Audiowide } from "next/font/google";
 import "./globals.css";
 import PopupForm from "../components/PopupForm";
 import CustomCursor from "../components/CustomCursor";
+
 const geistSans = Geist({
   subsets: ["latin"],
   weight: "400", // დაამატე სიმძლავრე

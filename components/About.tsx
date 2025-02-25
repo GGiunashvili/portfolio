@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import Svg from "./Svg";
+import { useSound } from "./SoundProvider";
+
 export default function About() {
+  const { allowSound } = useSound();
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const handleHover = () => {
+    if (allowSound && audioRef.current) {
+      audioRef.current.play(); // აუდიოს დაკვრა
+    }
+  };
   return (
     <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130] mb-[24px] sm:mb-0">
       <p className="border-r border-[#FE010130] px-[16px] py-[12px] text-xs text-red font-bold text-sm">
@@ -553,7 +563,12 @@ export default function About() {
                 PROFESSIONAL STUDY ZONES
               </p>{" "}
               <div className="grid gap-[10px] p-[16px] text-red  pb-[40px] sm:pb-[16px] ">
-                <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
+                <div
+                  className="flex gap-[16px] items-start hover:bg-hoverRed "
+                  onMouseEnter={handleHover}
+                >
+                  <audio ref={audioRef} src="/sound.mp3" preload="auto" />
+
                   <div>
                     <p className="text-xs mb-[4px]">
                       Tbilisi School Of Communication - Angular course
@@ -563,7 +578,11 @@ export default function About() {
                     </p>
                   </div>
                 </div>{" "}
-                <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
+                <div
+                  className="flex gap-[16px] items-start hover:bg-hoverRed "
+                  onMouseEnter={handleHover}
+                >
+                  <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                   <div>
                     <p className="text-xs mb-[4px]">
                       Udemy - Certified Internet Webmaster JavaScript Specialist
@@ -573,7 +592,11 @@ export default function About() {
                     </p>
                   </div>
                 </div>
-                <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
+                <div
+                  className="flex gap-[16px] items-start hover:bg-hoverRed "
+                  onMouseEnter={handleHover}
+                >
+                  <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                   <div>
                     <p className="text-xs mb-[4px]">
                       Geolab - Front End Development
@@ -583,7 +606,11 @@ export default function About() {
                     </p>
                   </div>
                 </div>{" "}
-                <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
+                <div
+                  className="flex gap-[16px] items-start hover:bg-hoverRed "
+                  onMouseEnter={handleHover}
+                >
+                  <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                   <div>
                     <p className="text-xs mb-[4px]">
                       Ilia State University - Faculty of Business and
