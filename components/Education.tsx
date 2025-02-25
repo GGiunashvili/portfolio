@@ -109,33 +109,18 @@ export default function Education() {
     <div className="relative col-span-8 grid grid-cols-8 border md:border-l-0 border-[#FE010130] overflow-hidden text-xs">
       <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] py-[12px] px-[16px]">
         <p className="text-x text-red font-bold">TECH ODYSSEY</p>
-        {/* SCRIPTS & BUILDS */}
       </div>
       <div className="col-span-8 relative  flex flex-col p-[16px]  overflow-scroll scrollbar-thin ">
         {" "}
         <div className="relative mb-[24px] sm:mb-[30px]">
           <p className="border border-[#FE010130] gap-x-[16px] py-[12px] px-[16px] font-bold texs-xs ">
-            {/* bg-gradient-to-r from-black via-red to-black */}
             FILE XPLORER
           </p>
           <p className="text-xs text-red py-[12px] px-[16px] uppercase border border-b-0 border-t-0 border-[#FE010130] bg-black">
             LOCATION: /PROJECTS
           </p>
 
-          <div className="grid grid-cols-8 flex-wrap gap-x-[10px]  text-xs text-red pb-[8px] p-[16px] pb-0 uppercase border border-[#FE010130] bg-black">
-            {/* {profileDetails.map((detail) => (
-              <div
-                key={detail.label}
-                className="flex items-center mb-[16px] col-span-8 xl:col-span-4"
-              >
-                <p className="text-[10px] font-normal mb-[0px]">
-                  {detail.label}
-                </p>
-                <p className="text-red text-sm font-bold py-[2px]">
-                  {detail.value}
-                </p>
-              </div>
-            ))} */}
+          <div className="grid grid-cols-8 flex-wrap gap-x-[10px]  text-xs text-red  p-[16px] pb-0 uppercase border border-[#FE010130] bg-black">
             {profileDetails.map((detail) => (
               <button
                 onMouseEnter={handleHover}
@@ -176,7 +161,6 @@ export default function Education() {
                       {detail.status}
                     </p>
                   </div>
-                  {/* <p>2021 - Present</p> */}
                 </div>
               </button>
             ))}
@@ -201,7 +185,7 @@ export default function Education() {
                   setHoveredIndex(i);
                 }}
                 onMouseLeave={() => {
-                  setHover(false); // Reset hover state here
+                  setHover(false);
                   handleHover();
                   setHoveredIndex(i);
                 }}
@@ -231,7 +215,7 @@ export default function Education() {
                           : "font-bold text-[#b2b7ba] group-hover:text-red text-[10px]"
                       }`}
                     >
-                      {profile.label} {/* Displaying profile value */}
+                      {profile.label}
                     </p>
                     <p
                       className={`${
@@ -240,7 +224,7 @@ export default function Education() {
                           : "text-[10px] text-red font-bold mb-[8px] group-hover:text-[#b2b7ba]"
                       }`}
                     >
-                      {profile.value} {/* Displaying profile label */}
+                      {profile.value}
                     </p>
                   </div>
                   <p
@@ -250,7 +234,7 @@ export default function Education() {
                         : "text-[10px] text-red font-bold group-hover:text-[#b2b7ba]"
                     }`}
                   >
-                    {profile.year} {/* Displaying profile type */}
+                    {profile.year}
                   </p>
                 </div>
                 <div
@@ -280,7 +264,6 @@ export default function Education() {
       <Svg top="-0.1rem" right="-0.1rem" />
       <Svg bottom="-0.1rem" right="-0.1rem" />
 
-      {/* this is how handleHover sound works */}
       <div
         onMouseEnter={handleHover}
         className="absolute bottom-0 left-0 w-full bg-black flex justify-center items-center col-span-8 border-t border-[#FE010130] py-[12px] px-[16px]"

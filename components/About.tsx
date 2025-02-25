@@ -554,11 +554,6 @@ export default function About() {
               </p>{" "}
               <div className="grid gap-[10px] p-[16px] text-red  pb-[40px] sm:pb-[16px] ">
                 <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
-                  {/* <img
-                    className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
-                    src="/iliauni.svg"
-                    alt=""
-                  /> */}
                   <div>
                     <p className="text-xs mb-[4px]">
                       Tbilisi School Of Communication - Angular course
@@ -569,11 +564,6 @@ export default function About() {
                   </div>
                 </div>{" "}
                 <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
-                  {/* <img
-                    className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
-                    src="/udemy-3.svg"
-                    alt=""
-                  /> */}
                   <div>
                     <p className="text-xs mb-[4px]">
                       Udemy - Certified Internet Webmaster JavaScript Specialist
@@ -584,12 +574,6 @@ export default function About() {
                   </div>
                 </div>
                 <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
-                  {/* <img
-                    className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
-                    src="/geolab.svg"
-                    alt=""
-                  /> */}
-
                   <div>
                     <p className="text-xs mb-[4px]">
                       Geolab - Front End Development
@@ -600,12 +584,6 @@ export default function About() {
                   </div>
                 </div>{" "}
                 <div className="flex gap-[16px] items-start hover:bg-hoverRed ">
-                  {/* <img
-                    className="rounded-full min-w-[40px] h-[30px] mt-[4px] p-1 bg-[#FE010130]"
-                    src="/iliauni.svg"
-                    alt=""
-                  /> */}
-
                   <div>
                     <p className="text-xs mb-[4px]">
                       Ilia State University - Faculty of Business and
