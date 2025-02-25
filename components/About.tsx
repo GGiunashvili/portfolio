@@ -13,7 +13,7 @@ export default function About() {
   };
   return (
     <div className="overflow-hidden relative col-span-4 border border-r-0 border-[#FE010130]">
-      <p className="border-r border-[#FE010130] px-[16px] py-[12px] text-xs text-red font-bold text-sm">
+      <p className="border-r border-[#FE010130] px-[16px] py-[12px] text-xs text-red font-bold">
         PERSONAL REPO
       </p>
       <div className="overflow-scroll scrollbar-thin h-[calc(100%-64px)] border border-b-0 border-[#FE010130]">
@@ -40,7 +40,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
                     NEXT JS
                   </p>
@@ -91,7 +91,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px]bg-[black]">
                     {" "}
                     REACT
                   </p>
@@ -140,7 +140,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px]bg-[black]">
                     {" "}
                     TYPESCRIPT
                   </p>
@@ -244,7 +244,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
                     GITHUB
                   </p>
@@ -293,7 +293,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
                     GIT
                   </p>
@@ -347,7 +347,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
                     JAVASCRIPT
                   </p>
@@ -396,7 +396,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
                     HTML
                   </p>
@@ -447,7 +447,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
                     SCSS
                   </p>
@@ -496,7 +496,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] border bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
                     CSS
                   </p>
