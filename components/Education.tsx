@@ -14,6 +14,7 @@ export default function Education() {
         "Built UIs from wireframes using HTML, CSS, JavaScript. Enhanced interactivity with modern frameworks.",
         "Delivered custom UI designs for remote clients.",
       ],
+      link: "https://extra.ge",
     },
     {
       id: "2",
@@ -23,9 +24,11 @@ export default function Education() {
       type: [
         "At Digital Area, I crafted over 30 diverse promotion landing pages and web projects, with a special focus on creating smooth, eye-catching animations. Collaborating closely with designers and marketers, I ensured every project delivered engaging, user-friendly experiences that stood out and drove results.",
       ],
+      link: "https://digitalarea.ge",
     },
     {
       id: "3",
+      private: "private",
       label: "Front End Developer",
       value: "Freelancer.com",
       year: "2020-2021",
@@ -33,6 +36,7 @@ export default function Education() {
     },
     {
       id: "4",
+      private: "private",
       label: "Front End Developer",
       value: "Travel Guide app",
       year: "2020-2020",
@@ -44,6 +48,7 @@ export default function Education() {
       value: "Redmed",
       year: "2019-2020",
       type: "At REDMED, I focused on ensuring the reliability and quality of our digital health solutions. I conducted rigorous testing and debugging to identify and resolve issues, ensuring our software met the highest standards. My work involved close collaboration with the development team to enhance functionality, user experience, and overall system performance.",
+      link: "https://redmed.ge",
     },
   ];
   const profileDetails = [
@@ -51,8 +56,9 @@ export default function Education() {
       id: "1",
       label: "CORPORATION",
       value: "EXTRA.GE",
-      status: "private",
+      status: "public",
       type: "E-Commerce",
+      link: "https://extra.ge",
     },
     {
       id: "2",
@@ -60,13 +66,15 @@ export default function Education() {
       value: "DIGITAL-AREA.GE",
       status: "public",
       type: "Inc",
+      link: "https://digitalarea.ge",
     },
     {
       id: "3",
       label: "CORPORATION",
       value: "REDMED.GE",
-      status: "private",
+      status: "public",
       type: "Healthcare",
+      link: "https://redmed.ge",
     },
     {
       id: "4",
@@ -74,6 +82,7 @@ export default function Education() {
       value: "PORTFOLIO",
       status: "public",
       type: "",
+      link: "https://github.com/GGiunashvili/portfolio",
     },
     // {
     //   id: "5",
@@ -122,9 +131,12 @@ export default function Education() {
 
           <div className="grid grid-cols-8 flex-wrap gap-x-[10px]  text-xs text-red  p-[16px] pb-0 uppercase border border-[#FE010130] bg-black">
             {profileDetails.map((detail) => (
-              <button
-                onMouseEnter={handleHover}
+              <a
                 key={detail.id}
+                href={detail.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={handleHover}
                 className="flex items-center mb-[16px] col-span-8 xl:col-span-4 hover:bg-hoverRed border border-transparent hover:border-[#FE010130]"
               >
                 <audio ref={audioRef} src="/sound.mp3" preload="auto" />
@@ -162,7 +174,7 @@ export default function Education() {
                     </p>
                   </div>
                 </div>
-              </button>
+              </a>
             ))}
           </div>
           <Svg top="-0.1rem" left="-0.1rem" />
@@ -170,7 +182,7 @@ export default function Education() {
           <Svg bottom="-0.1rem" left="-0.1rem" />
           <Svg bottom="-0.1rem" right="-0.1rem" />
         </div>
-        <div className="flex flex-col justify-between flex-wrap ">
+        <div className="flex flex-col justify-between flex-wrap  flex-start">
           <p className="mb-[16px] sm:mb-[20px] text-xs">PROFESSIONAL ROLES</p>
           {professionalRoles.map((profile, i) => {
             // Handle hover state
@@ -178,7 +190,7 @@ export default function Education() {
             return (
               <a
                 key={profile.id}
-                href="https://extra.ge"
+                href={profile.link}
                 onMouseEnter={() => {
                   setHover(true);
                   handleHover();
@@ -205,7 +217,11 @@ export default function Education() {
                 rel="noopener noreferrer"
               >
                 <audio ref={audioRef} src="/sound.mp3" preload="auto" />
-
+                <div className="  absolute right-0 left-0 m-auto text-center">
+                  <p className="inline-block bg-red text-black px-[10px] ">
+                    {profile.private}
+                  </p>
+                </div>
                 <div className="flex justify-between w-full">
                   <div>
                     <p
@@ -227,6 +243,7 @@ export default function Education() {
                       {profile.value}
                     </p>
                   </div>
+
                   <p
                     className={`${
                       hoveredIndex === i || (i === 0 && hoveredIndex === null)
@@ -266,7 +283,7 @@ export default function Education() {
 
       <div
         onMouseEnter={handleHover}
-        className="absolute bottom-0 left-0 w-full bg-black flex justify-center items-center col-span-8 border-t border-[#FE010130] py-[12px] px-[16px]"
+        className="absolute bottom-0 left-0 w-full bg-black flex justify-center items-center col-span-8 border-t border-[#FE010130] py-[12px] px-[16px] z-[9999]"
       >
         <p className="text-xs text-red font-bold">CREATIONS</p>
         <audio ref={audioRef} src="/sound.mp3" preload="auto" />

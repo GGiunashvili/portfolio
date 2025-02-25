@@ -94,7 +94,7 @@ export default function Profile() {
           onClick={toggleTransform}
           className="w-full flex justify-center items-center text-black bg-red text-[10px] font-bold p-[6px] mb-[12px]"
         >
-          {isTransformed ? "Close Modal" : "Open Modal"}
+          {isTransformed ? "Close Modal" : "OPEN FOR HIRE"}
         </button>
         <button
           onClick={toggleFullscreen}
