@@ -35,9 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased bg-black ">
+      <body className="antialiased bg-black flex items-center justify-center sm:h-screen">
         <CustomCursor />
-        <div id="root" className="font-Audiowide text-[12px] ">
+        <div id="root" className="font-Audiowide text-[12px] max-w-[1920px]">
           {children}
         </div>
         <div
