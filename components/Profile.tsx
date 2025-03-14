@@ -90,12 +90,12 @@ export default function Profile() {
         <div className="w-full flex justify-center mb-[12px]">
           <Button />
         </div>
-        <button
+        {/* <button
           onClick={toggleTransform}
           className="w-full flex justify-center items-center text-black bg-red text-[10px] font-bold p-[6px] mb-[12px]"
         >
           {isTransformed ? "Close Modal" : "OPEN FOR HIRE"}
-        </button>
+        </button> */}
         <button
           onClick={toggleFullscreen}
           className="w-full flex justify-center items-center text-black bg-red text-[10px] font-bold p-[6px]"
