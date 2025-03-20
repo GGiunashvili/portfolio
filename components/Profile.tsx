@@ -38,7 +38,7 @@ export default function Profile() {
   return (
     <div className="w-full ">
       <div
-        className="group w-full sm:w-full xl:w-full relative  border border-[#FE010130] mb-[20px] shadow-lg shadow-red-500 overflow-hidden"
+        className="group w-full sm:w-full xl:w-full relative  border border-[#FE010130] mb-[24px] shadow-lg shadow-red-500 overflow-hidden"
         style={{
           transition: "transform 0.5s, background-color 0.5s",
           transform: isHovered
@@ -87,13 +87,13 @@ export default function Profile() {
         </div>
         <button
           onClick={toggleFullscreen}
-          className="w-full flex justify-center items-center text-black bg-red text-[10px] font-bold p-[6px] mb-[16px]"
+          className="w-full flex justify-center items-center text-black bg-red text-[10px] font-bold p-[6px] mb-[24px]"
         >
           Toggle Fullscreen Mode
         </button>
 
-        <div className="text-center border border-[#FE010130] p-[16px]">
-          <div className="flex justify-between items-center gap-[8px] mb-[8px] px-[16px] py-[12px]">
+        <div className="text-center px-[20px]">
+          <div className="flex justify-between items-center gap-[8px] mb-[16px]">
             <a
               href="https://github.com/GGiunashvili/"
               target="_blank"
@@ -131,7 +131,7 @@ export default function Profile() {
                 </g>
               </svg>
             </a>
-            <p className="text-red font-bold text-xs">find Me</p>
+            <p className="text-red font-bold">CONNECT</p>
             <a
               href="https://www.linkedin.com/in/react-developer-giorgi-giunashvili/"
               target="_blank"
@@ -165,7 +165,7 @@ export default function Profile() {
               </svg>
             </a>
           </div>
-          <p>giorgi99.giunashvili@gmail.com</p>
+          <p className="text-xs">giorgi99.giunashvili@gmail.com</p>
         </div>
       </div>
     </div>

@@ -49,9 +49,9 @@ const CustomCursor = () => {
         height: "50px",
         // backgroundColor: isHovered ? "rgba(255, 0, 0, 0.5)" : "transparent", // Hover-ზე წითელი background
 
-        transform: isHovered
-          ? "perspective(25rem) rotateX(30deg) translateX(-2rem) translateZ(2em) "
-          : "translate(1%, -1%) rotateX(0deg)",
+        // transform: isHovered
+        //   ? "perspective(25rem) rotateX(30deg) translateX(-2rem) translateZ(2em) "
+        //   : "translate(1%, -1%) rotateX(0deg)",
         transition: "transform 0.3s ease-out",
         zIndex: 9999,
         willChange: "transform",
