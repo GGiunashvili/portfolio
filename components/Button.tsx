@@ -1,8 +1,10 @@
 "use client";
 import { useSound } from "./SoundProvider"; // import sound context
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
+import { SpeakerWaveIcon, SpeakerXMarkIcon } from "@heroicons/react/24/solid";
 
 export default function Button() {
+  const [muted, setMuted] = useState(false);
   const { allowSound, setAllowSound } = useSound(); // obtain sound state and set function
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -13,8 +15,9 @@ export default function Button() {
     }
   }, []); // empty dependency array ensures it runs only once on component mount
 
-  const toggleSound = () => {
+  const toggleSoundAndMute = () => {
     setAllowSound(!allowSound); // toggle sound permission
+    setMuted(!muted); // toggle mute status
 
     if (!allowSound && audioRef.current) {
       audioRef.current.play(); // Play sound when enabled
@@ -23,44 +26,23 @@ export default function Button() {
       audioRef.current.pause(); // Pause sound when disabled
       audioRef.current.currentTime = 0; // Reset the audio to the beginning
     }
+
+    if (audioRef.current) {
+      audioRef.current.muted = muted; // mute/unmute audio based on current state
+    }
   };
 
   return (
     <button
-      className="w-full flex justify-center items-center gap-[2px] text-red text-xs font-bold p-[6px]"
-      onClick={toggleSound} // toggle sound permission and play/pause music
+      onClick={toggleSoundAndMute} // toggle sound and mute at the same time
+      className="w-full flex gap-[8px] justify-center items-center text-red text-xs font-bold p-[6px]"
     >
       Sound
-      <svg
-        width="30px"
-        height="30px"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M3 16.5C2.59 16.5 2.25 16.16 2.25 15.75V8.25C2.25 7.84 2.59 7.5 3 7.5C3.41 7.5 3.75 7.84 3.75 8.25V15.75C3.75 16.16 3.41 16.5 3 16.5Z"
-          fill="red"
-        />
-        <path
-          opacity="0.4"
-          d="M7.5 19C7.09 19 6.75 18.66 6.75 18.25V5.75C6.75 5.34 7.09 5 7.5 5C7.91 5 8.25 5.34 8.25 5.75V18.25C8.25 18.66 7.91 19 7.5 19Z"
-          fill="red"
-        />
-        <path
-          d="M12 21.5C11.59 21.5 11.25 21.16 11.25 20.75V3.25C11.25 2.84 11.59 2.5 12 2.5C12.41 2.5 12.75 2.84 12.75 3.25V20.75C12.75 21.16 12.41 21.5 12 21.5Z"
-          fill="red"
-        />
-        <path
-          opacity="0.4"
-          d="M16.5 19C16.09 19 15.75 18.66 15.75 18.25V5.75C15.75 5.34 16.09 5 16.5 5C16.91 5 17.25 5.34 17.25 5.75V18.25C17.25 18.66 16.91 19 16.5 19Z"
-          fill="red"
-        />
-        <path
-          d="M21 16.5C20.59 16.5 20.25 16.16 20.25 15.75V8.25C20.25 7.84 20.59 7.5 21 7.5C21.41 7.5 21.75 7.84 21.75 8.25V15.75C21.75 16.16 21.41 16.5 21 16.5Z"
-          fill="red"
-        />
-      </svg>
+      {!muted ? (
+        <SpeakerXMarkIcon className="h-6 w-6 text-red" />
+      ) : (
+        <SpeakerWaveIcon className="h-6 w-6 text-red" />
+      )}
     </button>
   );
 }

@@ -562,7 +562,7 @@ export default function About() {
               <p className=" texs-xs font-bold border-b border-[#FE010130] py-[12px] px-[16px]">
                 PROFESSIONAL STUDY ZONES
               </p>{" "}
-              <div className="grid gap-[10px] p-[16px] text-red  pb-[40px] sm:pb-[16px] ">
+              <div className="grid gap-[10px] p-[16px] text-red  pb-[60px] sm:pb-[36px] ">
                 <div
                   className="flex gap-[16px] items-start hover:bg-hoverRed "
                   onMouseEnter={handleHover}
@@ -571,7 +571,7 @@ export default function About() {
 
                   <div>
                     <p className="text-xs mb-[4px]">
-                      Tbilisi School Of Communication - Angular course
+                      Tbilisi School Of Communication - React course
                     </p>
                     <p className="text-xs text-[#b2b7ba]">
                       Sept 2024 – Present

@@ -141,7 +141,7 @@ export default function Education() {
               >
                 <audio ref={audioRef} src="/sound.mp3" preload="auto" />
 
-                <div className="flex items-center justify-center bg-[#F7888838] w-[48px] h-[48px]">
+                <div className="flex items-center justify-center bg-[#F7888838] w-[40px] md:w-[48px] h-[48px]">
                   <svg
                     style={{
                       display: "flex",
@@ -165,9 +165,9 @@ export default function Education() {
                 </div>
                 <div className="flex">
                   <div className="flex items-center ">
-                    <div className="flex flex-wrap ml-[8px]">
+                    <div className="flex gap-[8px] flex-wrap ml-[8px]">
                       <p>{detail.value}</p>
-                      <p className="text-xs ml-[8px]">{detail.type}</p>
+                      <p className="text-xs">{detail.type}</p>
                     </div>
                     <p className="border border-[#FE010130] text-[#b2b7ba] rounded-full ml-[8px] text-xs p-[6px]">
                       {detail.status}
@@ -183,7 +183,7 @@ export default function Education() {
           <Svg bottom="-0.1rem" left="-0.1rem" />
           <Svg bottom="-0.1rem" right="-0.1rem" />
         </div>
-        <div className="flex flex-col justify-between flex-wrap  flex-start">
+        <div className="flex flex-col justify-between flex-wrap  flex-start mb-[16px]">
           <p className="mb-[16px] sm:mb-[20px] text-xs">PROFESSIONAL ROLES</p>
           {professionalRoles.map((profile, i) => {
             // Handle hover state
@@ -218,8 +218,8 @@ export default function Education() {
                 rel="noopener noreferrer"
               >
                 <audio ref={audioRef} src="/sound.mp3" preload="auto" />
-                <div className="  absolute right-0 left-0 m-auto text-center">
-                  <p className="inline-block bg-red text-black px-[10px] ">
+                <div className="rotate-[-45deg] md:rotate-[-30deg] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <p className="inline-block text-xs bg-red text-black px-[10px] ">
                     {profile.private}
                   </p>
                 </div>
