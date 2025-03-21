@@ -3,7 +3,7 @@ import { Geist, Geist_Mono, Rubik_Glitch, Audiowide } from "next/font/google";
 import "./globals.css";
 import PopupForm from "../components/PopupForm";
 import CustomCursor from "../components/CustomCursor";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -55,7 +55,7 @@ export default function RootLayout({
             <PopupForm />
           </div>
         </div>
-        <GoogleTagManager gtmId="G-N3JBQYZ1TW" />
+        <GoogleAnalytics gaId="G-N3JBQYZ1TW" />
       </body>
     </html>
   );
