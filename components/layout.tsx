@@ -45,7 +45,7 @@ export default function RootLayout({
 
           {children}
         </div>
-        <div
+        {/* <div
           id="modal"
           className="flex flex-col justify-end fixed h-screen sm:h-auto sm:left-[20px] bottom-0 sm:bottom-[0px] w-full sm:w-[500px] bg-yellow-100 w-full z-[999] hidden p-[20px] "
         >
@@ -69,7 +69,7 @@ export default function RootLayout({
               DISCARD [ESC]
             </button>
           </div>
-        </div>
+        </div> */}
       </body>
     </html>
   );

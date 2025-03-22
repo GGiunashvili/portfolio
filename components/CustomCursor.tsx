@@ -53,7 +53,7 @@ const CustomCursor = () => {
         //   ? "perspective(25rem) rotateX(30deg) translateX(-2rem) translateZ(2em) "
         //   : "translate(1%, -1%) rotateX(0deg)",
         transition: "transform 0.3s ease-out",
-        zIndex: 9999,
+        zIndex: 99999,
         willChange: "transform",
         WebkitBackfaceVisibility: "hidden",
         backfaceVisibility: "hidden",

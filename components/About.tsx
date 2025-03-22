@@ -34,7 +34,7 @@ export default function About() {
             <p className=" texs-xs font-bold border-b border-[#FE010130]  py-[12px] px-[16px]">
               CORE COMPETENCIES
             </p>
-            <div className="flex justify-center flex-wrap gap-x-[4px] gap-y-[16px] p-[16px]">
+            <div className="flex justify-center flex-wrap gap-x-[4px] gap-y-[16px] p-[16px] 3xl:px-[60px]">
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}

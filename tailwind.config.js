@@ -22,6 +22,10 @@ export default {
         "geist-mono": ["Geist Mono", "monospace"],
         Audiowide: ["Audiowide", "cursive"],
       },
+      screens: {
+        "3xl": "1680px", // ახალი breakpoint
+        // "4xl": "1800px", // კიდევ ერთი breakpoint
+      },
     },
   },
   plugins: [],
