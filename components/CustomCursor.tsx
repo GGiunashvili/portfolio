@@ -57,14 +57,15 @@ const CustomCursor = () => {
         willChange: "transform",
         WebkitBackfaceVisibility: "hidden",
         backfaceVisibility: "hidden",
+        // backgroundColor: "red",
       }}
     >
       <Image
         src="/crs.svg"
         alt="Custom Cursor"
-        width={50}
-        height={50}
-        className="w-[50px] h-[50px] "
+        width={30}
+        height={30}
+        className="w-[30px] h-[30px] "
       />
     </div>
   );
