@@ -26,8 +26,9 @@ body {
 }
 @layer utilities {
   .scrollbar-thin {
-    scrollbar-width: thin; /* Firefox */
+    scrollbar-width: auto; /* Firefox */
     overflow: auto; /* საჭიროა overflow */
+    max-height: 1200px;
   }
 
   .scrollbar-thin::-webkit-scrollbar {
