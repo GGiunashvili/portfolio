@@ -20,7 +20,7 @@ export default function About() {
         <div className="flex flex-col">
           <div>
             <p className="border-b border-[#FE010130] py-[12px] px-[16px] font-bold text-xs">
-              FRONT END DEVELOPER
+              REACT/NEXT DEVELOPER
             </p>
             <p className="text-[10px] text-red p-[16px] uppercase">
               I’m Giorgi, a Front-End Developer with 4 years of experience. I
