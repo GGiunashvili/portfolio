@@ -31,7 +31,7 @@ body {
   }
 
   .scrollbar-thin::-webkit-scrollbar {
-    width: 6px; /* მეტი სისქე აქ */
+    width: 1px; /* მეტი სისქე აქ */
   }
 
   .scrollbar-thin::-webkit-scrollbar-thumb {
