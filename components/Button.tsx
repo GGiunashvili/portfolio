@@ -35,9 +35,9 @@ export default function Button() {
   return (
     <button
       onClick={toggleSoundAndMute} // toggle sound and mute at the same time
-      className="w-full flex gap-[8px] justify-center items-center text-red text-xs font-bold p-[6px]"
+      className=" text-red text-xs font-bold"
     >
-      Sound
+      {/* Sound */}
       {!muted ? (
         <SpeakerXMarkIcon className="h-6 w-6 text-red" />
       ) : (
