@@ -38,7 +38,9 @@ export default function About() {
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
+                onMouseEnter={handleHover}
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
@@ -89,7 +91,9 @@ export default function About() {
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
+                onMouseEnter={handleHover}
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
@@ -138,7 +142,9 @@ export default function About() {
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
+                onMouseEnter={handleHover}
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
@@ -188,7 +194,9 @@ export default function About() {
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
+                onMouseEnter={handleHover}
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
@@ -242,7 +250,9 @@ export default function About() {
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
+                onMouseEnter={handleHover}
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
@@ -291,7 +301,9 @@ export default function About() {
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
+                onMouseEnter={handleHover}
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
@@ -345,7 +357,9 @@ export default function About() {
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
+                onMouseEnter={handleHover}
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
@@ -394,7 +408,9 @@ export default function About() {
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
+                onMouseEnter={handleHover}
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
@@ -445,7 +461,9 @@ export default function About() {
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
+                onMouseEnter={handleHover}
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
@@ -494,7 +512,9 @@ export default function About() {
               <div
                 className="group"
                 style={{ position: "relative", display: "inline-block" }}
+                onMouseEnter={handleHover}
               >
+                <audio ref={audioRef} src="/sound.mp3" preload="auto" />
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
                   <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}

@@ -10,6 +10,7 @@ import {
   ArrowsPointingInIcon,
   ClipboardDocumentIcon,
 } from "@heroicons/react/24/solid";
+import Button from "./Button";
 export default function Profile() {
   const { isFullscreen, toggleFullscreen } = useFullscreenStore();
   const [isHovered, setIsHovered] = useState(false);
@@ -71,7 +72,7 @@ export default function Profile() {
         </div>
 
         <div className="w-full flex justify-center mb-[12px]">
-          {/* Your custom Button component */}
+          <Button />
         </div>
 
         <button
@@ -96,7 +97,7 @@ export default function Profile() {
           {isCopied ? (
             <span>Copied!</span>
           ) : (
-            <ClipboardDocumentIcon className="w-5 h-5" />
+            <ClipboardDocumentIcon className="w-[24px] h-[24px]" />
           )}
         </button>
       </div>
