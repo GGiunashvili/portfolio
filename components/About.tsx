@@ -91,7 +91,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px]bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
                     REACT
                   </p>
@@ -140,7 +140,7 @@ export default function About() {
                 style={{ position: "relative", display: "inline-block" }}
               >
                 <div className="group-hover:flex hidden absolute top-[-30px] m-auto right-0 left-0  w-[100px] py-[4px] px-[6px]  transform -translate-x-[27%] justify-center text-center  ">
-                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px]bg-[black]">
+                  <p className="inline-block text-xs font-bold text-red border border-red py-[2px] px-[4px] bg-[black]">
                     {" "}
                     TYPESCRIPT
                   </p>
