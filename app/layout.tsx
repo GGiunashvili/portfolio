@@ -77,7 +77,7 @@ export default function RootLayout({
             <img
               src="/2xl.png"
               alt="Giorgi Giunashvili"
-              className="rounded-full sm:w-[180px] sm:h-[180px] sm:w-[240px] sm:h-[192px] m-auto sm:m-unset object-cover"
+              className="rounded-full w-[180px] h-[180px] sm:w-[240px] sm:h-[192px] m-auto sm:m-unset object-cover"
             />
             <div className="flex justify-center flex-col w-full ">
               <p className="text-lg text-red uppercase mt-[20px] font-rubik-glitch mb-[20px]">
