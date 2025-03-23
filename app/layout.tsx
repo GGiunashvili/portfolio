@@ -45,7 +45,7 @@ export default function RootLayout({
         </div>
         <div
           id="modal"
-          className=" hidden flex-col justify-center fixed right-0 left-0 bottom-0 top-0 m-auto bg-black sm:bg-[#00000096] rounded-[8px] h-screen sm:h-fit w-[90%] z-[999]  p-[30px] sm:p-[40px] sm:pb-[80px] border border-[#b2b7ba] max-h-[90%] overflow-scroll"
+          className=" hidden flex-col justify-center fixed right-0 left-0 bottom-0 top-0 m-auto bg-black sm:bg-[#00000096] rounded-[8px] h-screen sm:h-fit w-[90%] z-[999]  p-[30px] sm:p-[40px] sm:pb-[80px] border border-[#b2b7ba] max-h-[90%] sm:w-full sm:max-w-[90%] xl:max-w-[1280px] overflow-scroll"
         >
           <p className="font-bold text-red text-2xl sm:text-[40px]  font-rubik-glitch mb-[16px]">
             CONNECT WITH ME

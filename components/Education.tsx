@@ -164,7 +164,7 @@ export default function Education() {
                   </svg>
                 </div>
                 <div className="flex">
-                  <div className="flex items-center ">
+                  <div className="flex items-center sm:flex-wrap md:flex-nowrap">
                     <div className="flex gap-[8px] flex-wrap ml-[8px]">
                       <p>{detail.value}</p>
                       <p className="text-xs">{detail.type}</p>

@@ -24,9 +24,12 @@ const useTransformStore = create<TransformStore>((set, get) => ({
         body.classList.add("bg-red-100", "text-black!important");
         modal.classList.remove("hidden");
 
+        body.style.opacity = "0.3"; // Example of adding overflow style
+
         parent.style.overflow = "hidden"; // Example of adding overflow style
       } else {
         parent.style.overflow = "scroll"; // Example of adding overflow style
+        body.style.opacity = "1"; // Example of adding overflow style
 
         body.style.transform = "";
         body.classList.remove("bg-red-100", "text-black!important");

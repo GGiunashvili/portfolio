@@ -112,7 +112,7 @@ const PopupForm = () => {
       </div> */}
       <button
         onClick={toggleTransform}
-        className="absolute top-[0px] right-[40px] text-[60px] text-red font-rubik-glitch"
+        className="absolute top-[0px] right-[30px] sm:right-[40px] text-[60px] text-red font-rubik-glitch"
       >
         x
       </button>
