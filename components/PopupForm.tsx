@@ -32,7 +32,7 @@ const PopupForm = () => {
 
   return (
     <>
-      <div className="w-full h-full flex justify-center items-center text-xl">
+      {/* <div className="w-full h-full flex justify-center items-center text-xl">
         <div className="w-full flex flex-col">
           <form
             className="w-full flex flex-col mb-[12px]"
@@ -109,13 +109,13 @@ const PopupForm = () => {
             </button>
           </div>
         </div>
-        <button
-          onClick={toggleTransform}
-          className="absolute top-[30px] right-[30px] text-[60px]"
-        >
-          x
-        </button>
-      </div>
+      </div> */}
+      <button
+        onClick={toggleTransform}
+        className="absolute top-[0px] right-[40px] text-[60px] text-red font-rubik-glitch"
+      >
+        x
+      </button>
     </>
   );
 };

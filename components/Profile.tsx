@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import useFullscreenStore from "../stores/useFullscreenStore";
+import useTransformStore from "stores/useTransformStore";
+
 // import {
 //   ArrowsPointingOutIcon,
 //   ArrowsPointingInIcon,
@@ -8,28 +10,18 @@ import useFullscreenStore from "../stores/useFullscreenStore";
 import {
   ArrowsPointingOutIcon,
   ArrowsPointingInIcon,
-  ClipboardDocumentIcon,
 } from "@heroicons/react/24/solid";
 import Button from "./Button";
 export default function Profile() {
   const { isFullscreen, toggleFullscreen } = useFullscreenStore();
   const [isHovered, setIsHovered] = useState(false);
+  const { toggleTransform } = useTransformStore();
 
   const profileDetails = [
     { label: "NAME", value: "GIORGI GIUNASHVILI" },
     { label: "OCCUPATION", value: "REACT/NEXT DEVELOPER" },
     { label: "CORPORATION", value: "EXTRA.GE" },
   ];
-  const [isCopied, setIsCopied] = useState(false);
-  const handleCopy = () => {
-    navigator.clipboard
-      .writeText("giorgi99.giunashvili@gmail.com")
-      .then(() => {
-        setIsCopied(true);
-        setTimeout(() => setIsCopied(false), 2000); // აიკონის დაბრუნება ორ წამში
-      })
-      .catch((err) => console.error("Error copying text: ", err));
-  };
 
   return (
     <div className="w-full">
@@ -52,8 +44,12 @@ export default function Profile() {
             ? "perspective(75rem) rotateX(25deg) translateY(-2.2rem) translateZ(-4rem)"
             : "none",
         }}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
+        onClick={() => {
+          setIsHovered(true);
+        }}
+        onMouseLeave={() => {
+          setIsHovered(false);
+        }}
       >
         <video
           className="w-full group-hover:scale-[1.2] duration-[1000ms]"
@@ -82,7 +78,7 @@ export default function Profile() {
           ))}
         </div>
 
-        <div className="hidden items-center justify-center gap-[18px] fixed bottom-[20px] right-0 left-0 w-full mx-auto">
+        <div className="hidden items-center justify-center gap-[18px] fixed bottom-[20px] right-0 left-0 w-full mx-auto ">
           <a
             href="https://github.com/GGiunashvili/"
             target="_blank"
@@ -154,18 +150,15 @@ export default function Profile() {
           </a>
         </div>
 
-        {/* <button
-          onClick={handleCopy}
-          className="flex justify-center items-center gap-[8px] w-full text-sm  cursor-pointer h-[24px] text-red"
+        <button
+          onClick={() => {
+            setIsHovered(true);
+            toggleTransform();
+          }}
+          className="font-bold text-red text-xl mb-[8px] font-rubik-glitch mt-[10px] sm:mt-0"
         >
-          <span className="ml-2">giorgi99.giunashvili@gmail.com</span>
-
-          {isCopied ? (
-            <span>Copied!</span>
-          ) : (
-            <ClipboardDocumentIcon className="w-[24px] h-[24px]" />
-          )}
-        </button> */}
+          CONNECT WITH ME
+        </button>
       </div>
     </div>
   );

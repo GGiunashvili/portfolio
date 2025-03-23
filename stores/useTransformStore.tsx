@@ -13,7 +13,7 @@ const useTransformStore = create<TransformStore>((set, get) => ({
     const modal = document.getElementById("modal") as HTMLDivElement;
 
     if (body && modal) {
-      body.style.transition = "transform 0.5s ease, background-color 0.5s ease";
+      body.style.transition = "transform 0.9s ease, background-color 0.5s ease";
 
       if (!transformed) {
         body.style.transform =

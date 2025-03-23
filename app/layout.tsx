@@ -4,6 +4,8 @@ import "./globals.css";
 import PopupForm from "../components/PopupForm";
 import CustomCursor from "../components/CustomCursor";
 import { GoogleAnalytics } from "@next/third-parties/google";
+// import CopyInfo from "components/CopyInfo";
+import { Github, Linkedin, MessageCircle, Mail } from "lucide-react";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -43,18 +45,56 @@ export default function RootLayout({
         </div>
         <div
           id="modal"
-          className=" hidden flex-col justify-center overflow-hidden fixed right-0 left-0 bottom-0 top-0 m-auto bg-black sm:bg-[#00000096] rounded-[8px] h-screen sm:h-fit w-[90%] z-[999]  p-[20px] border border-[#b2b7ba]"
+          className=" hidden flex-col justify-center fixed right-0 left-0 bottom-0 top-0 m-auto bg-black sm:bg-[#00000096] rounded-[8px] h-screen sm:h-fit w-[90%] z-[999]  p-[30px] sm:p-[40px] sm:pb-[80px] border border-[#b2b7ba] max-h-[90%] overflow-scroll"
         >
-          <p className="font-bold text-red text-xl mb-[8px] font-rubik-glitch">
+          <p className="font-bold text-red text-2xl sm:text-[40px]  font-rubik-glitch mb-[16px]">
             CONNECT WITH ME
           </p>
-          <p className="font-bold text-white text-xs mb-[16px]">
+          <p className="font-bold text-white text-xs mb-[16px] ">
             WANNA CHAT? OR JUST SHARE SOMETHING COOL?
           </p>
-          <div className="text-red text-xs font-bold border border-red p-[20px] bg-hoverRed mb-[24px] sm:w-[500px]">
-            <PopupForm />
+          <div className="flex justify-between sm:justify-center sm:gap-[80px] items-center mb-[20px]">
+            <a href="https://github.com/GGiunashvili" target="_blank">
+              <Github className="w-10 h-10 text-red" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/react-developer-giorgi-giunashvili/"
+              target="_blank"
+            >
+              <Linkedin className="w-10 h-10 text-red" />
+            </a>
+            <a href="mailto:giorgi99.giunashvili@gmail.com" target="_blank">
+              <Mail className="w-10 h-10 text-red" />
+            </a>
+            <a
+              href="https://discord.com/users/929481823006916618"
+              target="_blank"
+            >
+              <MessageCircle className="w-10 h-10 text-red " />
+            </a>
           </div>
+          <div className="flex flex-col sm:flex-row sm:gap-[20px]">
+            <img
+              src="https://avatars.githubusercontent.com/u/51047124?v=4"
+              alt="Giorgi Giunashvili"
+              className="rounded-full w-40 h-40 m-auto sm:m-unset"
+            />
+            <div className="flex justify-center flex-col w-full ">
+              <p className="text-xl text-red uppercase mt-[20px] font-rubik-glitch mb-[20px]">
+                For 4 years, I’ve been shaping the web with React and Next.js,
+                crafting dynamic and responsive applications. What’s been built
+                is just the surface. Beneath it lies a deeper understanding of
+                design, functionality, and the endless possibilities that come
+                with them. If you sense there's more to explore, let’s connect
+                and uncover what lies beneath...
+              </p>
+              {/* <CopyInfo /> */}
+            </div>
+          </div>
+
+          <PopupForm />
         </div>
+
         <GoogleAnalytics gaId="G-N3JBQYZ1TW" />
       </body>
     </html>
