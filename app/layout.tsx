@@ -75,9 +75,9 @@ export default function RootLayout({
           </div>
           <div className="flex flex-col sm:flex-row sm:gap-[20px]">
             <img
-              src="https://avatars.githubusercontent.com/u/51047124?v=4"
+              src="/2xl.png"
               alt="Giorgi Giunashvili"
-              className="rounded-full w-40 h-40 m-auto sm:m-unset"
+              className="rounded-full sm:w-[180px] sm:h-[180px] sm:w-[240px] sm:h-[192px] m-auto sm:m-unset object-cover"
             />
             <div className="flex justify-center flex-col w-full ">
               <p className="text-lg text-red uppercase mt-[20px] font-rubik-glitch mb-[20px]">
