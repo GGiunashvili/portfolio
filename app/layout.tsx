@@ -80,7 +80,7 @@ export default function RootLayout({
               className="rounded-full w-40 h-40 m-auto sm:m-unset"
             />
             <div className="flex justify-center flex-col w-full ">
-              <p className="text-xl text-red uppercase mt-[20px] font-rubik-glitch mb-[20px]">
+              <p className="text-lg text-red uppercase mt-[20px] font-rubik-glitch mb-[20px]">
                 For 4 years, I’ve been shaping the web with React and Next.js,
                 crafting dynamic and responsive applications. What’s been built
                 is just the surface. Beneath it lies a deeper understanding of

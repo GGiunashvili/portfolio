@@ -9,6 +9,8 @@ const useTransformStore = create<TransformStore>((set, get) => ({
   isTransformed: false,
   toggleTransform: () => {
     const transformed = get().isTransformed;
+    const parent = document.querySelector("body") as HTMLBodyElement;
+
     const body = document.getElementById("root") as HTMLBodyElement;
     const modal = document.getElementById("modal") as HTMLDivElement;
 
@@ -18,8 +20,11 @@ const useTransformStore = create<TransformStore>((set, get) => ({
       if (!transformed) {
         body.style.transform =
           "perspective(75rem) rotateX(25deg) translateY(-6.2rem) translateZ(-4rem)";
+        body.style.overflow = "hidden";
         body.classList.add("bg-red-100", "text-black!important");
         modal.classList.remove("hidden");
+
+        parent.style.overflow = "hidden"; // Example of adding overflow style
       } else {
         body.style.transform = "";
         body.classList.remove("bg-red-100", "text-black!important");

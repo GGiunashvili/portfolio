@@ -119,7 +119,7 @@ export default function Education() {
       <div className="flex justify-center items-center col-span-8 border-b border-[#FE010130] py-[12px] px-[16px]">
         <p className="text-x text-red font-bold">TECH ODYSSEY</p>
       </div>
-      <div className="col-span-8 relative  flex flex-col p-[24px]  overflow-scroll scrollbar-thin ">
+      <div className="col-span-8 relative  flex flex-col p-[24px]  sm:overflow-scroll sm:scrollbar-thin ">
         {" "}
         <div className="relative mb-[24px] sm:mb-[30px]">
           <p className="border border-[#FE010130] gap-x-[16px] py-[12px] px-[16px] font-bold texs-xs ">

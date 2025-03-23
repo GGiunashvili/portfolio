@@ -152,7 +152,6 @@ export default function Profile() {
 
         <button
           onClick={() => {
-            setIsHovered(true);
             toggleTransform();
           }}
           className="font-bold text-red text-xl mb-[8px] font-rubik-glitch mt-[10px] sm:mt-0"
