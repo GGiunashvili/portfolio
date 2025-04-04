@@ -65,7 +65,7 @@ const CustomCursor = () => {
         alt="Custom Cursor"
         width={30}
         height={30}
-        className="w-[30px] h-[30px] "
+        className="w-[30px] h-[30px] hidden md:flex"
       />
     </div>
   );

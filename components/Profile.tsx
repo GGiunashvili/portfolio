@@ -26,7 +26,7 @@ export default function Profile() {
   return (
     <div className="w-full">
       <div className="flex items-center justify-start w-full gap-[12px] mb-[20px]">
-        <button onClick={toggleFullscreen} className=" text-red">
+        <button onClick={toggleFullscreen} className="hidden md:flex text-red">
           {isFullscreen ? (
             <ArrowsPointingInIcon className="w-[24px] h-[24px]" />
           ) : (
