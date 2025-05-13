@@ -594,7 +594,7 @@ export default function About() {
                       Tbilisi School Of Communication - React course
                     </p>
                     <p className="text-xs text-[#b2b7ba]">
-                      Sept 2024 – Present
+                      Sept 2023 – Dec 2023
                     </p>
                   </div>
                 </div>{" "}
@@ -622,7 +622,7 @@ export default function About() {
                       Geolab - Front End Development
                     </p>
                     <p className="text-xs text-[#b2b7ba]">
-                      Sept 2022 – May 2022
+                      Sept 2021 – May 2021
                     </p>
                   </div>
                 </div>{" "}
@@ -637,7 +637,7 @@ export default function About() {
                       Information Technology
                     </p>
                     <p className="text-xs text-[#b2b7ba]">
-                      Sept 2022 – May 2022
+                      Sept 2017 – May 2021
                     </p>
                   </div>
                 </div>
