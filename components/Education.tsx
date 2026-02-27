@@ -7,8 +7,21 @@ export default function Education() {
     {
       id: "1",
       label: "Front End Developer",
+      value: "ILARIA.GE",
+      year: "2025-Present",
+      type: [
+        "Developing scalable and high-performance HR and business management platform interfaces using React.js, TypeScript, and modern frontend architecture.",
+        "Building reusable UI components, complex forms, dashboards, and data-driven features with strong focus on maintainability, performance, and user experience.",
+        "Managing server state with TanStack Query and client state with Zustand, while integrating REST APIs and optimizing data flow across the application.",
+        "Collaborating closely with backend developers, designers, and product teams to deliver responsive, user-friendly, and production-ready solutions.",
+      ],
+      link: "https://ilaria.ge",
+    },
+    {
+      id: "2",
+      label: "Front End Developer",
       value: "extra.ge",
-      year: "2021-Present",
+      year: "2021-2025",
       type: [
         "Leading UI developers in creating responsive web/mobile interfaces with cross-functional teams.",
         "Built UIs from wireframes using HTML, CSS, JavaScript. Enhanced interactivity with modern frameworks.",
@@ -17,7 +30,7 @@ export default function Education() {
       link: "https://extra.ge",
     },
     {
-      id: "2",
+      id: "3",
       label: "FRONT-END DEVELOPER",
       value: "DigitalArea.ge",
       year: "2020-2021",
@@ -27,7 +40,7 @@ export default function Education() {
       link: "https://digitalarea.ge",
     },
     {
-      id: "3",
+      id: "4",
       private: "private",
       label: "Front End Developer",
       value: "Freelancer.com",
@@ -35,7 +48,7 @@ export default function Education() {
       type: "During my time freelancing on Freelancer.com, I took on a few unique projects that really pushed me to expand my skills and adapt to different client needs. Each project had its own set of challenges, making the work both rewarding and educational.",
     },
     {
-      id: "4",
+      id: "5",
       private: "private",
       label: "Front End Developer",
       value: "Travel Guide app",
@@ -43,7 +56,7 @@ export default function Education() {
       type: "As a Front-End Developer Intern at Travel Guide App, I gained hands-on experience in web development, focusing on creating intuitive user interfaces. ",
     },
     {
-      id: "5",
+      id: "6",
       label: "Front End Developer",
       value: "Redmed.ge",
       year: "2019-2020",

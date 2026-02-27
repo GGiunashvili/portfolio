@@ -20,7 +20,7 @@ export default function Profile() {
   const profileDetails = [
     { label: "NAME", value: "GIORGI GIUNASHVILI" },
     { label: "OCCUPATION", value: "REACT/NEXT DEVELOPER" },
-    { label: "CORPORATION", value: "EXTRA.GE" },
+    { label: "CORPORATION", value: "ILARIA.GE" },
   ];
 
   return (
